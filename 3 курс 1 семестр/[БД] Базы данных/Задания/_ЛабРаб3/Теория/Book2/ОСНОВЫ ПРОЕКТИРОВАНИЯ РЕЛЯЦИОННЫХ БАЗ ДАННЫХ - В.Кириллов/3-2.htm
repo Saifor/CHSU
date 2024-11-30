@@ -1,0 +1,198 @@
+<!doctype html public "-//W3C//DTD HTML 3.2//RU">
+<html>
+<head>
+   <title>Реляционная база данных</title>
+   
+   
+   
+   
+   
+		    <style type="text/css">
+TH.arial { font-family: Arial, Serif;}
+P.topic { font-family: sans-serif;}
+A.plain { text-decoration: none;}
+A.topic01 { color: #006890;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic02 { color: #099771;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic03 { color: #719709;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic04 { color: #98650A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic05 { color: #98340A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic06 { color: #099607;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic07 { color: #9E1215;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic08 { color: #970941;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic09 { color: #950995;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic010 { color: #390A98;
+font-family: sans-serif;
+text-decoration: none;}
+H1 { font-family: sans-serif;}
+H2 { font-family: sans-serif;}
+H3 { font-family: sans-serif;}
+H4 { font-family: sans-serif;}
+H5 { font-family: sans-serif;}
+H6 { font-family: sans-serif;}
+</style>
+</head>
+<body bgcolor="#FFFFFF" link="#006890" vlink="#003860" alink="#800000" text="#000000">
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/header0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<img src="_pic_/logo.gif" width=157 height=53 border=0 alt="Server for Information Technologies">
+</td><td align="right">
+<font size="-2">Сервер поддерживается<br><a class="plain" href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>(095) 932-9212, 932-9213, 939-0783<br>E-mail: <a class=noneline href="mailto:info@citmgu.ru?Subject='From page topic CIT FORUM local copy'">info@citforum.ru</a></font>
+</td></tr>
+</table>
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<font size="-1">Сервер содержит море(!) аналитической информации</font>
+</td><td align="right">
+<font size="-1">CIT Forum CD-ROM</font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<h4>3.2. Реляционная база данных</h4>
+<p align="justify">Реляционная база данных – это совокупность отношений, содержащих всю информацию, которая должна храниться в БД. Однако пользователи могут воспринимать такую базу данных как совокупность таблиц. Так на рис. 3.2 показаны таблицы базы данных, построенные по инфологической модели базы данных "Питание" рис. <a href="2-3.htm#pic2-4">2.4</a>.</p>
+<a name="pic3-2"></a>
+<center>
+<table cellspacing=3 cellpadding=5 border=0>
+<tr><td align="center">
+Блюда
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>БЛ</th><th>Блюдо</th><th>Вид</th></tr>
+<tr valign=top><td align="center">1</td><td align="center">Лобио</td><td align="center">Закуска</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">Харчо</td><td align="center">Суп</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">Шашлык</td><td align="center">Горячее</td></tr>
+<tr valign=top><td align="center">4</td><td align="center">Кофе</td><td align="center">Десерт</td></tr>
+</table>
+<br>
+Расход
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>БЛ</th><th>Порций</th><th>Дата_Р</th></tr>
+<tr valign=top><td align="center">1</td><td align="center">158</td><td align="center">1/9/94</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">144</td><td align="center">1/9/94</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">207</td><td align="center">1/9/94</td></tr>
+<tr valign=top><td align="center">4</td><td align="center">235</td><td align="center">1/9/94</td></tr>
+<tr valign=top><td align="center">...</td><td align="center">...</td><td align="center">...</td></tr>
+</table>
+</td><td align="center">
+Продукты
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>ПР</th><th>Продукт</th><th>Калор.</th></tr>
+<tr valign=top><td align="center">1</td><td align="center">Фасоль</td><td align="center">3070</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">Лук</td><td align="center">450</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">Масло</td><td align="center">7420</td></tr>
+<tr valign=top><td align="center">4</td><td align="center">Зелень</td><td align="center">180</td></tr>
+<tr valign=top><td align="center">5</td><td align="center">Мясо</td><td align="center">1660</td></tr>
+<tr valign=top><td align="center">6</td><td align="center">Томаты</td><td align="center">240</td></tr>
+<tr valign=top><td align="center">7</td><td align="center">Рис</td><td align="center">3340</td></tr>
+<tr valign=top><td align="center">8</td><td align="center">Кофе</td><td align="center">2750</td></tr>
+</table>
+<br>
+Рецепты
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>БЛ</th><th>Рецепт</th></tr>
+<tr valign=top><td align="center">1</td><td align="center">Ломаную очищ</td></tr>
+<tr valign=top><td align="center">...</td><td align="center">...</td></tr>
+</table>
+</td><td align="center">
+Состав
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>БЛ</th><th>ПР</th><th>Веc (г)</th></tr>
+<tr valign=top><td align="center">1</td><td align="center">1</td><td align="center">200</td></tr>
+<tr valign=top><td align="center">1</td><td align="center">2</td><td align="center">40</td></tr>
+<tr valign=top><td align="center">1</td><td align="center">3</td><td align="center">30</td></tr>
+<tr valign=top><td align="center">1</td><td align="center">4</td><td align="center">10</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">5</td><td align="center">80</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">2</td><td align="center">30</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">6</td><td align="center">40</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">7</td><td align="center">50</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">3</td><td align="center">15</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">4</td><td align="center">15</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">5</td><td align="center">180</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">6</td><td align="center">100</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">2</td><td align="center">40</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">4</td><td align="center">20</td></tr>
+<tr valign=top><td align="center">4</td><td align="center">8</td><td align="center">8</td></tr>
+</table>
+</td></tr><tr><td align="center">
+Поставщики
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>ПОС</th><th>Поставщик</th><th>Город</th></tr>
+<tr valign=top><td align="center">1</td><td align="center">"Полесье"</td><td align="center">Киев</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">"Наталка"</td><td align="center">Киев</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">"Хуанхэ"</td><td align="center">Пекин</td></tr>
+<tr valign=top><td align="center">4</td><td align="center">"Лайма"</td><td align="center">Рига</td></tr>
+<tr valign=top><td align="center">5</td><td align="center">"Юрмала"</td><td align="center">Рига</td></tr>
+<tr valign=top><td align="center">6</td><td align="center">"Даугава"</td><td align="center">Рига</td></tr>
+</table>
+<br>
+Города
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Город</th><th>Страна</th></tr>
+<tr valign=top><td align="center">Киев</td><td align="center">Украина</td></tr>
+<tr valign=top><td align="center">Пекин</td><td align="center">Китай</td></tr>
+<tr valign=top><td align="center">Рига</td><td align="center">Латвия</td></tr>
+</table>
+</td><td colspan=2 align="center">
+Поставки
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>ПОС</th><th>ПР</th><th>Вес (кг)</th><th>Цена</th><th>Дата_П</th></tr>
+<tr valign=top><td align="center">1</td><td align="center">6</td><td align="center">120</td><td align="center">0.45</td><td align="center">27/8/94</td></tr>
+<tr valign=top><td align="center">1</td><td align="center">3</td><td align="center">50</td><td align="center">1.82</td><td align="center">27/8/94</td></tr>
+<tr valign=top><td align="center">1</td><td align="center">2</td><td align="center">50</td><td align="center">0.61</td><td align="center">27/8/94</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">2</td><td align="center">100</td><td align="center">0.52</td><td align="center">27/8/94</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">5</td><td align="center">100</td><td align="center">2.18</td><td align="center">27/8/94</td></tr>
+<tr valign=top><td align="center">2</td><td align="center">4</td><td align="center">10</td><td align="center">0.88</td><td align="center">27/8/94</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">1</td><td align="center">250</td><td align="center">0.37</td><td align="center">24/8/94</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">7</td><td align="center">75</td><td align="center">0.44</td><td align="center">24/8/94</td></tr>
+<tr valign=top><td align="center">3</td><td align="center">8</td><td align="center">40</td><td align="center">2.87</td><td align="center">24/8/94</td></tr>
+<tr valign=top><td align="center">4</td><td align="center">3</td><td align="center">70</td><td align="center">1.56</td><td align="center">30/8/94</td></tr>
+<tr valign=top><td align="center">5</td><td align="center">5</td><td align="center">200</td><td align="center">2.05</td><td align="center">30/8/94</td></tr>
+<tr valign=top><td align="center">6</td><td align="center">6</td><td align="center">15</td><td align="center">0.99</td><td align="center">30/8/94</td></tr>
+</table>
+</td></tr>
+</table>
+</center>
+<p align="center"><i>Рис. 3.2. База данных "Питание" (см. п. <a href="2-3.htm">2.3</a>)</i></p>
+<p align="justify">1. Каждая таблица состоит из однотипных строк и имеет уникальное имя.</p>
+<p align="justify">2. <a name="row"></a>Строки имеют фиксированное число полей (столбцов) и значений (множественные поля и повторяющиеся группы недопустимы). Иначе говоря, в каждой позиции таблицы на пересечении строки и столбца всегда имеется в точности одно значение или ничего. </p>
+<p align="justify">3. Строки таблицы обязательно отличаются друг от друга хотя бы единственным значением, что позволяет однозначно идентифицировать любую строку такой таблицы. </p>
+<p align="justify">4. <a name="column"></a>Столбцам таблицы однозначно присваиваются имена, и в каждом из них размещаются однородные значения данных (даты, фамилии, целые числа или денежные суммы). </p>
+<p align="justify">5. Полное информационное содержание базы данных представляется в виде явных значений данных и такой метод представления является единственным. В частности, не существует каких-либо специальных "связей" или указателей, соединяющих одну таблицу с другой. Так, связи между строкой с БЛ = 2 таблицы "Блюда" на рис. 3.2 и строкой с ПР = 7 таблицы продукты (для приготовления Харчо нужен Рис), представляется не с помощью указателей, а благодаря существованию в таблице "Состав" строки, в которой номер блюда равен 2, а номер продукта – 7. </p>
+<p align="justify">6. При выполнении операций с таблицей ее строки и столбцы можно обрабатывать в любом порядке безотносительно к их информационному содержанию. Этому способствует наличие имен таблиц и их столбцов, а также возможность выделения любой их строки или любого набора строк с указанными признаками (например, рейсов с пунктом назначения "Париж" и временем прибытия до 12 часов).</p>
+<p align="center">
+<font size=-1>
+[<a href="3-1.htm">Назад</a>] [<a href="index.htm">Содержание</a>] [<a href="3-3.htm">Вперед</a>]
+</font>
+</p>
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/footer0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="right" valign="top" width="33%">
+<font size="-2">Comments: <a class="plain" href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM local copy'">info@citmgu.ru</a><br>
+Designed by <a class="plain" href="mailto:andrey@novikov.com">Andrey Novikov</a><br>
+Copyright &copy; <a class="plain" href="http://www.citmgu.ru/">CIT</a></font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

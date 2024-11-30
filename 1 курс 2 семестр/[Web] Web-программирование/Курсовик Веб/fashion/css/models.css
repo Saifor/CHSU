@@ -1,0 +1,17 @@
+.section-promo2__block__image {
+	width: 400px;
+}
+
+.section-promo2__block__text ol li {
+   padding-left: 10px;
+}
+
+.dash-list {
+   list-style: none;   
+}
+
+.dash-list li::before {
+   content: "– ";
+   font-weight: bold;
+   padding-right: 10px; 
+}

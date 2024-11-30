@@ -1,0 +1,136 @@
+<!doctype html public "-//W3C//DTD HTML 3.2//RU">
+<html>
+<head>
+   <title>Универсальное отношение</title>
+   
+   
+   
+   
+   
+		    <style type="text/css">
+TH.arial { font-family: Arial, Serif;}
+P.topic { font-family: sans-serif;}
+A.plain { text-decoration: none;}
+A.topic01 { color: #006890;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic02 { color: #099771;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic03 { color: #719709;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic04 { color: #98650A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic05 { color: #98340A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic06 { color: #099607;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic07 { color: #9E1215;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic08 { color: #970941;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic09 { color: #950995;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic010 { color: #390A98;
+font-family: sans-serif;
+text-decoration: none;}
+H1 { font-family: sans-serif;}
+H2 { font-family: sans-serif;}
+H3 { font-family: sans-serif;}
+H4 { font-family: sans-serif;}
+H5 { font-family: sans-serif;}
+H6 { font-family: sans-serif;}
+</style>
+</head>
+<body bgcolor="#FFFFFF" link="#006890" vlink="#003860" alink="#800000" text="#000000">
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/header0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<img src="_pic_/logo.gif" width=157 height=53 border=0 alt="Server for Information Technologies">
+</td><td align="right">
+<font size="-2">Сервер поддерживается<br><a class="plain" href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>(095) 932-9212, 932-9213, 939-0783<br>E-mail: <a class=noneline href="mailto:info@citmgu.ru?Subject='From page topic CIT FORUM local copy'">info@citforum.ru</a></font>
+</td></tr>
+</table>
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<font size="-1">Сервер содержит море(!) аналитической информации</font>
+</td><td align="right">
+<font size="-1">CIT Forum CD-ROM</font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<h4>4.2. Универсальное отношение</h4>
+<p align="justify">Предположим, что проектирование базы данных "Питание" (рис. <a href="3-2.htm#pic3-2">3.2</a>) начинается с выявления атрибутов и подбора данных, образец которых (часть блюд изготовленных и реализованных 1/9/94 г.) показан на рис. 4.1.</p>
+<p align="justify">Этот вариант таблицы "Питание" не является отношением, так как большинство ее строк не атомарны. Атомарными являются лишь значения полей Блюдо, Вид, Рецепт (хотя он и большой), Порций и Дата_Р остальные же поля таблицы рис. 4.1 – множественные. Для придания таким данным формы отношения необходимо реконструировать таблицу. Наиболее просто это сделать с помощью простого процесса вставки, результат которой показан на рис. 4.2. Однако такое преобразование приводит к возникновению большого объема избыточных данных.</p>
+<a name="pic4-1"></a>
+<center>
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Блюдо</th><th>Вид</th><th>Рецепт</th><th>Порций</th><th>Дата Р</th><th>Продукт</th><th>Калорийность</th><th>Вес (г)</th><th>Поставщик</th><th>Город</th><th>Страна</th><th>Вес (кг)</th><th>Цена ($)</th><th>Дата П</tr>
+<tr valign=top><td>Лобио</td><td>Закуска</td><td>Лом.</td><td>158</td><td>1/9/94</td><td>Фасоль</td><td>3070</td><td>200</td><td>"Хуанхэ"</td><td>Пекин</td><td>Китай</td><td>250</td><td>0.37</td><td>24/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Лук</td><td>450</td><td>40</td><td>"Наталка"</td><td>Киев</td><td>Украина</td><td>100</td><td>0.52</td><td>27/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Масло</td><td>7420</td><td>30</td><td>"Лайма"</td><td>Рига</td><td>Латвия</td><td>70</td><td>1.55</td><td>30/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Зелень</td><td>180</td><td>10</td><td>"Даугава"</td><td>Рига</td><td>Латвия</td><td>15</td><td>0.99</td><td>30/8/94</tr>
+<tr valign=top><td>Харчо</td><td>Суп</td><td>...</td><td>144</td><td>1/9/94</td><td>Мясо</td><td>1660</td><td>80</td><td>"Наталка"</td><td>Киев</td><td>Украина</td><td>100</td><td>2.18</td><td>27/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Лук</td><td>450</td><td>30</td><td>"Наталка"</td><td>Киев</td><td>Украина</td><td>100</td><td>0.52</td><td>27/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Томаты</td><td>240</td><td>40</td><td>"Полесье"</td><td>Киев</td><td>Украина</td><td>120</td><td>0.45</td><td>27/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Рис</td><td>3340</td><td>50</td><td>"Хуанхэ"</td><td>Пекин</td><td>Китай</td><td>75</td><td>0.44</td><td>24/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Масло</td><td>7420</td><td>15</td><td>"Полесье"</td><td>Киев</td><td>Украина</td><td>50</td><td>1.62</td><td>27/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Зелень</td><td>180</td><td>15</td><td>"Наталка"</td><td>Киев</td><td>Украина</td><td>10</td><td>0.88</td><td>27/8/94</tr>
+<tr valign=top><td>Шашлык</td><td>Горячее</td><td>...</td><td>207</td><td>1/9/94</td><td>Мясо</td><td>1660</td><td>180</td><td>"Юрмала"</td><td>Рига</td><td>Латвия</td><td>200</td><td>2.05</td><td>30/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Лук</td><td>450</td><td>40</td><td>"Полесье"</td><td>Киев</td><td>Украина</td><td>50</td><td>0.61</td><td>27/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Томаты</td><td>240</td><td>100</td><td>"Полесье"</td><td>Киев</td><td>Украина</td><td>120</td><td>0.45</td><td>27/8/94</tr>
+<tr valign=top><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Зелень</td><td>180</td><td>20</td><td>"Даугава"</td><td>Рига</td><td>Латвия</td><td>15</td><td>0.99</td><td>30/8/94</tr>
+<tr valign=top><td>Кофе</td><td>Десерт</td><td>...</td><td>235</td><td>1/9/94</td><td>Кофе</td><td>2750</td><td>8</td><td>"Хуанхэ"</td><td>Пекин</td><td>Китай</td><td>40</td><td>2.87</td><td>24/8/94</tr>
+</table>
+</center>
+<p align="center"><i>Рис. 4.1. Данные, необходимые для создания базы данных "Питание"</i></p>
+<p align="justify">Таблица на рис. 4.2 представляет собой экземпляр корректного отношения. Его называют универсальным отношением проектируемой БД. В одно универсальное отношение включаются все представляющие интерес атрибуты, и оно может содержать все данные, которые предполагается размещать в БД в будущем. Для малых БД (включающих не более 15 атрибутов) универсальное отношение может использоваться в качестве отправной точки при проектировании БД.</p>
+<a name="pic4-2"></a>
+<center>
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Блюдо</th><th>Вид</th><th>Рецепт</th><th>Порций</th><th>Дата Р</th><th>Продукт</th><th>Калорийность</th><th>Вес (г)</th><th>Поставщик</th><th>Город</th><th>Страна</th><th>Вес (кг)</th><th>Цена ($)</th><th>Дата П</tr>
+<tr valign=top><td>Лобио</td><td>Закуска</td><td>Лом.</td><td>158</td><td>1/9/94</td><td>Фасоль</td><td>3070</td><td>200</td><td>"Хуанхэ"</td><td>Пекин</td><td>Китай</td><td>250</td><td>0.37</td><td>24/8/94</tr>
+<tr valign=top><td>Лобио</td><td>Закуска</td><td>Лом</td><td>108</td><td>1/9/94</td><td>Лук</td><td>450</td><td>40</td><td>"Наталка"</td><td>Киев</td><td>Украина</td><td>100</td><td>0.52</td><td>27/8/94</tr>
+<tr valign=top><td>Лобио</td><td>Закуска</td><td>Лом</td><td>108</td><td>1/9/94</td><td>Масло</td><td>7420</td><td>30</td><td>"Лайма"</td><td>Рига</td><td>Латвия</td><td>70</td><td>1.55</td><td>30/8/94</tr>
+<tr valign=top><td>Лобио</td><td>Закуска</td><td>Лом</td><td>108</td><td>1/9/94</td><td>Зелень</td><td>180</td><td>10</td><td>"Даугава"</td><td>Рига</td><td>Латвия</td><td>15</td><td>0.99</td><td>30/8/94</tr>
+<tr valign=top><td>Харчо</td><td>Суп</td><td>...</td><td>144</td><td>1/9/94</td><td>Мясо</td><td>1660</td><td>80</td><td>"Наталка"</td><td>Киев</td><td>Украина</td><td>100</td><td>2.18</td><td>27/8/94</tr>
+<tr valign=top><td>Харчо</td><td>Суп</td><td>...</td><td>144</td><td>1/9/94</td><td>Лук</td><td>450</td><td>30</td><td>"Наталка"</td><td>Киев</td><td>Украина</td><td>100</td><td>0.52</td><td>27/8/94</tr>
+<tr valign=top><td>Харчо</td><td>Суп</td><td>...</td><td>144</td><td>1/9/94</td><td>Томаты</td><td>240</td><td>40</td><td>"Полесье"</td><td>Киев</td><td>Украина</td><td>120</td><td>0.45</td><td>27/8/94</tr>
+<tr valign=top><td>Харчо</td><td>Суп</td><td>...</td><td>144</td><td>1/9/94</td><td>Рис</td><td>3340</td><td>50</td><td>"Хуанхэ"</td><td>Пекин</td><td>Китай</td><td>75</td><td>0.44</td><td>24/8/94</tr>
+<tr valign=top><td>Харчо</td><td>Суп</td><td>...</td><td>144</td><td>1/9/94</td><td>Масло</td><td>7420</td><td>15</td><td>"Полесье"</td><td>Киев</td><td>Украина</td><td>50</td><td>1.62</td><td>27/8/94</tr>
+<tr valign=top><td>Харчо</td><td>Суп</td><td>...</td><td>144</td><td>1/9/94</td><td>Зелень</td><td>180</td><td>15</td><td>"Наталка"</td><td>Киев</td><td>Украина</td><td>10</td><td>0.88</td><td>27/8/94</tr>
+<tr valign=top><td>Шашлык</td><td>Горячее</td><td>...</td><td>207</td><td>1/9/94</td><td>Мясо</td><td>1660</td><td>180</td><td>"Юрмала"</td><td>Рига</td><td>Латвия</td><td>200</td><td>2.05</td><td>30/8/94</tr>
+<tr valign=top><td>Шашлык</td><td>Горячее</td><td>...</td><td>207</td><td>1/9/94</td><td>Лук</td><td>450</td><td>40</td><td>"Полесье"</td><td>Киев</td><td>Украина</td><td>50</td><td>0.61</td><td>27/8/94</tr>
+<tr valign=top><td>Шашлык</td><td>Горячее</td><td>...</td><td>207</td><td>1/9/94</td><td>Томаты</td><td>240</td><td>100</td><td>"Полесье"</td><td>Киев</td><td>Украина</td><td>120</td><td>0.45</td><td>27/8/94</tr>
+<tr valign=top><td>Шашлык</td><td>Горячее</td><td>...</td><td>207</td><td>1/9/94</td><td>Зелень</td><td>180</td><td>20</td><td>"Даугава"</td><td>Рига</td><td>Латвия</td><td>15</td><td>0.99</td><td>30/8/94</tr>
+<tr valign=top><td>Кофе</td><td>Десерт</td><td>...</td><td>235</td><td>1/9/94</td><td>Кофе</td><td>2750</td><td>8</td><td>"Хуанхэ"</td><td>Пекин</td><td>Китай</td><td>40</td><td>2.87</td><td>24/8/94</tr>
+</table>
+</center>
+<p align="center"><i>Рис. 4.2. Универсальное отношение "Питание"</i></p>
+<p align="center">
+<font size=-1>
+[<a href="4-1.htm">Назад</a>] [<a href="index.htm">Содержание</a>] [<a href="4-3.htm">Вперед</a>]
+</font>
+</p>
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/footer0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="right" valign="top" width="33%">
+<font size="-2">Comments: <a class="plain" href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM local copy'">info@citmgu.ru</a><br>
+Designed by <a class="plain" href="mailto:andrey@novikov.com">Andrey Novikov</a><br>
+Copyright &copy; <a class="plain" href="http://www.citmgu.ru/">CIT</a></font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

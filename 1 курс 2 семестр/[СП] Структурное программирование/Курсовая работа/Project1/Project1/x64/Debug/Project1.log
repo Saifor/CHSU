@@ -1,0 +1,9 @@
+﻿  MyForm.cpp
+d:\chsu\сп кр\project1\project1\MyForm.h(310): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+d:\chsu\сп кр\project1\project1\MyForm.h(311): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+d:\chsu\сп кр\project1\project1\MyForm.h(312): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+d:\chsu\сп кр\project1\project1\MyForm.h(313): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+MyForm.cpp(5): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+  MyForm.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  Project1.vcxproj -> D:\CHSU\СП КР\Project1\x64\Debug\Project1.exe
+  Project1.vcxproj -> D:\CHSU\СП КР\Project1\x64\Debug\Project1.pdb (Partial PDB)

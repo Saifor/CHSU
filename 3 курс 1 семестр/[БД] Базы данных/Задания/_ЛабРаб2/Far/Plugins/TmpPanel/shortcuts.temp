@@ -1,0 +1,12 @@
+|&C: жесткий|C:
+|&D: жесткий|D:
+|-|
+|&D: Desktop|%HOMEDRIVE%%HOMEPATH%\Desktop
+|&N: NetHood|%HOMEDRIVE%%HOMEPATH%\NetHood
+|&M: My Documents|%HOMEDRIVE%%HOMEPATH%\\My Documents
+|&S: Shared Documents|%ALLUSERSPROFILE%\Documents
+|-|
+|&1: временная|tmp:
+|&2: Far Navigator|ftp:
+|&3: сеть|net:
+|&8: реестр|reg:

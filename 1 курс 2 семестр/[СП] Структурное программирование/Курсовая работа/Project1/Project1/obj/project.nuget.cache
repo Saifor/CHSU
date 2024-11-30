@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xZvfXP5eauoYTkFi1/jdA59S2Ta6wF7ENXaRouLuxqj2Lyw9vCZ7fJRf3N7d+UgKvrxEUIXy1SuziXDeNJ2hBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AsBri\\OneDrive\\Рабочий стол\\Project1\\Project1\\Project1.vcxproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AsBri\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22621.29\\microsoft.windows.sdk.net.ref.10.0.22621.29.nupkg.sha512"
+  ],
+  "logs": []
+}

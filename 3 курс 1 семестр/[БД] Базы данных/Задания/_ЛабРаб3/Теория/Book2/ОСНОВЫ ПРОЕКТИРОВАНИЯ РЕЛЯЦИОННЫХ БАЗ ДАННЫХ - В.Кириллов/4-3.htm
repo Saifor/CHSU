@@ -1,0 +1,255 @@
+<!doctype html public "-//W3C//DTD HTML 3.2//RU">
+<html>
+<head>
+   <title>Почему проект БД может быть плохим?</title>
+   
+   
+   
+   
+   
+		    <style type="text/css">
+TH.arial { font-family: Arial, Serif;}
+P.topic { font-family: sans-serif;}
+A.plain { text-decoration: none;}
+A.topic01 { color: #006890;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic02 { color: #099771;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic03 { color: #719709;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic04 { color: #98650A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic05 { color: #98340A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic06 { color: #099607;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic07 { color: #9E1215;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic08 { color: #970941;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic09 { color: #950995;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic010 { color: #390A98;
+font-family: sans-serif;
+text-decoration: none;}
+H1 { font-family: sans-serif;}
+H2 { font-family: sans-serif;}
+H3 { font-family: sans-serif;}
+H4 { font-family: sans-serif;}
+H5 { font-family: sans-serif;}
+H6 { font-family: sans-serif;}
+</style>
+</head>
+<body bgcolor="#FFFFFF" link="#006890" vlink="#003860" alink="#800000" text="#000000">
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/header0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<img src="_pic_/logo.gif" width=157 height=53 border=0 alt="Server for Information Technologies">
+</td><td align="right">
+<font size="-2">Сервер поддерживается<br><a class="plain" href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>(095) 932-9212, 932-9213, 939-0783<br>E-mail: <a class=noneline href="mailto:info@citmgu.ru?Subject='From page topic CIT FORUM local copy'">info@citforum.ru</a></font>
+</td></tr>
+</table>
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<font size="-1">Сервер содержит море(!) аналитической информации</font>
+</td><td align="right">
+<font size="-1">CIT Forum CD-ROM</font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<h4>4.3. Почему проект БД может быть плохим?</h4>
+<p align="justify">Начинающий проектировщик будет использовать отношение "Питание" (рис. <a href="4-2.htm#pic4-2">4.2</a>) в качестве завершенной БД. Действительно, зачем разбивать отношение "Питание" на несколько более мелких отношений (см. например, рис. <a href="3-2.htm#pic3-2">3.2</a>), если оно заключает в себе все данные? А разбивать надо потому, что при использовании универсального отношения возникает несколько проблем:</p>
+<p align="justify">1. <a name="over"></a><i>Избыточность</i>. Данные практически всех столбцов многократно повторяются. Повторяются и некоторые наборы данных (Блюдо-Вид-Рецепт, Продукт-Калорийность, Поставщик-Город-Страна). Нежелательно повторение рецептов, некоторые из которых намного больше рецепта "Лобио" (см. рис. <a href="2-3.htm#pic2-3">2.3</a>). И уж совсем плохо, что все данные о блюде (включая рецепт) повторяются каждый раз, когда это блюдо включается в меню.</p>
+<p align="justify">2. <a name="diss"></a><i>Потенциальная противоречивость (аномалии обновления)</i>. Вследствие избыточности можно обновить адрес поставщика в одной строке, оставляя его неизменным в других. Если поставщик кофе сообщил о своем переезде в Харбин и была обновлена строка с продуктом кофе, то у поставщика "Хуанхэ" появляется два адреса, один из которых не актуален. Следовательно, при обновлениях необходимо просматривать всю таблицу для нахождения и изменения всех подходящих строк.</p>
+<p align="justify">3. <a name="include"></a><i>Аномалии включения</i>. В БД не может быть записан новый поставщик ("Няринга", Вильнюс, Литва), если поставляемый им продукт (Огурцы) не используется ни в одном блюде. Можно, конечно, поместить неопределенные значения в столбцы Блюдо, Вид, Порций и Вес (г) для этого поставщика. Но если появится блюдо, в котором используется этот продукт, не забудем ли мы удалить строку с неопределенными значениями?</p>
+<p align="justify">По аналогичным причинам нельзя ввести и новый продукт (например, Баклажаны), который предлагает существующий поставщик (например, "Полесье"). А как ввести новое блюдо, если в нем используется новый продукт (Крабы)?</p>
+<p align="justify">4. <a name="delete"></a><i>Аномалии удаления</i>. Обратная проблема возникает при необходимости удаления всех продуктов, поставляемых данным поставщиком или всех блюд, использующих эти продукты. При таких удалениях будут утрачены сведения о таком поставщике.</p>
+<p align="justify">Многие проблемы этого примера исчезнут, если выделить в отдельные таблицы сведения о блюдах, рецептах, расходе блюд, продуктах и их поставщиках, а также создать связующие таблицы "Состав" и "Поставки" (рис. 4.3).</p>
+<a name="pic4-3"></a>
+<center>
+<table cellspacing=2 cellpadding=3 border=0>
+<tr><td align="center" valign="top">
+Блюда
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Блюдо</th><th>Вид</tr>
+<tr valign=top><td>Лобио</td><td>Закуска</tr>
+<tr valign=top><td>Харчо</td><td>Суп</tr>
+<tr valign=top><td>Шашлык</td><td>Горячее</tr>
+<tr valign=top><td>Кофе</td><td>Десерт</tr>
+<tr valign=top><td>...</td><td>...</tr>
+</table>
+</td><td align="center" valign="top">
+Рецепты
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Блюдо</th><th>Рецепт</tr>
+<tr valign=top><td>Лобио</td><td>Ломаную очищ</tr>
+<tr valign=top><td>...</td><td>...</tr>
+</table>
+</td><td align="center" valign="top">
+Расход
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Блюдо</th><th>Порций</th><th>Дата_Р</tr>
+<tr valign=top><td>Лобио</td><td>158</td><td>1/9/94</tr>
+<tr valign=top><td>Харчо</td><td>144</td><td>1/9/94</tr>
+<tr valign=top><td>Шашлык</td><td>207</td><td>1/9/94</tr>
+<tr valign=top><td>Кофе</td><td>235</td><td>1/9/94</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</tr>
+</table>
+</td></tr><tr><td align="center" valign="top">
+Продукты
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Продукт</th><th>Калор.</tr>
+<tr valign=top><td>Фасоль</td><td>3070</tr>
+<tr valign=top><td>Лук</td><td>450</tr>
+<tr valign=top><td>Масло</td><td>7420</tr>
+<tr valign=top><td>Зелень</td><td>180</tr>
+<tr valign=top><td>Мясо</td><td>1660</tr>
+<tr valign=top><td>...</td><td>...</tr>
+</table>
+</td><td align="center" valign="top">
+Состав
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Блюдо</th><th>Продукт</th><th>Вес (г)</tr>
+<tr valign=top><td>Лобио</td><td>Фасоль</td><td>200</tr>
+<tr valign=top><td>Лобио</td><td>Лук</td><td>40</tr>
+<tr valign=top><td>Лобио</td><td>Масло</td><td>30</tr>
+<tr valign=top><td>Лобио</td><td>Зелень</td><td>10</tr>
+<tr valign=top><td>Харчо</td><td>Мясо</td><td>80</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</tr>
+</table>
+</td><td align="center" valign="top">
+Поставщики
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Поставщик</th><th>Город</th><th>Страна</tr>
+<tr valign=top><td>"Полесье"</td><td>Киев</td><td>Украина</tr>
+<tr valign=top><td>"Наталка"</td><td>Киев</td><td>Украина</tr>
+<tr valign=top><td>"Хуанхэ"</td><td>Пекин</td><td>Китай</tr>
+<tr valign=top><td>"Лайма"</td><td>Рига</td><td>Латвия</tr>
+<tr valign=top><td>"Юрмала"</td><td>Рига</td><td>Латвия</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</tr>
+</table>
+</td></tr><tr><td colspan=3 align="center" valign="top">
+Поставки
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Поставщик</th><th>Город</th><th>Продукт</th><th>Вес (кг)</th><th>Цена ($)</th><th>Дата_П</tr>
+<tr valign=top><td>"Полесье"</td><td>Киев</td><td>Томаты</td><td>120</td><td>0.45</td><td>27/8/94</tr>
+<tr valign=top><td>"Полесье"</td><td>Киев</td><td>Масло</td><td>50</td><td>1.62</td><td>27/8/94</tr>
+<tr valign=top><td>"Полесье"</td><td>Киев</td><td>Лук</td><td>50</td><td>0.61</td><td>27/8/94</tr>
+<tr valign=top><td>"Наталка"</td><td>Киев</td><td>Лук</td><td>100</td><td>0.52</td><td>27/8/94</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</tr>
+</table>
+</td></tr>
+</table>
+</center>
+<p align="center"><i>Рис. 4.3. Преобразование универсального отношения "Питание" (первый вариант)</i></p>
+<p align="justify"><b>Включение</b>. Простым добавлением строк (Поставщики; "Няринга", Вильнюс, Литва) и (Поставки; "Няринга", Вильнюс, Огурцы, 40) можно ввести информацию о новом поставщике. Аналогично можно ввести данные о новом продукте (Продукты; Баклажаны, 240) и (Поставки; "Полесье", Киев, Баклажаны, 50). </p>
+<p align="justify"><b>Удаление</b>. Удаление сведений о некоторых поставках или блюдах не приводит к потере сведений о поставщиках. </p>
+<p align="justify"><b>Обновление</b>. В таблицах рис. 4.3 все еще много повторяющихся данных, находящихся в связующих таблицах (Состав и Поставки). Следовательно, в данном варианте БД сохранилась потенциальная противоречивость: для изменения названия поставщика с "Полесье" на "Днепро" придется изменять не только строку таблицы Поставщики, но и множество строк таблицы Поставки. При этом не исключено, что в БД будут одновременно храниться: "Полесье", "Палесье", "Днепро", "Днипро" и другие варианты названий. </p>
+<p align="justify">Кроме того, повторяющиеся текстовые данные (такие как название блюда "Рулет из телячей грудинки с сосисками и гарниром из разноцветного пюре" или продукта "Колбаса московская сырокопченая") существенно увеличивают объем хранимых данных. </p>
+<p align="justify">Для исключения ссылок на длинные текстовые значения последние обычно нумеруют: нумеруют блюда в больших кулинарных книгах, товары (продукты) в каталогах и т.д. Воспользуемся этим приемом для исключения избыточного дублирования данных и появления ошибок при копировании длинных текстовых значений (рис. 4.4). Теперь при изменении названия поставщика "Полесье" на "Днепро" исправляется единственное значение в таблице Поставщики. И даже если оно вводится с ошибкой ("Днипро"), то это не может повлиять на связь между поставщиками и продуктами (в связующей таблице Поставки используются номера поставщиков и продуктов, а не их названия).</p>
+<a name="pic4-4"></a>
+<center>
+<table cellspacing=2 cellpadding=3 border=0>
+<tr><td align="center" valign="top">
+Блюда
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>БЛ</th><th>Блюдо</th><th>Вид</tr>
+<tr valign=top><td>1</td><td>Лобио</td><td>Закуска</tr>
+<tr valign=top><td>2</td><td>Харчо</td><td>Суп</tr>
+<tr valign=top><td>3</td><td>Шашлык</td><td>Горячее</tr>
+<tr valign=top><td>4</td><td>Кофе</td><td>Десерт</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</tr>
+</table>
+</td><td align="center" valign="top">
+Рецепты
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Блюдо</th><th>Рецепт</tr>
+<tr valign=top><td>Лобио</td><td>Ломаную очищ</tr>
+<tr valign=top><td>...</td><td>...</tr>
+</table>
+</td><td align="center" valign="top">
+Расход
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>Блюдо</th><th>Порций</th><th>Дата_Р</tr>
+<tr valign=top><td>Лобио</td><td>158</td><td>1/9/94</tr>
+<tr valign=top><td>Харчо</td><td>144</td><td>1/9/94</tr>
+<tr valign=top><td>Шашлык</td><td>207</td><td>1/9/94</tr>
+<tr valign=top><td>Кофе</td><td>235</td><td>1/9/94</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</tr>
+</table>
+</td></tr><tr><td align="center" valign="top">
+Продукты
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>ПР</th><th>Продукт</th><th>Калор.</tr>
+<tr valign=top><td>1</td><td>Фасоль</td><td>3070</tr>
+<tr valign=top><td>2</td><td>Лук</td><td>450</tr>
+<tr valign=top><td>3</td><td>Масло</td><td>7420</tr>
+<tr valign=top><td>4</td><td>Зелень</td><td>180</tr>
+<tr valign=top><td>5</td><td>Мясо</td><td>1660</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</tr>
+</table>
+</td><td align="center" valign="top">
+Состав
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>БЛ</th><th>ПР</th><th>Вес (г)</tr>
+<tr valign=top><td>1</td><td>1</td><td>200</tr>
+<tr valign=top><td>1</td><td>2</td><td>40</tr>
+<tr valign=top><td>1</td><td>3</td><td>30</tr>
+<tr valign=top><td>1</td><td>4</td><td>10</tr>
+<tr valign=top><td>2</td><td>5</td><td>80</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</tr>
+</table>
+</td><td align="center" valign="top">
+Поставщики
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>ПОС</th><th>Поставщик</th><th>Город</th><th>Страна</tr>
+<tr valign=top><td>1</td><td>"Полесье"</td><td>Киев</td><td>Украина</tr>
+<tr valign=top><td>2</td><td>"Наталка"</td><td>Киев</td><td>Украина</tr>
+<tr valign=top><td>3</td><td>"Хуанхэ"</td><td>Пекин</td><td>Китай</tr>
+<tr valign=top><td>4</td><td>"Лайма"</td><td>Рига</td><td>Латвия</tr>
+<tr valign=top><td>5</td><td>"Юрмала"</td><td>Рига</td><td>Латвия</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</td><td>...</tr>
+</table>
+</td></tr><tr><td colspan=3 align="center" valign="top">
+Поставки
+<table cellspacing=0 cellpadding=3 border=1>
+<tr valign=top><th>ПОС</th><th>ПР</th><th>Вес (кг)</th><th>Цена ($)</th><th>Дата_П</tr>
+<tr valign=top><td>1</td><td>6</td><td>120</td><td>0.45</td><td>27/8/94</tr>
+<tr valign=top><td>1</td><td>3</td><td>50</td><td>1.62</td><td>27/8/94</tr>
+<tr valign=top><td>1</td><td>2</td><td>50</td><td>0.61</td><td>27/8/94</tr>
+<tr valign=top><td>2</td><td>2</td><td>100</td><td>0.52</td><td>27/8/94</tr>
+<tr valign=top><td>...</td><td>...</td><td>...</td><td>...</td><td>...</tr>
+</table>
+</td></tr>
+</table>
+</center>
+<p align="center"><i>Рис. 4.4. Преобразование универсального отношения "Питание" (второй вариант)</i></p>
+<p align="center">
+<font size=-1>
+[<a href="4-2.htm">Назад</a>] [<a href="index.htm">Содержание</a>] [<a href="4-4.htm">Вперед</a>]
+</font>
+</p>
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/footer0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="right" valign="top" width="33%">
+<font size="-2">Comments: <a class="plain" href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM local copy'">info@citmgu.ru</a><br>
+Designed by <a class="plain" href="mailto:andrey@novikov.com">Andrey Novikov</a><br>
+Copyright &copy; <a class="plain" href="http://www.citmgu.ru/">CIT</a></font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

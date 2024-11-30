@@ -1,0 +1,114 @@
+<!doctype html public "-//W3C//DTD HTML 3.2//RU">
+<html>
+<head>
+   <title>Реляционная структура данных</title>
+   
+   
+   
+   
+   
+		    <style type="text/css">
+TH.arial { font-family: Arial, Serif;}
+P.topic { font-family: sans-serif;}
+A.plain { text-decoration: none;}
+A.topic01 { color: #006890;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic02 { color: #099771;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic03 { color: #719709;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic04 { color: #98650A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic05 { color: #98340A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic06 { color: #099607;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic07 { color: #9E1215;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic08 { color: #970941;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic09 { color: #950995;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic010 { color: #390A98;
+font-family: sans-serif;
+text-decoration: none;}
+H1 { font-family: sans-serif;}
+H2 { font-family: sans-serif;}
+H3 { font-family: sans-serif;}
+H4 { font-family: sans-serif;}
+H5 { font-family: sans-serif;}
+H6 { font-family: sans-serif;}
+</style>
+</head>
+<body bgcolor="#FFFFFF" link="#006890" vlink="#003860" alink="#800000" text="#000000">
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/header0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<img src="_pic_/logo.gif" width=157 height=53 border=0 alt="Server for Information Technologies">
+</td><td align="right">
+<font size="-2">Сервер поддерживается<br><a class="plain" href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>(095) 932-9212, 932-9213, 939-0783<br>E-mail: <a class=noneline href="mailto:info@citmgu.ru?Subject='From page topic CIT FORUM local copy'">info@citforum.ru</a></font>
+</td></tr>
+</table>
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<font size="-1">Сервер содержит море(!) аналитической информации</font>
+</td><td align="right">
+<font size="-1">CIT Forum CD-ROM</font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<h3>Глава 3. Реляционный подход</h3>
+<h4>3.1. Реляционная структура данных</h4>
+<p align="justify">В конце 60-х годов появились работы, в которых обсуждались возможности применения различных табличных даталогических моделей данных, т.е. возможности использования привычных и естественных способов представления данных. Наиболее значительной из них была статья сотрудника фирмы IBM д-ра Э.Кодда (Codd E.F., A Relational Model of Data for Large Shared Data Banks. CACM 13: 6, June 1970), где, вероятно, впервые был применен термин "реляционная модель данных". </p>
+<p align="justify">Будучи математиком по образованию Э.Кодд предложил использовать для обработки данных аппарат теории множеств (объединение, пересечение, разность, декартово произведение). Он показал, что любое представление данных сводится к совокупности двумерных таблиц особого вида, известного в математике как <a name="relation"></a><i>отношение</i> – relation (англ.) [<a href="literatu.htm#3">3</a>, <a href="literatu.htm#7">7</a>, <a href="literatu.htm#9">9</a>]. </p>
+<p align="justify">Наименьшая единица данных реляционной модели – это отдельное <a name="atom"></a><i>атомарное</i> (неразложимое) для данной модели значение данных. Так, в одной предметной области фамилия, имя и отчество могут рассматриваться как единое значение, а в другой – как три различных значения.</p>
+<p align="justify"><a name="domain"></a><i>Доменом</i> называется множество атомарных значений одного и того же типа. Так, на рис. <a href="1-1.htm#pic1-1">1.1</a> домен пунктов отправления (назначения) – множество названий населенных пунктов, а домен номеров рейса – множество целых положительных чисел. </p>
+<p align="justify">Смысл доменов состоит в следующем. Если значения двух атрибутов берутся из одного и того же домена, то, вероятно, имеют смысл сравнения, использующие эти два атрибута (например, для организации транзитного рейса можно дать запрос "Выдать рейсы, в которых время вылета из Москвы в Сочи больше времени прибытия из Архангельска в Москву"). Если же значения двух атрибутов берутся из различных доменов, то их сравнение, вероятно, лишено смысла: стоит ли сравнивать номер рейса со стоимостью билета? </p>
+<p align="justify">Отношение на доменах D1, D2, ..., Dn (не обязательно, чтобы все они были различны) состоит из заголовка и тела. На рис. 3.1 приведен пример отношения для расписания движения самолетов (рис. <a href="1-1.htm#pic1-1">1.1</a>). </p>
+<p align="justify"><a name="header"></a><i>Заголовок</i> (на рис. <a href="1-1.htm#pic1-1">1.1</a> он назывался интерпретацией) состоит из такого фиксированного множества атрибутов A1, A2, ..., An, что существует взаимно однозначное соответствие между этими атрибутами Ai и определяющими их доменами Di (i=1,2,...,n). </p>
+<a name="pic3-1"></a>
+<p align="center"><img src="_pic_/pic3-1.gif" width=300 height=271 border=0></p>
+<p align="center"><i>Рис. 3.1. Отношение с математической точки зрения (Ai - атрибуты, Vi - значения атрибутов)</i></p>
+<p align="justify"><a name="body"></a><i>Тело</i> состоит из меняющегося во времени множества <a name="kortezh"></a><i>кортежей</i>, где каждый кортеж состоит в свою очередь из множества пар атрибут-значение (Ai:Vi), (i=1,2,...,n), по одной такой паре для каждого атрибута Ai в заголовке. Для любой заданной пары атрибут-значение (Ai:Vi) Vi является значением из единственного домена Di, который связан с атрибутом Ai.</p>
+<p align="justify"><a name="power"></a><i>Степень отношения</i> – это число его атрибутов. Отношение степени один называют унарным, степени два – бинарным, степени три – тернарным, ..., а степени n – n-арным. Степень отношения "Рейс" (рис. <a href="1-1.htm#pic1-1">1.1</a>) – 8.</p>
+<p align="justify"><a name="kardinal"></a><i>Кардинальное число</i> или <a name="power2"></a><i>мощность отношения</i> – это число его кортежей. Мощность отношения "Рейс" равна 10. Кардинальное число отношения изменяется во времени в отличие от его степени. </p>
+<p align="justify">Поскольку отношение – это множество, а множества по определению не содержат совпадающих элементов, то никакие два кортежа отношения не могут быть дубликатами друг друга в любой произвольно-заданный момент времени. Пусть R – отношение с атрибутами A1, A2, ..., An. Говорят, что множество атрибутов K=(Ai, Aj, ..., Ak) отношения R является возможным ключом R тогда и только тогда, когда удовлетворяются два независимых от времени условия: </p>
+<p align="justify"><ol>
+<li><a name="unique"></a>Уникальность: в произвольный заданный момент времени никакие два различных кортежа R не имеют одного и того же значения для Ai, Aj, ..., Ak. 
+<li><a name="minimum"></a>Минимальность: ни один из атрибутов Ai, Aj, ..., Ak не может быть исключен из K без нарушения уникальности. 
+</ol></p>
+<p align="justify">Каждое отношение обладает хотя бы одним возможным ключом, поскольку по меньшей мере комбинация всех его атрибутов удовлетворяет условию уникальности. Один из возможных ключей (выбранный произвольным образом) принимается за его первичный ключ. Остальные возможные ключи, если они есть, называются альтернативными ключами. </p>
+<p align="justify">Вышеупомянутые и некоторые другие математические понятия явились теоретической базой для создания реляционных СУБД, разработки соответствующих языковых средств и программных систем, обеспечивающих их высокую производительность, и создания основ теории проектирования баз данных. Однако для массового пользователя реляционных СУБД можно с успехом использовать неформальные эквиваленты этих понятий:</p>
+<p align="justify">Отношение – Таблица (иногда Файл),<br>
+Кортеж – <a name="row"></a>Строка  (иногда Запись),<br>
+Атрибут – <a name="column"></a>Столбец, Поле. </p>
+<p align="justify">При этом принимается, что "запись" означает "экземпляр записи", а <a name="field"></a>"поле" означает "имя и тип поля".</p>
+<p align="center">
+<font size=-1>
+[<a href="2-6.htm">Назад</a>] [<a href="index.htm">Содержание</a>] [<a href="3-2.htm">Вперед</a>]
+</font>
+</p>
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/footer0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="right" valign="top" width="33%">
+<font size="-2">Comments: <a class="plain" href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM local copy'">info@citmgu.ru</a><br>
+Designed by <a class="plain" href="mailto:andrey@novikov.com">Andrey Novikov</a><br>
+Copyright &copy; <a class="plain" href="http://www.citmgu.ru/">CIT</a></font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

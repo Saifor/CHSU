@@ -1,0 +1,193 @@
+Current developer:
+  JouriM@uran.ru
+  2:5080/80.66
+------------------------------------------------------------------------
+   LogType: Logical type
+   RegType: Registry data type
+      Name: Name of the key
+   Default: Default value (if registry key is not found)
+   Meaning: Description
+------------------------------------------------------------------------
+
+ 1.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\DigitDelimit]
+   LogType: BOOL
+   RegType: DWORD
+      Name: DigitDelimit
+   Default: TRUE
+   Meaning: Delimit thousands in digits with spec chars.
+            E.g.: "3000" will be shown as "3.000", if delimiter is
+            set to '.'
+
+ 2.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\DigitDelimiter]
+   LogType: char
+   RegType: DWORD (code of OEM character)
+      Name: DigitDelimiter
+   Default: 0
+   Meaning: Character delimiter used to delimit digits.
+            Set it to 0 to use the user local delimiter from Windows
+
+ 3.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\WaitTimeout]
+   LogType: int
+   RegType: DWORD
+      Name: WaitTimeout
+   Default: 30
+   Meaning: Maximal timeout to wait for data receiving (sec).
+            If waiting for data is more than this timeout, connection
+            error is assumed
+
+ 4.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\AskAbort]
+   LogType: BOOL
+   RegType: DWORD
+      Name: AskAbort
+   Default: TRUE
+   Meaning: Ask Yes/No on ESC pressed
+
+ 5.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\CmdLength]
+   LogType: int
+   RegType: DWORD
+      Name: CmdLength
+   Default: 7
+   Meaning: Count of command lines stored in cache.
+            This value determines vertical size of commands window
+            (FAR versions less than 1.7? will trap if value exceeds 8)
+
+ 6.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\CmdLine]
+   LogType:  int
+   RegType: DWORD
+      Name: CmdLine
+   Default: 70
+   Meaning: Length of one line in command buffer.
+            This value determines width of commands window
+
+ 7.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\WaitIdle]
+   LogType: int
+   RegType: DWORD
+      Name: WaitIdle
+   Default: 0
+   Meaning: Delay in socket wait function.
+            The value is a number of milliseconds before appropriate calls of
+            Windows API.
+            Larger value will decrease usage of CPU by the plugin, giving
+            more CPU time to other applications, but connection/transfer
+            speed may become slower.
+            Zero value means not to wait at all.
+
+ 8.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\CmdLogFile]
+   LogType: char*
+   RegType: STRING
+      Name: CmdLogFile
+   Default: ""
+   Meaning: Log file where FTP commands are placed.
+            If you do not specify full path (starting with drive letter)
+            filename will be appened to the path of plugin DLL
+
+ 9.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\CmdLogLimit]
+   LogType: int
+   RegType: DWORD
+      Name: CmdLogLimit
+   Default: 100 (100.000 bytes)
+   Meaning: Limit of cmd log file (*1000 bytes).
+            When this limit is reached, the log file is truncated to zero.
+
+10.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\IOBuffSize]
+   LogType: int
+   RegType: DWORD
+      Name: IOBuffSize
+   Default: 10.000 (10.000 bytes)
+   Meaning: Size of buffer to read/write file during get/put operation
+
+11.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\BeepTimeout]
+   LogType: int
+   RegType: DWORD
+      Name: BeepTimeout
+   Default: 30 (sec)
+   Meaning: Time of long operation.
+            If operation processed is longer than this timeout, the
+            'beep' signal is played in next panel idle state.
+            Set to 0 to disable beep
+
+12.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\ShowIdle]
+   LogType: bool
+   RegType: DWORD
+      Name: ShowIdle
+   Default: TRUE
+   Meaning: Show in screen's top left corner a percents of idle while
+            FTP connection is in waiting state
+            Idle message is showed in the following form:
+              "idle(XX): YY%"
+            where:
+              XX - current idle seconds (since the last data transfer)
+              YY - percent of total plugin idle timeout (see WaitTimeout)
+            Because FAR has "specific" text interface API, idle text will
+            stay on the screen until the left panel will be refreshed.
+
+13.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\IdleColor]
+   LogType: int
+   RegType: DWORD
+      Name: IdleColor
+   Default: FAR_COLOR(fccCYAN,fccBLUE)
+   Meaning: Color of idle text on screen
+
+14.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\TimeoutRetry]
+   LogType: BOOL
+   RegType: DWORD
+      Name: TimeoutRetry
+   Default: FALSE
+   Meaning: Retry data transfer, if connection was dropped by TIMEOUT error.
+            Warnings:
+              - this option has meaning ONLY with timeout error.
+                Any other error will be handled as usual.
+              - if some error occured during data transfer (as an Overwrite or
+                ReadOnly question), it stops process to interact with user as
+                usual.
+
+15.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\RetryCount]
+   LogType: int
+   RegType: DWORD
+      Name: RetryCount
+   Default: 0
+   Meaning: Maximum count of automatic retries while timeout errors happen.
+            Zero means INFINITE.
+            When retry count is reached, standard interactive error message
+            will be displayed.
+            Retry counter will be reset to 0 with every up/downloaded file.
+            Current retry counter (if nonzero) will be shown in console title
+            and in the title of up/download statistic window
+
+16.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\LogOutput]
+   LogType: bool
+   RegType: DWORD
+      Name: LogOutput
+   Default: false
+   Meaning: Write to CMD log the data received from server (directory listings,
+            etc.)
+
+17.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\PluginColumnMode]
+   LogType: int
+   RegType: DWORD
+      Name: PluginColumnMode
+   Default: 2
+   Meaning: Default column mode number of plugin panel in hosts mode.
+            Default value is used when panel is opened for the first time.
+            !! Numbers of values mean exactly pressed keys: value number 0
+               means column type switching by pressing Ctrl+0; value number 1
+               means column type switching by pressing Ctrl+1; and so on
+
+18.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\DrawProgress]
+   LogType: bool
+   RegType: DWORD
+      Name: DrawProgress
+   Default: TRUE
+   Meaning: Draw gauges of current and total copy process in copy dialog,
+            instead a delimiter line between total and current progressing
+
+19.[HKEY_CURRENT_USER\Software\Far\plugins\FTP\IdleMode]
+   LogType: int
+   RegType: DWORD
+      Name: IdleMode
+   Default: 1
+   Meaning: Select type of idle info display.
+            If value set to 1 - show idle into FAR screen only;
+            If value set to 2 - show idle into console caption only;
+            If value set to 3 - show idle into both: FAR screen and console
+            caption;

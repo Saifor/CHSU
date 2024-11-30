@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>16.2. Язык модулей</title>
+		    <style type="text/css">
+A.noneline { font-family: Arial, Serif; text-decoration: none; }
+FONT.arial { font-family: Arial, Serif; }
+TD.arial   { font-family: Arial, Serif; }
+TH.arial   { font-family: Arial, Serif; }
+PRE        { font-family: Monospace; color: navy; }
+SAMP       { font-family: Monospace; color: navy; }
+TT         { font-family: Monospace; color: navy; }
+VAR        { font-family: Monospace; color: navy; }
+</style>
+</head>
+<body bgcolor="#FFF5EE" text="#000000" link="#FF0000" alink="#FF0000" vlink="#A52A2A">
+<basefont size="3">
+<center>
+<table width=100% border=0 cellpadding=0>
+<tr valign=top><td class=arial><a href="http://www.citforum.ru/"><img height=50 width=150 src="_pic_/logo3D.gif" alt="Server for Information Technologies" border=0></a><br>
+</td>
+<td align=right class=arial>
+<font size="-2">
+Сервер поддерживается<br>
+<a class=noneline href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>
+(095) 932-9212, 932-9213, 939-0783<br>
+E-mail: <a class=noneline href="mailto:info@citforum.ru?Subject='From page topic CIT-FORUM'">info@citforum.ru</a></font>
+</tr>
+<tr>
+<th colspan=2 class=arial>
+<font color=#000080 size=2><a href="http://www.citforum.ru" class=noneline>Сервер Информационных Технологий</a> содержит море(!) аналитической информации</font>
+<hr noshade>
+</th>
+</tr>
+</table>
+</center>
+<h4><a name="_5_4_2">16.2. Язык модулей</a></h4>
+<p>
+Структура модуля SQL в стандарте SQL/89 определяется следующими синтаксическими правилами:
+<pre>&lt;module&gt; ::=
+   &lt;module name clause&gt;
+   &lt;language clause&gt;
+   &lt;module autorization clause&gt;
+  [&lt;declare cursor&gt;...]
+  &lt; procedure &gt;  ...
+&lt;module name clause&gt; ::= MODULE [&lt;module name&gt;]
+&lt;language clause&gt; ::= LANGUAGE { COBOL | FORTRAN | PASCAL | PLI }
+&lt;module autorization clause&gt; ::=
+   AUTHORIZATION &lt;module autorization identifier&gt;
+&lt;module autorization identifier&gt; ::= &lt;autorization identifier&gt;</pre>
+<p>
+Существенно, что каждый модуль SQL ориентирован на использование в программах, написанных на конкретном языке программирования. Если в модуле присутствуют процедуры работы с курсорами, то все курсоры должны быть специфицированы в начале модуля. Заметим, что объявление курсора не погружается в какую-либо процедуру, поскольку это описательный, а не выполняемый оператор SQL.
+<h5><a name="_5_4_2_1">16.2.1. Определение процедуры</a></h5>
+<p>
+Процедуры в модуле SQL определяются следующими синтаксическими конструкциями:
+<pre>&lt;procedure&gt; ::=
+   PROCEDURE &lt;procedure name&gt;
+   &lt;parameter declaration&gt;...;
+   &lt;SQL statment&gt;;
+&lt;parameter declaration&gt;::=
+  &lt;parameter name&gt; &lt;data type&gt;
+| &lt;SQLCODE parameter&gt;
+&lt;SQLCODE parameter&gt; ::= SQLCODE
+&lt;SQL statement&gt; ::=
+  &lt;close statement&gt;
+| &lt;commit statement&gt;
+| &lt;delete statement positioned&gt;
+| &lt;delete statement searched&gt;
+| &lt;fetch statement&gt;
+| &lt;insert statement&gt;
+| &lt;open statement&gt;
+| &lt;rollback statement&gt;
+| &lt;select statement&gt;
+| &lt;update statement positioned&gt;
+| &lt;update statement searched&gt;</pre>
+<p>
+Имена всех процедур в одном модуле должны быть различны. Любое имя параметра, содержащегося в операторе SQL процедуры, должно быть специфицировано в разделе объявления параметров. Число фактических параметров при вызове процедуры должно совпадать с числом формальных параметров, указанных при ее объявлении. Список формальных параметров каждой процедуры должен содержать ровно один параметр SQLCODE (код ответа процедуры; возможные значения кодов ответа стандартизованы, но некоторые из них определяются в реализации).
+<p><center><a href="glava_64.htm">Предыдущая глава</a> || <a href="contents.htm">Оглавление</a> || <a href="glava_66.htm">Следующая глава</a><p>
+<p></p>
+<hr noshade>
+<center>
+<font size=1 class=arial>
+Comments: <a href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM'" class=noneline>info@citmgu.ru</a><br>
+Copyright &copy; <a href="http://www.citmgu.ru/" class=noneline>CIT</a>
+</font></center></body></html>

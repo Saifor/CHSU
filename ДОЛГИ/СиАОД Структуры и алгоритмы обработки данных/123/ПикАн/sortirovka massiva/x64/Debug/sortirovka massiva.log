@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\_4смстрСтруктуры и алгоритмы обработки данных\2 семестр\sortirovka massiva\main.cpp(24,34): warning C4101: tmp: неиспользованная локальная переменная
+D:\_4смстрСтруктуры и алгоритмы обработки данных\2 семестр\sortirovka massiva\main.cpp(73,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\_4смстрСтруктуры и алгоритмы обработки данных\2 семестр\sortirovka massiva\main.cpp(74,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  sortirovka massiva.vcxproj -> D:\_4смстрСтруктуры и алгоритмы обработки данных\2 семестр\sortirovka massiva\x64\Debug\sortirovka massiva.exe

@@ -1,0 +1,54 @@
+body {
+	background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../images/photo1.jpg");
+}
+
+.default {
+	display: flex;
+	justify-content: center;
+	height: auto;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+.title {
+   display: flex;
+   color: #66bd7f;
+   font-family: "Neue Machina";
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 48px;
+   text-align: center;
+   justify-content: center;
+   text-transform: uppercase;
+   padding-bottom: 20px;
+}
+
+.text {
+   display: flex;
+   color: #444444;
+   font-family: 'Manrope', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 30px;
+   text-align: left;
+   padding-bottom: 25px;
+   text-indent: 50px;
+}
+
+.block {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   max-width: 900px;
+   gap: 20px;
+}
+
+.block img {
+   display: flex;
+   max-height: 850px;
+   max-width: 420px;
+}

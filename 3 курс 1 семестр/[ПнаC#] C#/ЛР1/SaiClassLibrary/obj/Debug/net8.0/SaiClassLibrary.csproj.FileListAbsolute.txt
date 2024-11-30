@@ -1,0 +1,11 @@
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\bin\Debug\net8.0\SaiClassLibrary.deps.json
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\bin\Debug\net8.0\SaiClassLibrary.dll
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\bin\Debug\net8.0\SaiClassLibrary.pdb
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\obj\Debug\net8.0\SaiClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\obj\Debug\net8.0\SaiClassLibrary.AssemblyInfoInputs.cache
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\obj\Debug\net8.0\SaiClassLibrary.AssemblyInfo.cs
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\obj\Debug\net8.0\SaiClassLibrary.csproj.CoreCompileInputs.cache
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\obj\Debug\net8.0\SaiClassLibrary.dll
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\obj\Debug\net8.0\refint\SaiClassLibrary.dll
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\obj\Debug\net8.0\SaiClassLibrary.pdb
+S:\2022_1ПИб-02-1оп-22\Маслов В.А. x Saifor.exe\3 курс 1 семестр\C#\ЛР1\SaiClassLibrary\obj\Debug\net8.0\ref\SaiClassLibrary.dll

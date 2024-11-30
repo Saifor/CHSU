@@ -1,0 +1,55 @@
+
+                    The FAR File and Archive Manager
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    How to install/uninstall plugins
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+INSTALL A PLUGIN
+~~~~~~~~~~~~~~~~
+1. Read the plugin documentation to find the installation instructions,
+   the minimum version of FAR required for correct plugin operation and
+   so on.
+
+   Install the plugin as described there.
+
+2. If there are no installation instructions in the documentation, or
+   if it was impossible to install the plugin according to the
+   instructions given in the documentation, install the plugin
+   the following way:
+
+   a) create a subdirectory with an arbitrary name in the Plugins
+      subdirectory of the directory where FAR is installed.
+
+   b) copy the contents of the plugin distribution archive to that
+      directory (usually it is enough to copy only *.dll, *.hlf, *.lng)
+
+   c) restart FAR manager.
+
+   If successful, the plugin will add a menu item to the plugins menu or
+   will perform the necessary functions as described in its documentation.
+
+
+REMOVE A PLUGIN
+~~~~~~~~~~~~~~~
+1. Read the plugin documentation to find the uninstallation instructions.
+   Remove the plugin as described there.
+
+2. If there are no uninstallation instructions in the documentation, or it
+   was impossible to remove the plugin according to the instructions given
+   in the documentation, remove the plugin the following way:
+
+   a) Start a new instance of FAR manager with "/p" command line switch
+      (FAR will start without plugins).
+
+   b) Quit all other FAR manager instances.
+
+   c) Delete the directory containing the plugin to be removed.
+
+   d) Clear plugins cache. Use the file ClearPluginsCache.bat to complete
+      this operation.
+
+   e) You can try to find and delete all registry entries belonging
+      to that plugin. If you do not know how to do it, ask your system
+      administrator. However, this step is completely optional: there is
+      no harm in not deleting these registry entries.

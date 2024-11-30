@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SaiProject/1.0.0": {
+        "dependencies": {
+          "SaiClassLibrary": "1.0.0"
+        },
+        "runtime": {
+          "SaiProject.dll": {}
+        }
+      },
+      "SaiClassLibrary/1.0.0": {
+        "runtime": {
+          "SaiClassLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SaiProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SaiClassLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

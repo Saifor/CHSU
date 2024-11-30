@@ -1,0 +1,130 @@
+<!doctype html public "-//W3C//DTD HTML 3.2//RU">
+<html>
+<head>
+   <title>Концепция баз данных</title>
+   
+   
+   
+   
+   
+		    <style type="text/css">
+TH.arial { font-family: Arial, Serif;}
+P.topic { font-family: sans-serif;}
+A.plain { text-decoration: none;}
+A.topic01 { color: #006890;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic02 { color: #099771;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic03 { color: #719709;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic04 { color: #98650A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic05 { color: #98340A;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic06 { color: #099607;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic07 { color: #9E1215;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic08 { color: #970941;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic09 { color: #950995;
+font-family: sans-serif;
+text-decoration: none;}
+A.topic010 { color: #390A98;
+font-family: sans-serif;
+text-decoration: none;}
+H1 { font-family: sans-serif;}
+H2 { font-family: sans-serif;}
+H3 { font-family: sans-serif;}
+H4 { font-family: sans-serif;}
+H5 { font-family: sans-serif;}
+H6 { font-family: sans-serif;}
+</style>
+</head>
+<body bgcolor="#FFFFFF" link="#006890" vlink="#003860" alink="#800000" text="#000000">
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/header0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<img src="_pic_/logo.gif" width=157 height=53 border=0 alt="Server for Information Technologies">
+</td><td align="right">
+<font size="-2">Сервер поддерживается<br><a class="plain" href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>(095) 932-9212, 932-9213, 939-0783<br>E-mail: <a class=noneline href="mailto:info@citmgu.ru?Subject='From page topic CIT FORUM local copy'">info@citforum.ru</a></font>
+</td></tr>
+</table>
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="left">
+<font size="-1">Сервер содержит море(!) аналитической информации</font>
+</td><td align="right">
+<font size="-1">CIT Forum CD-ROM</font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<h4>1.2. Концепция баз данных</h4>
+<p align="justify">Активная деятельность по отысканию приемлемых способов обобществления непрерывно растущего объема информации привела к созданию в начале 60-х годов специальных программных комплексов, называемых <a name="subd"></a>"<i>Системы управления базами данных</i>" (СУБД).</p>
+<p align="justify">Основная особенность СУБД – это наличие процедур для ввода и хранения не только самих данных, но и описаний их структуры. Файлы, снабженные описанием хранимых в них данных и находящиеся под управлением СУБД, стали называть банки данных, а затем <a name="bd"></a>"<i>Базы данных</i>" (БД).</p>
+<p align="justify">Пусть, например, требуется хранить расписание движения самолетов (рис. <a href="1-1.htm#pic1-1">1.1</a>) и ряд других данных, связанных с организацией работы аэропорта (БД "Аэропорт"). Используя для этого одну из современных  "русифицированных" СУБД, можно подготовить следующее описание расписания:
+<pre>
+СОЗДАТЬ ТАБЛИЦУ Расписание
+  (Номер_рейса        Целое
+   Дни_недели         Текст (8)
+   Пункт_отправления  Текст (24)
+   Время_вылета       Время
+   Пункт_назначения   Текст (24)
+   Время_прибытия     Время
+   Тип_самолета       Текст (8)
+   Стоимость_билета   Валюта);
+</pre>
+и ввести его вместе с данными в БД "Аэропорт".</p>
+<p align="justify"><i>Язык запросов</i> СУБД позволяет обращаться за данными как из программ, так и с терминалов (рис. 1.2). Сформировав запрос
+<pre>
+ВЫБРАТЬ  Номер_рейса, Дни_недели, Время_вылета
+ИЗ ТАБЛИЦЫ  Расписание
+ГДЕ  Пункт_отправления = 'Москва'
+  И  Пункт_назначения  = 'Киев'
+  И  Время_вылета > 17;
+</pre>
+получим расписание "Москва-Киев" на вечернее время, а по запросу
+<pre>
+ВЫБРАТЬ  КОЛИЧЕСТВО(Номер_рейса)
+ИЗ ТАБЛИЦЫ  Расписание
+ГДЕ  Пункт_отправления = 'Москва'
+  И  Пункт_назначения  = 'Минск';
+</pre>
+получим количество рейсов "Москва-Минск".</p>
+<a name="pic1-2"></a>
+<p align="center"><img src="_pic_/pic1-2.gif" width=300 height=428 border=0></p>
+<p align="center"><i>Рис. 1.2. Связь программ и данных при использовании СУБД</i></p>
+<p align="justify">Эти запросы не потеряют актуальности и при расширении таблицы:
+<pre>
+ДОБАВИТЬ В ТАБЛИЦУ Расписание
+   Длительность_полета  Целое;
+</pre>
+как это было с программами обработки почтовых адресов при введении почтового индекса (см. <a href="1-1.htm">п. 1.1</a>).</p>
+<p align="justify">Однако, за все надо расплачиваться: на обмен данными через СУБД  требуется большее время,  чем на обмен аналогичными данными прямо из файлов, специально созданных для того или иного приложения.</p>
+<p align="center">
+<font size=-1>
+[<a href="1-1.htm">Назад</a>] [<a href="index.htm">Содержание</a>] [<a href="1-3.htm">Вперед</a>]
+</font>
+</p>
+<table cellspacing=0 cellpadding=0 border=0 background="_pic_/footer0.jpg" width="100%">
+<tr><td align="center">
+<table cellspacing=0 cellpadding=4 border=0 width="100%" background="">
+<tr><td align="right" valign="top" width="33%">
+<font size="-2">Comments: <a class="plain" href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM local copy'">info@citmgu.ru</a><br>
+Designed by <a class="plain" href="mailto:andrey@novikov.com">Andrey Novikov</a><br>
+Copyright &copy; <a class="plain" href="http://www.citmgu.ru/">CIT</a></font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

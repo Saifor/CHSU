@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>17.3. Оператор получения информации из области дескриптора SQL</title>
+		    <style type="text/css">
+A.noneline { font-family: Arial, Serif; text-decoration: none; }
+FONT.arial { font-family: Arial, Serif; }
+TD.arial   { font-family: Arial, Serif; }
+TH.arial   { font-family: Arial, Serif; }
+PRE        { font-family: Monospace; color: navy; }
+SAMP       { font-family: Monospace; color: navy; }
+TT         { font-family: Monospace; color: navy; }
+VAR        { font-family: Monospace; color: navy; }
+</style>
+</head>
+<body bgcolor="#FFF5EE" text="#000000" link="#FF0000" alink="#FF0000" vlink="#A52A2A">
+<basefont size="3">
+<center>
+<table width=100% border=0 cellpadding=0>
+<tr valign=top><td class=arial><a href="http://www.citforum.ru/"><img height=50 width=150 src="_pic_/logo3D.gif" alt="Server for Information Technologies" border=0></a><br>
+</td>
+<td align=right class=arial>
+<font size="-2">
+Сервер поддерживается<br>
+<a class=noneline href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>
+(095) 932-9212, 932-9213, 939-0783<br>
+E-mail: <a class=noneline href="mailto:info@citforum.ru?Subject='From page topic CIT-FORUM'">info@citforum.ru</a></font>
+</tr>
+<tr>
+<th colspan=2 class=arial>
+<font color=#000080 size=2><a href="http://www.citforum.ru" class=noneline>Сервер Информационных Технологий</a> содержит море(!) аналитической информации</font>
+<hr noshade>
+</th>
+</tr>
+</table>
+</center>
+<h4><a name="_5_5_3">17.3. Оператор получения информации из области дескриптора SQL</a></h4>
+<pre>&lt;get descriptor statement&gt; ::=
+   GET DESCRIPTOR &lt;descriptor name&gt;
+  &lt;get descriptor information&gt;
+&lt;get descriptor information&gt; ::=
+  &lt;get count&gt;
+ ( VALUE &lt;item number&gt;
+  &lt;get item information&gt;
+ ({&lt;comma&gt; &lt;get item information&gt;}...]
+&lt;get count&gt; ::=
+  &lt;simple target specification 1&gt;
+  &lt;equals operator&gt; COUNT
+&lt;get item information&gt; ::=
+  &lt;simple target specification 2&gt;
+  &lt;equals operator&gt;
+  &lt;descriptor item name&gt;
+&lt;item number&gt; ::= &lt;simple value specification&gt;
+&lt;simple target specification 1&gt; ::= &lt;simple target specification&gt;
+&lt;simple target specification 2&gt; ::= &lt;simple target specification&gt;
+&lt;descriptor item name&gt; ::=
+   TYPE
+ ( LENGHT
+ ( OCTET_LENGHT
+ ( RETURNED_LENGHT
+ ( RETURNED_OCTET_LENGHT
+ ( PRECISION
+ ( SCALE
+ ( DATETIME_INTERVAL_CODE
+ ( DATATIME_INTERVAL_PRECISION
+ ( NULLABLE
+ ( INDICATOR
+ ( DATA
+ ( NAME
+ ( UNNAMED
+ ( COLLATION_CATALOG
+ ( COLLATION_SCHEMA
+ ( COLLATION_NAME
+ ( CHARACTER_SET_CATALOG
+ ( CHARACTER_SET_SCHEMA
+ ( CHARACTER_SET_NAME
+&lt;simple target specification&gt; ::=
+  &lt;parameter name&gt;
+( &lt;embedded variable name&gt;</pre>
+<p>
+<i>Комментарий:</i>
+<p>
+Оператор GET DESCRIPTOR служит для выборки описательной информации, ранее размещенной в дескрипторе с помощью оператора DESCRIBE. За одно выполнение оператора можно получить либо число заполненных элементов дескриптора (COUNT), либо информацию, содержащуюся в одном из заполненных элементов.
+<p><center><a href="glava_71.htm">Предыдущая глава</a> || <a href="contents.htm">Оглавление</a> || <a href="glava_73.htm">Следующая глава</a><p>
+<p></p>
+<hr noshade>
+<center>
+<font size=1 class=arial>
+Comments: <a href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM'" class=noneline>info@citmgu.ru</a><br>
+Copyright &copy; <a href="http://www.citmgu.ru/" class=noneline>CIT</a>
+</font></center></body></html>

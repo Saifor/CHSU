@@ -1,0 +1,28 @@
+.Language=English,English
+.PluginContents=File names case conversion
+
+@Contents
+$ #File names case conversion#
+    This command allows to change the case of selected file
+names to any of several available formats.
+
+ #Do not process#             The plugin will not process files and
+ #mixed case files#           directories with mixed case names.
+
+ #Process subdirectories#     If the selected file objects include
+                            directories, the plugin will also process
+                            the files and subdirectories in the
+                            selected directories.
+
+ #Process name and#           When this option is turned off,
+ #extension separately#       the plugin will process only names
+                            of file objects.
+
+ #Process directory name#     If the cursor is positioned on
+                            a directory and the option
+                            #Process subdirectories# is turned on,
+                            the plugin will also process the name
+                            of that directory.
+
+ #Current run only#           Use the options specified in the dialog
+                            only for the current conversion session.

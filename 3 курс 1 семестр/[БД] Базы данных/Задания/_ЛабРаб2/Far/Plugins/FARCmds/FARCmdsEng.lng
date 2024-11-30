@@ -1,0 +1,13 @@
+.Language=English,English
+
+"FAR Commands"
+"Same Directory"
+
+"Add "Same Directory" to the &Plugins menu"
+"Add "Same Directory" to the &Disks menu"
+"Disks menu &hotkey ('1'-'9'). Set 0 to autoassign."
+"&Command/object separator"
+"&Keep external command output"
+
+"&OK"
+"Cancel"

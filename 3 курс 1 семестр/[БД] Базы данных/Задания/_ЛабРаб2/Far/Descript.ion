@@ -1,0 +1,32 @@
+ArcSupport.Rus.txt Configuring archivers for FAR Manager (Russian)
+ArcSupport.txt Configuring archivers for FAR Manager
+ClearPluginsCache.bat Clear Plugins Cache
+Contacts.txt Distribution and author contacts
+Descript.ion File descriptions
+Far.ico FAR icon
+Far_Site.txt Distribution sites list
+FarEng.hlf English help file
+FarEng.lng English messages file
+FarFAQ.txt FAQ and hints
+FarRus.hlf Russian help file
+FarRus.lng Russian messages file
+File_id.diz Short version description
+License.txt License for use and distribution
+License.xUSSR.txt License for ex-USSR users
+Macros.Rus.txt Additional information on macros in FAR Manager (Russian)
+Macros.txt Additional information on macros in FAR Manager
+Plugins Plugin modules folder
+README.TXT Brief FAR overview
+REGISTER.FRM Registration form
+REGISTER.TXT Registration instructions
+RestoreSettings.bat Restore FAR settings from FarSave1.reg and FarSave2.reg
+SaveSettings.bat Save FAR settings to FarSave1.reg and FarSave2.reg
+TechInfo.Rus.txt FAR Manager Technical Information (Russian)
+TechInfo.txt FAR Manager Technical Information
+UnInstall.exe Uninstall program
+UnInstall.lst Uninstall list file
+WhatsNew.Rus.txt What is new in this version (Russian)
+WhatsNew.txt What is new in this version
+Addons Character tables, key macros, archiver commands, etc.
+PlugDoc.rar FAR plugin development documentation
+Far.exe FAR 1.70 beta 4 (build 1282) executable module

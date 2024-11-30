@@ -1,0 +1,727 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body background="back1.jpg">
+<TABLE WIDTH=100%>
+<TR><TD>
+<a href="http://infocity.spedia.net/"><img src="logo.jpg"></a></TD>
+<TD><a href="http://infocity.spedia.net/"><B>InfoCity</B></a>-<I>виртуальный город техническй документации.</I><BR>
+<STRONG>Координаторы проекта:</STRONG><I><a href=mailto:micha_pi@chat.ru>Michael Pinkus,</a><a href=mailto:mustafa@a-teleport.com> Alexsander Mustafin.</a></I>     
+</TD></TR>
+</TABLE>
+<HR>
+<basefont size="3">
+
+
+<h3 align="center">Основы современных баз данных</h3>
+
+<p align="center"><b>Предисловие</b> </p>
+
+<p>Предметом курса являются системы управления
+базами данных (СУБД). Это очень важная тема, без
+основательного знакомства с которой в наше время
+невозможно быть не только квалифицированным
+программистом, но даже и грамотным пользователем
+компьютеров. </p>
+
+<p>Заметим, что литературы на русском языке,
+посвященной тематике СУБД, очень мало.
+Невозможно порекомендовать одну или несколько
+книг, содержание которых покрывало бы материал
+данного курса. К числу лучших относятся книги К.
+Дейта &quot;Введение в системы баз данных&quot; (Наука,
+1980) и &quot;Руководство по реляционной СУБД DB2&quot;
+(Финансы и статистика, 1988), а также книга Дж.
+Ульмана &quot;Основы систем баз данных&quot; (Финансы
+и статистика, 1983). Хотя эти книги несколько
+устарели (на английском языке вышло уже
+несколько дополненных изданий), их стоит читать. </p>
+
+<p>Основное назначение данного курса -
+систематическое введение в идеи и методы,
+используемые в современных реляционных системах
+управления базами данных. В курсе не
+рассматривается какая-либо одна популярная СУБД;
+излагаемый материал в равной степени относится к
+любой современной системе. Как показывает опыт,
+без знания основ баз данных трудно на серьезном
+уровне работать с конкретными системами, как бы
+хорошо они не были документированы. </p>
+
+<p>В вводной части курса рассматриваются основные
+различия между файловыми системами и системами
+управления базами данных. На основе анализа
+возможностей современных файловых систем
+выделяются области приложений, в которых
+достаточно использовать файлы, а также те, для
+которых необходимы базы данных. В этой же части
+курса обсуждаются базовые функции и приводится
+типовая организация СУБД. В заключении вводной
+части кратко рассматриваются основные
+характеристики ранних, дореляционных систем. </p>
+
+<p>Вторая часть курса содержит необходимый
+теоретический базис, на котором основывается
+дальнейшее изложение. Вводятся основные понятия
+реляционной модели данных, обсуждаются основные
+свойства отношений, рассматриваются два базовых
+механизма манипулирования данными: реляционная
+алгебра и реляционное исчисление. Далее
+излагаются принципы нормализации, на которых
+основан классический подход к проектированию
+реляционных баз данных. Наконец, описывается
+более современный подход к проектированию баз
+данных, основанный на использовании
+семантических моделей данных. </p>
+
+<p>В третьей части курса обсуждаются два
+классических примера экспериментальных
+проектов реляционных СУБД, которые, фактически,
+служат основой всех современных коммерческих
+СУБД. Рассматриваются проекты System R и Ingres. Идея
+состоит в том, чтобы продемонстрировать
+сбалансированные наборы решений, примененных в
+этих двух существенно различающихся системах. </p>
+
+<p>Четвертая часть курса посвящается внутренней
+организации современных многопользовательских
+реляционных СУБД. Рассматриваются методы
+организации внешней памяти баз данных и
+применяемые структуры данных. Вводится понятие
+транзакции и анализируются известные способы
+управления асинхронно выполняемыми
+транзакциями. Обсуждаются потребности в
+журнализации изменений баз данных и связь
+алгоритмов журнализации с политикой управления
+буферами оперативной памяти. Наконец,
+рассматриваются способы применения журнальной и
+архивной информации для восстановления баз
+данных после различных сбоев. </p>
+
+<p>В пятой части курса подробно рассматривается
+язык реляционных баз данных SQL. Исходные понятия
+SQL обсуждаются на основе версии языка,
+разработанной в рамках проекта System R. Затем
+кратко описывается история SQL после System R и, в
+частности, международная деятельность по его
+стандартизации. После этого систематически
+излагается наиболее распространенный стандарт
+языка - SQL-89. Обсуждаются способы использования SQL
+при программировании прикладных систем. Пятая
+часть курса завершается рассмотрением наиболее
+важных свойств, появившихся в последнем
+стандарте языка SQL-92. </p>
+
+<p>Шестая часть курса посвящена проблемам,
+которые решаются в компиляторах языка SQL. Эти
+проблемы концентрируются вокруг необходимости
+получения эффективных программ, выполняющих
+операторы, которые изначально формулируются на
+декларативном языке SQL. Для решения проблем в
+компиляторах SQL приходится применять
+разнообразные оптимизирующие приемы, знание
+которых помогает понять работу любой конкретной
+системы. </p>
+
+<p>В седьмой части курса рассматривается
+применение архитектуры &quot;клиент-сервер&quot; в
+современных СУБД. Рассматриваются принципы
+взаимодействия между клиентскими и серверными
+частями системы, и, в частности, важность
+применения протоколов удаленного вызова
+процедур для обеспечения организации
+неоднородных организаций &quot;клиент-сервер&quot;.
+Обсуждаются типичное разделение функций между
+клиентами и серверами и следующие из этого
+требования к аппаратным возможностям. </p>
+
+<p>В восьмой части рассматриваются специфические
+проблемы распределенных баз данных.
+Анализируются категории распределенных систем,
+вопросы именования, администрирования,
+поддержания надежности и доступности данных,
+особенности управления транзакциями и
+компиляции запросов. </p>
+
+<p>Наконец, завершающая курс девятая часть
+посвящена направлениям и состоянию
+исследовательских работ в области баз данных.
+Рассматриваются проекты и исследования,
+относящиеся к так называемым системам баз данных
+следующего поколения; основные принципы
+организации систем объектно-ориентированных баз
+данных; системы баз данных, основанные на
+правилах, включая активные и дедуктивные базы
+данных.</p>
+
+<hr width="90%">
+
+<h2>Содержание</h2>
+
+<ol>
+  <li><a HREF="glava_1-1.htm" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_1.htm">Введение</a> <ul TYPE="disc">
+      <li><a HREF="glava_1-1.htm#_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_1.htm#_1_1">Лекция 1. Базы данных и файловые
+        системы</a> <ul TYPE="disc">
+          <li><a HREF="glava_2-1.htm#_1_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_2.htm#_1_1_1">1.1. Файловые системы</a> <ul TYPE="disc">
+              <li><a HREF="glava_2-1.htm#_1_1_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_2.htm#_1_1_1_1">1.1.1. Структуры файлов</a> </li>
+              <li><a HREF="glava_2-1.htm#_1_1_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_2.htm#_1_1_1_2">1.1.2. Именование файлов</a> </li>
+              <li><a HREF="glava_2-1.htm#_1_1_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_2.htm#_1_1_1_3">1.1.3. Защита файлов</a> </li>
+              <li><a HREF="glava_2-1.htm#_1_1_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_2.htm#_1_1_1_4">1.1.4. Режим
+                многопользовательского доступа</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_3-1.htm#_1_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_3.htm#_1_1_2">1.2. Области применения файлов</a> </li>
+          <li><a HREF="glava_4-1.htm#_1_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_4.htm#_1_1_3">1.3. Потребности информационных
+            систем</a> </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_5-1.htm#_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_5.htm#_1_2">Лекция 2. Функции СУБД. Типовая
+        организация СУБД. Примеры</a> <ul TYPE="disc">
+          <li><a HREF="glava_6-1.htm#_1_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_6.htm#_1_2_1">2.1. Основные функции СУБД</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_6-1.htm#_1_2_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_6.htm#_1_2_1_1">2.1.1. Непосредственное
+                управление данными во внешней памяти</a> </li>
+              <li><a HREF="glava_6-1.htm#_1_2_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_6.htm#_1_2_1_2">2.1.2. Управление буферами
+                оперативной памяти</a> </li>
+              <li><a HREF="glava_6-1.htm#_1_2_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_6.htm#_1_2_1_3">2.1.3. Управление транзакциями</a> </li>
+              <li><a HREF="glava_6-1.htm#_1_2_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_6.htm#_1_2_1_4">2.1.4. Журнализация</a> </li>
+              <li><a HREF="glava_6-1.htm#_1_2_1_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_6.htm#_1_2_1_5">2.1.5. Поддержка языков БД</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_7-1.htm#_1_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_7.htm#_1_2_2">2.2. Типовая организация
+            современной СУБД</a> </li>
+          <li><a HREF="glava_8-1.htm#_1_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_8.htm#_1_2_3">2.3. Пример: System R</a> </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_9-1.htm#_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_9.htm#_1_3">Лекция 3. Ранние подходы к
+        организации БД. Системы, основанные на
+        инвертированных списках, иерархические и
+        сетевые СУБД. Примеры. Сильные места и недостатки
+        ранних систем</a> <ul TYPE="disc">
+          <li><a HREF="glava_10-1.htm#_1_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_10.htm#_1_3_1">3.1. Основные особенности систем,
+            основанных на инвертированных списках</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_10-1.htm#_1_3_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_10.htm#_1_3_1_1">3.1.1. Структуры данных</a> </li>
+              <li><a HREF="glava_10-1.htm#_1_3_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_10.htm#_1_3_1_2">3.1.2. Манипулирование данными</a>
+              </li>
+              <li><a HREF="glava_10-1.htm#_1_3_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_10.htm#_1_3_1_3">3.1.3. Ограничения целостности</a>
+              </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_11-1.htm#_1_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_11.htm#_1_3_2">3.2. Иерархические системы</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_11-1.htm#_1_3_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_11.htm#_1_3_2_1">3.2.1. Иерархические структуры
+                данных</a> </li>
+              <li><a HREF="glava_11-1.htm#_1_3_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_11.htm#_1_3_2_2">3.2.2. Манипулирование данными</a>
+              </li>
+              <li><a HREF="glava_11-1.htm#_1_3_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_11.htm#_1_3_2_3">3.2.3. Ограничения целостности</a>
+              </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_12-1.htm#_1_3_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_12.htm#_1_3_3">3.3. Сетевые системы</a> <ul TYPE="disc">
+              <li><a HREF="glava_12-1.htm#_1_3_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_12.htm#_1_3_3_1">3.3.1. Сетевые структуры данных</a>
+              </li>
+              <li><a HREF="glava_12-1.htm#_1_3_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_12.htm#_1_3_3_2">3.3.2. Манипулирование данными</a>
+              </li>
+              <li><a HREF="glava_12-1.htm#_1_3_3_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_12.htm#_1_3_3_3">3.3.3. Ограничения целостности</a>
+              </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_13-1.htm#_1_3_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_13.htm#_1_3_4">3.4. Достоинства и недостатки</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a HREF="glava_14-1.htm#_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_14.htm#_2">Теоретические основы</a> <ul TYPE="disc">
+      <li><a HREF="glava_15-1.htm#_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_15.htm#_2_1">Лекция 4. Общие понятия
+        реляционного подхода к организации БД. Основные
+        концепции и термины</a> <ul TYPE="disc">
+          <li><a HREF="glava_16-1.htm#_2_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_16.htm#_2_1_1">4.1. Базовые понятия реляционных
+            баз данных</a> <ul TYPE="disc">
+              <li><a HREF="glava_16-1.htm#_2_1_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_16.htm#_2_1_1_1">4.1.1. Тип данных</a> </li>
+              <li><a HREF="glava_16-1.htm#_2_1_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_16.htm#_2_1_1_2">4.1.2. Домен</a> </li>
+              <li><a HREF="glava_16-1.htm#_2_1_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_16.htm#_2_1_1_3">4.1.3. Схема отношения, схема
+                базы данных</a> </li>
+              <li><a HREF="glava_16-1.htm#_2_1_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_16.htm#_2_1_1_4">4.1.4. Кортеж, отношение</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_17-1.htm#_2_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_17.htm#_2_1_2">4.2. Фундаментальные свойства
+            отношений</a> <ul TYPE="disc">
+              <li><a HREF="glava_17-1.htm#_2_1_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_17.htm#_2_1_2_1">4.2.1. Отсутствие
+                кортежей-дубликатов</a> </li>
+              <li><a HREF="glava_17-1.htm#_2_1_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_17.htm#_2_1_2_2">4.2.2. Отсутствие
+                упорядоченности кортежей</a> </li>
+              <li><a HREF="glava_17-1.htm#_2_1_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_17.htm#_2_1_2_3">4.2.3. Отсутствие
+                упорядоченности атрибутов</a> </li>
+              <li><a HREF="glava_17-1.htm#_2_1_2_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_17.htm#_2_1_2_4">4.2.4. Атомарность значений
+                атрибутов</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_18-1.htm#_2_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_18.htm#_2_1_3">4.3. Реляционная модель данных</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_18-1.htm#_2_1_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_18.htm#_2_1_3_1">4.3.1. Общая характеристика</a> </li>
+              <li><a HREF="glava_18-1.htm#_2_1_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_18.htm#_2_1_3_2">4.3.2. Целостность сущности и
+                ссылок</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_19-1.htm#_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_19.htm#_2_2">Лекция 5. Базисные средства
+        манипулирования реляционными данными</a> <ul TYPE="disc">
+          <li><a HREF="glava_20-1.htm#_2_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_20.htm#_2_2_1">5.1. Реляционная алгебра</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_20-1.htm#_2_2_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_20.htm#_2_2_1_1">5.1.1. Общая интерпретация
+                реляционных операций</a> </li>
+              <li><a HREF="glava_20-1.htm#_2_2_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_20.htm#_2_2_1_2">5.1.2. Замкнутость реляционной
+                алгебры и операция переименования</a> </li>
+              <li><a HREF="glava_20-1.htm#_2_2_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_20.htm#_2_2_1_3">5.1.3. Особенности
+                теоретико-множественных операций реляционной
+                алгебры</a> </li>
+              <li><a HREF="glava_20-1.htm#_2_2_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_20.htm#_2_2_1_4">5.1.4. Специальные реляционные
+                операции</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_21-1.htm#_2_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_21.htm#_2_2_2">5.2. Реляционное исчисление</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_21-1.htm#_2_2_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_21.htm#_2_2_2_1">5.2.1. Кортежные переменные и
+                правильно построенные формулы</a> </li>
+              <li><a HREF="glava_21-1.htm#_2_2_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_21.htm#_2_2_2_2">5.2.2. Целевые списки и выражения
+                реляционного исчисления</a> </li>
+              <li><a HREF="glava_21-1.htm#_2_2_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_21.htm#_2_2_2_3">5.2.3. Реляционное исчисление
+                доменов</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_22-1.htm#_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_22.htm#_2_3">Лекция 6. Проектирование
+        реляционных БД</a> <ul TYPE="disc">
+          <li><a HREF="glava_23-1.htm#_2_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_23.htm#_2_3_1">6.1. Проектирование реляционных
+            баз данных с использованием нормализации</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_23-1.htm#_2_3_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_23.htm#_2_3_1_1">6.1.1. Вторая нормальная форма</a> </li>
+              <li><a HREF="glava_23-1.htm#_2_3_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_23.htm#_2_3_1_2">6.1.2. Третья нормальная форма</a> </li>
+              <li><a HREF="glava_23-1.htm#_2_3_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_23.htm#_2_3_1_3">6.1.3. Нормальная форма
+                Бойса-Кодда</a> </li>
+              <li><a HREF="glava_23-1.htm#_2_3_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_23.htm#_2_3_1_4">6.1.4. Четвертая нормальная
+                форма</a> </li>
+              <li><a HREF="glava_23-1.htm#_2_3_1_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_23.htm#_2_3_1_5">6.1.5. Пятая нормальная форма</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_24-1.htm#_2_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_24.htm#_2_3_2">6.2. Семантическое моделирование
+            данных, ER-диаграммы</a> <ul TYPE="disc">
+              <li><a HREF="glava_24-1.htm#_2_3_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_24.htm#_2_3_2_1">6.2.1. Семантические модели
+                данных</a> </li>
+              <li><a HREF="glava_24-1.htm#_2_3_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_24.htm#_2_3_2_2">6.2.2. Основные понятия модели
+                Entity-Relationship (Сущность-Связи)</a> </li>
+              <li><a HREF="glava_24-1.htm#_2_3_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_24.htm#_2_3_2_3">6.2.3. Нормальные формы ER-схем</a> </li>
+              <li><a HREF="glava_24-1.htm#_2_3_2_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_24.htm#_2_3_2_4">6.2.4. Более сложные элементы
+                ER-модели</a> </li>
+              <li><a HREF="glava_24-1.htm#_2_3_2_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_24.htm#_2_3_2_5">6.2.5. Получение реляционной
+                схемы из ER-схемы</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a HREF="glava_25-1.htm#_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_25.htm#_3">Две классические
+    экспериментальные системы</a> <ul TYPE="disc">
+      <li><a HREF="glava_25-1.htm#_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_25.htm#_3_1">Лекция 7. System R: общая организация
+        системы, основы языка SQL</a> <ul TYPE="disc">
+          <li><a HREF="glava_26-1.htm#_3_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_26.htm#_3_1_1">7.1. Используемая терминология</a>
+          </li>
+          <li><a HREF="glava_27-1.htm#_3_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_27.htm#_3_1_2">7.2. Основные цели System R и их связь
+            с архитектурой системы</a> </li>
+          <li><a HREF="glava_28-1.htm#_3_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_28.htm#_3_1_3">7.3. Организация внешней памяти в
+            базах данных System R</a> </li>
+          <li><a HREF="glava_29-1.htm#_3_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_29.htm#_3_1_4">7.4. Интерфейс RSS</a> </li>
+          <li><a HREF="glava_30-1.htm#_3_1_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_30.htm#_3_1_5">7.5. Синхронизация в System R</a> </li>
+          <li><a HREF="glava_31-1.htm#_3_1_6" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_31.htm#_3_1_6">7.6. Журнализация и
+            восстановление в System R</a> </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_32-1.htm#_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_32.htm#_3_2">Лекция 8. Ingres: общая организация
+        системы, основы языка Quel</a> <ul TYPE="disc">
+          <li><a HREF="glava_32-1.htm#_3_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_32.htm#_3_2_1">8.1. История СУБД Ingres</a> </li>
+          <li><a HREF="glava_33-1.htm#_3_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_33.htm#_3_2_2">8.2. Ingres как UNIX-ориентированная
+            СУБД. Динамическая структура системы: набор
+            процессов</a> </li>
+          <li><a HREF="glava_34-1.htm#_3_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_34.htm#_3_2_3">8.3. Структуры данных, методы
+            доступа, интерфейсы доступа к данным</a> </li>
+          <li><a HREF="glava_35-1.htm#_3_2_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_35.htm#_3_2_4">8.4. Общая характеристика языка
+            QUEL. Язык программирования EQUEL</a> </li>
+          <li><a HREF="glava_36-1.htm#_3_2_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_36.htm#_3_2_5">8.5. Общий подход к организации
+            представлений, ограничениям целостности и
+            контролю доступа</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a HREF="glava_37-1.htm#_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_37.htm#_4">Внутренняя организация
+    реляционных СУБД</a> <ul TYPE="disc">
+      <li><a HREF="glava_37-1.htm#_4_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_37.htm#_4_1">Лекция 9. Cтруктуры внешней
+        памяти, методы организации индексов</a> <ul TYPE="disc">
+          <li><a HREF="glava_38-1.htm#_4_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_38.htm#_4_1_1">9.1. Хранение отношений</a> </li>
+          <li><a HREF="glava_39-1.htm#_4_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_39.htm#_4_1_2">9.2. Индексы</a> <ul TYPE="disc">
+              <li><a HREF="glava_39-1.htm#_4_1_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_39.htm#_4_1_2_1">9.2.1. B-деревья</a> </li>
+              <li><a HREF="glava_39-1.htm#_4_1_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_39.htm#_4_1_2_2">9.2.2. Хэширование</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_40-1.htm#_4_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_40.htm#_4_1_3">9.3. Журнальная информация</a> </li>
+          <li><a HREF="glava_41-1.htm#_4_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_41.htm#_4_1_4">9.4. Служебная информация</a> </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_42-1.htm#_4_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_42.htm#_4_2">Лекция 10. Управление
+        транзакциями, сериализация транзакций</a> <ul
+        TYPE="disc">
+          <li><a HREF="glava_43-1.htm#_4_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_43.htm#_4_2_1">10.1. Транзакции и целостность
+            баз данных</a> </li>
+          <li><a HREF="glava_44-1.htm#_4_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_44.htm#_4_2_2">10.2. Изолированность
+            пользователей</a> </li>
+          <li><a HREF="glava_45.htm#_4_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_45.htm#_4_2_3">10.3. Сериализация транзакций</a> </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_46.htm#_4_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_46.htm#_4_3">Лекция 11. Методы сериализации
+        транзакций</a> <ul TYPE="disc">
+          <li><a HREF="glava_47.htm#_4_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_47.htm#_4_3_1">11.1. Синхронизационные захваты</a>
+            <ul TYPE="disc">
+              <li><a HREF="glava_47.htm#_4_3_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_47.htm#_4_3_1_1">11.1.1. Гранулированные
+                синхронизационные захваты</a> </li>
+              <li><a HREF="glava_47.htm#_4_3_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_47.htm#_4_3_1_2">11.1.2. Предикатные
+                синхронизационные захваты</a> </li>
+              <li><a HREF="glava_47.htm#_4_3_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_47.htm#_4_3_1_3">11.1.3. Тупики, распознавание и
+                разрушение</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_48.htm#_4_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_48.htm#_4_3_2">11.2. Метод временных меток</a> </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_49.htm#_4_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_49.htm#_4_4">Лекция 12. Журнализация изменений
+        БД</a> <ul TYPE="disc">
+          <li><a HREF="glava_50.htm#_4_4_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_50.htm#_4_4_1">12.1. Журнализация и буферизация</a>
+          </li>
+          <li><a HREF="glava_51.htm#_4_4_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_51.htm#_4_4_2">12.2. Индивидуальный откат
+            транзакции</a> </li>
+          <li><a HREF="glava_52.htm#_4_4_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_52.htm#_4_4_3">12.3. Восстановление после
+            мягкого сбоя</a> </li>
+          <li><a HREF="glava_53.htm#_4_4_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_53.htm#_4_4_4">12.4. Физическая согласованность
+            базы данных</a> </li>
+          <li><a HREF="glava_54.htm#_4_4_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_54.htm#_4_4_5">12.5. Восстановление после
+            жесткого сбоя</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a HREF="glava_55.htm#_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5">Язык реляционных баз данных SQL</a> <ul
+    TYPE="disc">
+      <li><a HREF="glava_55.htm#_5_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1">Лекция 13. Язык SQL. Функции и
+        основные возможности</a> <ul TYPE="disc">
+          <li><a HREF="glava_55.htm#_5_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1">13.1. SEQUEL/SQL СУБД System R</a> <ul TYPE="disc">
+              <li><a HREF="glava_55.htm#_5_1_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_1">13.1.1. Запросы и операторы
+                манипулирования данными</a> </li>
+              <li><a HREF="glava_55.htm#_5_1_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_2">13.1.2. Операторы определения и
+                манипулирования схемой БД</a> </li>
+              <li><a HREF="glava_55.htm#_5_1_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_3">13.1.3. Определения ограничений
+                целостности и триггеров</a> </li>
+              <li><a HREF="glava_55.htm#_5_1_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_4">13.1.4. Представления базы данных</a>
+              </li>
+              <li><a HREF="glava_55.htm#_5_1_1_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_5">13.1.5. Определение управляющих
+                структур</a> </li>
+              <li><a HREF="glava_55.htm#_5_1_1_6" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_6">13.1.6. Авторизация доступа к
+                отношениям и их полям</a> </li>
+              <li><a HREF="glava_55.htm#_5_1_1_7" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_7">13.1.7. Точки сохранения и откаты
+                транзакции</a> </li>
+              <li><a HREF="glava_55.htm#_5_1_1_8" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_8">13.1.8. Встроенный SQL</a> </li>
+              <li><a HREF="glava_55.htm#_5_1_1_9" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_55.htm#_5_1_1_9">13.1.9. Динамический SQL</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_56.htm#_5_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_56.htm#_5_1_2">13.2. Язык SQL в коммерческих
+            реализациях</a> </li>
+          <li><a HREF="glava_57.htm#_5_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_57.htm#_5_1_3">13.3. Стандартизация SQL</a> </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_58.htm#_5_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_58.htm#_5_2">Лекция 14. Стандартный язык баз
+        данных SQL</a> <ul TYPE="disc">
+          <li><a HREF="glava_59.htm#_5_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_59.htm#_5_2_1">14.1. Типы данных</a> </li>
+          <li><a HREF="glava_60.htm#_5_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_60.htm#_5_2_2">14.2. Средства определения схемы</a>
+            <ul TYPE="disc">
+              <li><a HREF="glava_60.htm#_5_2_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_60.htm#_5_2_2_1">14.2.1. Оператор определения
+                схемы</a> </li>
+              <li><a HREF="glava_60.htm#_5_2_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_60.htm#_5_2_2_2">14.2.2. Определение таблицы</a> </li>
+              <li><a HREF="glava_60.htm#_5_2_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_60.htm#_5_2_2_3">14.2.3. Определение столбца</a> </li>
+              <li><a HREF="glava_60.htm#_5_2_2_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_60.htm#_5_2_2_4">14.2.4. Определение ограничений
+                целостности таблицы</a> </li>
+              <li><a HREF="glava_60.htm#_5_2_2_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_60.htm#_5_2_2_5">14.2.5. Определение
+                представлений</a> </li>
+              <li><a HREF="glava_60.htm#_5_2_2_6" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_60.htm#_5_2_2_6">14.2.6. Определение привилегий</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_61.htm#_5_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_61.htm#_5_3">Лекция 15. Язык SQL. Средства
+        манипулирования данными</a> <ul TYPE="disc">
+          <li><a HREF="glava_61.htm#_5_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_61.htm#_5_3_1">15.1. Структура запросов</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_61.htm#_5_3_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_61.htm#_5_3_1_1">15.1.1. Спецификация курсора</a> </li>
+              <li><a HREF="glava_61.htm#_5_3_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_61.htm#_5_3_1_2">15.1.2. Оператор выборки</a> </li>
+              <li><a HREF="glava_61.htm#_5_3_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_61.htm#_5_3_1_3">15.1.3. Подзапрос</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_62.htm#_5_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_62.htm#_5_3_2">15.2. Табличное выражение</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_62.htm#_5_3_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_62.htm#_5_3_2_1">15.2.1. Раздел FROM</a> </li>
+              <li><a HREF="glava_62.htm#_5_3_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_62.htm#_5_3_2_2">15.2.2. Раздел WHERE</a> </li>
+              <li><a HREF="glava_62.htm#_5_3_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_62.htm#_5_3_2_3">15.2.3. Раздел GROUP BY</a> </li>
+              <li><a HREF="glava_62.htm#_5_3_2_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_62.htm#_5_3_2_4">15.2.4. Раздел HAVING</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_63.htm#_5_3_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_63.htm#_5_3_3">15.3. Агрегатные функции и
+            результаты запросов</a> <ul TYPE="disc">
+              <li><a HREF="glava_63.htm#_5_3_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_63.htm#_5_3_3_1">15.3.1. Семантика агрегатных
+                функций</a> </li>
+              <li><a HREF="glava_63.htm#_5_3_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_63.htm#_5_3_3_2">15.3.2. Результаты запросов</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_64.htm#_5_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_64.htm#_5_4">Лекция 16. Использование SQL при
+        прикладном программировании</a> <ul TYPE="disc">
+          <li><a HREF="glava_64.htm#_5_4_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_64.htm#_5_4_1">16.1. Язык модулей или встроенный
+            SQL?</a> </li>
+          <li><a HREF="glava_65.htm#_5_4_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_65.htm#_5_4_2">16.2. Язык модулей</a> <ul TYPE="disc">
+              <li><a HREF="glava_65.htm#_5_4_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_65.htm#_5_4_2_1">16.2.1. Определение процедуры</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_66.htm#_5_4_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_66.htm#_5_4_3">16.3. Встроенный SQL</a> </li>
+          <li><a HREF="glava_67.htm#_5_4_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_67.htm#_5_4_4">16.4. Набор операторов
+            манипулирования данными</a> <ul TYPE="disc">
+              <li><a HREF="glava_67.htm#_5_4_4_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_67.htm#_5_4_4_1">16.4.1. Операторы, связанные с
+                курсором</a> </li>
+              <li><a HREF="glava_67.htm#_5_4_4_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_67.htm#_5_4_4_2">16.4.2. Одиночные операторы
+                манипулирования данными</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_68.htm#_5_4_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_68.htm#_5_4_5">16.5. Динамический SQL в Oracle V.6</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_68.htm#_5_4_5_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_68.htm#_5_4_5_1">16.5.1. Оператор подготовки</a> </li>
+              <li><a HREF="glava_68.htm#_5_4_5_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_68.htm#_5_4_5_2">16.5.2. Оператор получения
+                описания подготовленного оператора</a> </li>
+              <li><a HREF="glava_68.htm#_5_4_5_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_68.htm#_5_4_5_3">16.5.3. Оператор выполнения
+                подготовленного оператора</a> </li>
+              <li><a HREF="glava_68.htm#_5_4_5_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_68.htm#_5_4_5_4">16.5.4. Работа с динамическими
+                операторами SQL через курсоры</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_69.htm#_5_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_69.htm#_5_5">Лекция 17. Некоторые черты SQL/92 и
+        SQL-3</a> <ul TYPE="disc">
+          <li><a HREF="glava_70.htm#_5_5_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_70.htm#_5_5_1">17.1. Оператор выделения памяти
+            под дескриптор</a> </li>
+          <li><a HREF="glava_71.htm#_5_5_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_71.htm#_5_5_2">17.2. Оператор освобождения
+            памяти из-под дескриптора</a> </li>
+          <li><a HREF="glava_72.htm#_5_5_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_72.htm#_5_5_3">17.3. Оператор получения
+            информации из области дескриптора SQL</a> </li>
+          <li><a HREF="glava_73.htm#_5_5_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_73.htm#_5_5_4">17.4. Оператор установки
+            дескриптора</a> </li>
+          <li><a HREF="glava_74.htm#_5_5_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_74.htm#_5_5_5">17.5. Оператор подготовки</a> </li>
+          <li><a HREF="glava_75.htm#_5_5_6" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_75.htm#_5_5_6">17.6. Оператор отказа от
+            подготовленного оператора</a> </li>
+          <li><a HREF="glava_76.htm#_5_5_7" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_76.htm#_5_5_7">17.7. Оператор запроса описания
+            подготовленного оператора</a> </li>
+          <li><a HREF="glava_77.htm#_5_5_8" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_77.htm#_5_5_8">17.8. Оператор выполнения
+            подготовленного оператора</a> </li>
+          <li><a HREF="glava_78.htm#_5_5_9" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_78.htm#_5_5_9">17.9. Оператор подготовки с
+            немедленным выполнением</a> </li>
+          <li><a HREF="glava_79.htm#_5_5_10" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_79.htm#_5_5_10">17.10. Оператор объявления
+            курсора над динамически подготовленным
+            оператором выборки</a> </li>
+          <li><a HREF="glava_80.htm#_5_5_11" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_80.htm#_5_5_11">17.11. Оператор определения
+            курсора над динамически подготовленным
+            оператором выборки</a> </li>
+          <li><a HREF="glava_81.htm#_5_5_12" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_81.htm#_5_5_12">17.12. Оператор открытия курсора,
+            связанного с динамически подготовленным
+            оператором выборки</a> </li>
+          <li><a HREF="glava_82.htm#_5_5_13" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_82.htm#_5_5_13">17.13. Оператор чтения строки по
+            курсору, связанному с динамически
+            подготовленным оператором выборки</a> </li>
+          <li><a HREF="glava_83.htm#_5_5_14" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_83.htm#_5_5_14">17.14. Оператор закрытия курсора,
+            связанного с динамически подготовленным
+            оператором выборки</a> </li>
+          <li><a HREF="glava_84.htm#_5_5_15" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_84.htm#_5_5_15">17.15. Оператор позиционного
+            удаления по курсору, связанному с динамически
+            подготовленным оператором выборки</a> </li>
+          <li><a HREF="glava_85.htm#_5_5_16" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_85.htm#_5_5_16">17.16. Оператор позиционной
+            модификации по курсору, связанному с динамически
+            подготовленным оператором выборки</a> </li>
+          <li><a HREF="glava_86.htm#_5_5_17" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_86.htm#_5_5_17">17.17. Подготавливаемый оператор
+            позиционного удаления</a> </li>
+          <li><a HREF="glava_87.htm#_5_5_18" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_87.htm#_5_5_18">17.18. Подготавливаемый оператор
+            позиционной модификации</a> </li>
+          <li><a HREF="glava_88.htm#_5_5_19" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_88.htm#_5_5_19">17.19. Сводка новых возможностей
+            SQL-3</a> <ul TYPE="disc">
+              <li><a HREF="glava_88.htm#_5_5_19_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_88.htm#_5_5_19_1">17.19.1. Типы данных</a> </li>
+              <li><a HREF="glava_88.htm#_5_5_19_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_88.htm#_5_5_19_2">17.19.2. Некоторые другие
+                свойства SQL-3</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a HREF="glava_89.htm#_6" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_89.htm#_6">Компиляторы языка SQL</a> <ul TYPE="disc">
+      <li><a HREF="glava_89.htm#_6_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_89.htm#_6_1">Лекция 18. Компиляторы SQL.
+        Проблемы оптимизации</a> <ul TYPE="disc">
+          <li><a HREF="glava_90.htm#_6_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_90.htm#_6_1_1">18.1. Общая схема обработки
+            запроса</a> </li>
+          <li><a HREF="glava_91.htm#_6_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_91.htm#_6_1_2">18.2. Синтаксическая оптимизация
+            запросов</a> <ul TYPE="disc">
+              <li><a HREF="glava_91.htm#_6_1_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_91.htm#_6_1_2_1">18.2.1. Простые логические
+                преобразования запросов</a> </li>
+              <li><a HREF="glava_91.htm#_6_1_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_91.htm#_6_1_2_2">18.2.2 Преобразования запросов с
+                изменением порядка реляционных операций</a> </li>
+              <li><a HREF="glava_91.htm#_6_1_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_91.htm#_6_1_2_3">18.2.3 Приведение запросов со
+                вложенными подзапросами к запросам с
+                соединениями</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_92.htm#_6_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_92.htm#_6_1_3">18.3. Семантическая оптимизация
+            запросов</a> <ul TYPE="disc">
+              <li><a HREF="glava_92.htm#_6_1_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_92.htm#_6_1_3_1">18.3.1. Преобразования запросов
+                на основе семантической информации</a> </li>
+              <li><a HREF="glava_92.htm#_6_1_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_92.htm#_6_1_3_2">18.3.2. Использование
+                семантической информации при оптимизации
+                запросов</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_93.htm#_6_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_93.htm#_6_1_4">18.4. Выбор и оценка
+            альтернативных планов выполнения запросов</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_93.htm#_6_1_4_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_93.htm#_6_1_4_1">18.4.1. Генерация планов</a> </li>
+              <li><a HREF="glava_93.htm#_6_1_4_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_93.htm#_6_1_4_2">18.4.2. Оценка стоимости плана
+                запроса</a> </li>
+              <li><a HREF="glava_93.htm#_6_1_4_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_93.htm#_6_1_4_3">18.4.3. Более точные оценки</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a HREF="glava_94.htm#_7" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_94.htm#_7">СУБД в архитектуре
+    &quot;клиент-сервер&quot;</a> <ul TYPE="disc">
+      <li><a HREF="glava_94.htm#_7_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_94.htm#_7_1">Лекция 19. Архитектура
+        &quot;клиент-сервер&quot;</a> <ul TYPE="disc">
+          <li><a HREF="glava_95.htm#_7_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_95.htm#_7_1_1">19.1. Открытые системы</a> </li>
+          <li><a HREF="glava_96.htm#_7_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_96.htm#_7_1_2">19.2. Клиенты и серверы локальных
+            сетей</a> </li>
+          <li><a HREF="glava_97.htm#_7_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_97.htm#_7_1_3">19.3. Системная архитектура
+            &quot;клиент-сервер&quot;</a> </li>
+          <li><a HREF="glava_98.htm#_7_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_98.htm#_7_1_4">19.4. Серверы баз данных</a> <ul
+            TYPE="disc">
+              <li><a HREF="glava_98.htm#_7_1_4_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_98.htm#_7_1_4_1">19.4.1. Принципы взаимодействия
+                между клиентскими и серверными частями</a> </li>
+              <li><a HREF="glava_98.htm#_7_1_4_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_98.htm#_7_1_4_2">19.4.2. Преимущества протоколов
+                удаленного вызова процедур</a> </li>
+              <li><a HREF="glava_98.htm#_7_1_4_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_98.htm#_7_1_4_3">19.4.3. Типичное разделение
+                функций между клиентами и серверами</a> </li>
+              <li><a HREF="glava_98.htm#_7_1_4_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_98.htm#_7_1_4_4">19.4.4. Требования к аппаратным
+                возможностям и базовому программному
+                обеспечению клиентов и серверов</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a HREF="glava_99.htm#_8" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_99.htm#_8">Распределенные базы данных</a> <ul
+    TYPE="disc">
+      <li><a HREF="glava_99.htm#_8_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_99.htm#_8_1">Лекция 20. Распределенные БД</a> <ul
+        TYPE="disc">
+          <li><a HREF="glava_100.htm#_8_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_100.htm#_8_1_1">20.1. Разновидности
+            распределенных систем</a> </li>
+          <li><a HREF="glava_101.htm#_8_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_101.htm#_8_1_2">20.2. Распределенная система
+            управления базами данных System R*</a> <ul TYPE="disc">
+              <li><a HREF="glava_101.htm#_8_1_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_101.htm#_8_1_2_1">20.2.1. Именование объектов и
+                организация распределенного каталога</a> </li>
+              <li><a HREF="glava_101.htm#_8_1_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_101.htm#_8_1_2_2">20.2.2. Распределенная
+                компиляция запросов</a> </li>
+              <li><a HREF="glava_101.htm#_8_1_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_101.htm#_8_1_2_3">20.2.3. Управление транзакциями
+                и синхронизация</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_102.htm#_8_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_102.htm#_8_1_3">20.3. Интегрированные или
+            федеративные системы и мультибазы данных</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a HREF="glava_103.htm#_9" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_103.htm#_9">Современные направления
+    исследований и разработок</a> <ul TYPE="disc">
+      <li><a HREF="glava_104.htm#_9_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_104.htm#_9_1">Лекция 21. Системы управления
+        базами данных следующего поколения</a> <ul TYPE="disc">
+          <li><a HREF="glava_105.htm#_9_1_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_105.htm#_9_1_1">21.1. Ориентация на расширенную
+            реляционную модель</a> </li>
+          <li><a HREF="glava_106.htm#_9_1_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_106.htm#_9_1_2">21.2. Абстрактные типы данных</a> </li>
+          <li><a HREF="glava_107.htm#_9_1_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_107.htm#_9_1_3">21.3. Генерация систем баз
+            данных, ориентированных на приложения</a> </li>
+          <li><a HREF="glava_108.htm#_9_1_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_108.htm#_9_1_4">21.4. Оптимизация запросов,
+            управляемая правилами</a> </li>
+          <li><a HREF="glava_109.htm#_9_1_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_109.htm#_9_1_5">21.5. Поддержка исторической
+            информации и темпоральных запросов</a> </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_110.htm#_9_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_110.htm#_9_2">Лекция 22.
+        Объектно-ориентированные СУБД</a> <ul TYPE="disc">
+          <li><a HREF="glava_111.htm#_9_2_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_111.htm#_9_2_1">22.1. Связь
+            объектно-ориентированных СУБД с общими
+            понятиями объектно-ориентированного подхода</a> </li>
+          <li><a HREF="glava_112.htm#_9_2_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_112.htm#_9_2_2">22.2. Объектно-ориентированные
+            модели данных</a> </li>
+          <li><a HREF="glava_113.htm#_9_2_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_113.htm#_9_2_3">22.3. Языки программирования
+            объектно-ориентированных баз данных</a> <ul TYPE="disc">
+              <li><a HREF="glava_113.htm#_9_2_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_113.htm#_9_2_3_1">22.3.1. Потеря соответствия
+                между языками программирования и языками
+                запросов в реляционных СУБД</a> </li>
+              <li><a HREF="glava_113.htm#_9_2_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_113.htm#_9_2_3_2">22.3.2. Языки программирования
+                ООБД как объектно-ориентированные языки с
+                поддержкой стабильных (persistent) объектов</a> </li>
+              <li><a HREF="glava_113.htm#_9_2_3_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_113.htm#_9_2_3_3">22.3.3. Примеры языков
+                программирования ООБД</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_114.htm#_9_2_4" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_114.htm#_9_2_4">22.4. Языки запросов
+            объектно-ориентированных баз данных</a> <ul TYPE="disc">
+              <li><a HREF="glava_114.htm#_9_2_4_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_114.htm#_9_2_4_1">22.4.1. Явная навигация как
+                следствие преодоления потери соответствия</a> </li>
+              <li><a HREF="glava_114.htm#_9_2_4_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_114.htm#_9_2_4_2">22.4.2. Ненавигационные языки
+                запросов</a> </li>
+              <li><a HREF="glava_114.htm#_9_2_4_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_114.htm#_9_2_4_3">22.4.3. Проблемы оптимизации
+                запросов</a> </li>
+            </ul>
+          </li>
+          <li><a HREF="glava_115.htm#_9_2_5" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_115.htm#_9_2_5">22.5. Примеры
+            объектно-ориентированных СУБД</a> <ul TYPE="disc">
+              <li><a HREF="glava_115.htm#_9_2_5_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_115.htm#_9_2_5_1">22.5.1. Проект ORION</a> </li>
+              <li><a HREF="glava_115.htm#_9_2_5_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_115.htm#_9_2_5_2">22.5.2. Проект O2</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a HREF="glava_116.htm#_9_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_116.htm#_9_3">Лекция 23. Системы баз данных,
+        основанные на правилах</a> <ul TYPE="disc">
+          <li><a HREF="glava_117.htm#_9_3_1" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_117.htm#_9_3_1">23.1. Экстенсиональная и
+            интенсиональная части базы данных</a> </li>
+          <li><a HREF="glava_118.htm#_9_3_2" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_118.htm#_9_3_2">23.2. Активные базы данных</a> </li>
+          <li><a HREF="glava_119.htm#_9_3_3" tppabs="http://www.nioch.nsc.ru/~xam/BASE/glava_119.htm#_9_3_3">23.3. Дедуктивные базы данных</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p align="center">&nbsp;</p>
+</body>
+</html>

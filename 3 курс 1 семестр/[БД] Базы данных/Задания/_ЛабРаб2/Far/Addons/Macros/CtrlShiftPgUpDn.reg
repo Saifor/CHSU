@@ -1,0 +1,11 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Far\KeyMacros\Shell\CtrlShiftPgUp]
+"Sequence"="CtrlPgUp Up CtrlPgDn"
+"DisableOutput"=dword:00000001
+"Description"="In the previous folder on that a level"
+
+[HKEY_CURRENT_USER\Software\Far\KeyMacros\Shell\CtrlShiftPgDn]
+"Sequence"="CtrlPgUp Down CtrlPgDn"
+"DisableOutput"=dword:00000001
+"Description"="In the following folder on that a level"

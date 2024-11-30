@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="./images/icons/moda.png">
+		<title>Заказать консультацию</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/call.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<section class="section-header">
+			<div class="section-header-top">
+					<div class="section-header-top-logo">
+						<div class="section-header-top-logo__ico">
+							<a href="index.html"><img class="section-header-top-logo__ico" src="images/icons/moda.png" alt=""></a>
+						</div>
+						<div class="section-header-top-logo__title">
+							<a href="index.html">Развитие модных стилей одежды</a>
+						</div>
+					</div>
+					<div class="section-header-top-navigation">
+						<ul class="section-header-top-navigation__menu">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="history.html">История моды</a></li>
+							<li><a href="trends.html">Современные тренды</a></li>
+							<li><a href="models.html">Топовые модные стили</a></li>
+							<li><a href="call.html" class="selected">Консультация</a></li>
+						</ul>
+					</div>
+					<div class="section-header-top-social">
+						<div class="section-header-top-social__inst">
+							<img src="images/icons/instagram.png" alt="">
+						</div>
+						<div class="section-header-top-social__phone">
+							+7 (960) 297-59-26
+						</div>
+						<div class="section-header-top-social__order-call">
+							<a href="call.html"><input type="button" class="section-header-top-social__order-call-btn" value="Заказать звонок"></a>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="section-promo2">	
+			<div class="section-promo2-wrapper">
+				<div class="section-promo2__block">
+					<div class="section-promo2__block-wrapper">
+						<div class="section-promo2__block__title">
+							Закажите консультацию прямо сейчас!
+						</div>
+						<div class="section-promo2__block__text">							
+							<form action="#" method="post" target="_blank">
+								<h3>Чтобы заказать консультацию, заполните анкету:</h3>
+								<fieldset>
+									<legend>Ваши персональные данные</legend>
+									<ul>
+										<li>
+											<label for="name">ФИО:*</label>
+											<input type="text" name="name" placeholder="Иванов Иван Иванович" id="name" required>
+										</li>
+										<li>
+											<label for="age">Возраст:</label>
+											<input type="number" name="age" placeholder="16" id="age" min="0" max="150">
+										</li>
+										<li>
+											<label>Ваш пол:</label>
+											<select required>
+												<option hidden>...</option>
+												<option value="male">Мужчина</option> 
+												<option value="women">Женщина</option>
+											</select>
+										</li>
+									</ul>
+								</fieldset>
+								<fieldset>
+									<legend>Контакты</legend>
+									<ul>
+										<li>
+											<label for="email">E-mail:*</label>
+											<input type="email" name="mail" placeholder="Ваш email@gmail.com" id="email" required>
+										</li>
+										<li>
+											<label for="number">Телефон:*</label>
+											<input type="tel" name="phone" placeholder="+7 777 777-77-77" id="number" maxlength="21" required>
+										</li>
+									</ul>
+								</fieldset>
+								<fieldset>
+									<legend>В какое время суток Вам можно позвонить?</legend>
+										<ul>
+											<li>
+												<input type="checkbox" value="9" id="time8">
+												<label for="time8">9:00 - 12:00</label>
+											</li>
+											<li>
+												<input type="checkbox" value="12" id="time12">
+												<label for="time12">12:00 - 15:00</label>
+											</li>
+											<li>
+												<input type="checkbox" value="15" id="time15">
+												<label for="time14">15:00 - 18:00</label>
+											</li>
+											<li>
+												<input type="checkbox" value="18" id="time18">
+												<label for="time18">18:00 - 21:00</label>
+											</li>
+										</ul>
+								</fieldset>
+								<fieldset>
+									<legend>Вы уже обращались к нам ранее?</legend>
+									<ul>
+										<li>
+											<input type="radio" name="course" id="one" value="one-course">
+											<label for="one">Да</label>
+										</li>
+										<li>
+											<input type="radio" name="course" id="two" value="two-course">
+											<label for="two">Нет</label>
+										</li>
+									</ul>
+								</fieldset>
+								<div class="button-submit">
+									<p>* - Обязательные поля</p><button type="submit">Заказать</button> <button type="reset" id="resetbtn">Отменить</button>
+								</div> 
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
+<!-- Created by Vladislav Maslov (Saifor) -->

@@ -1,0 +1,10 @@
+﻿  Source.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2458): error C4996: 'std::copy_n::_Unchecked_iterators::_Deprecate': Call to 'std::copy_n' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2458): note:  см. объявление "std::copy_n::_Unchecked_iterators::_Deprecate"
+  s:\2021_09.03.04_пи11\пикалова анастасия\2 курс\проект1\проект1\source.cpp(120): note: см. ссылку на создание экземпляров функции шаблон при компиляции "_OutIt *std::copy_n<int*,int,int*>(_InIt,_Diff,_OutIt)"
+          with
+          [
+              _OutIt=int *,
+              _InIt=int *,
+              _Diff=int
+          ]

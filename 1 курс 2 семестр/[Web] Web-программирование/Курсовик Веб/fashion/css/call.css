@@ -1,0 +1,31 @@
+form button {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   border: none;
+   background: #66bd7f;
+   color: #ffffff;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   cursor: pointer;
+   width: 234px;
+   height: 50px;
+   border-radius: 34px;
+   font-size: 18px;
+   margin-right: 10px;
+}
+
+form button:hover {
+   background: #087e45;
+   text-decoration: underline;
+}
+
+form button#resetbtn {
+	background: #868686;
+}
+
+form button#resetbtn:hover {
+   background: #cc7e7e;
+   text-decoration: underline;
+}

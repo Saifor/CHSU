@@ -1,0 +1,187 @@
+
+                    The FAR File and Archive Manager
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                             Macro commands
+                             ~~~~~~~~~~~~~~
+
+   This document contains additional technical  details  on  macro  commands
+that are not listed in the main help file.
+
+   All macro commands are stored under the registry branch
+[HKEY_CURRENT_USER\Software\Far\KeyMacros]
+
+   The macro commands are divided into 13 areas:
+
+   Area           Usage
+   컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+   "Shell"        File panels
+   "Viewer"       Internal viewer
+   "Editor"       Internal editor
+   "Dialog"       Dialogs
+   "Search"       Quick file search
+   "Disks"        Select drive menu
+   "MainMenu"     Main menu
+   "Menu"         Other menus
+   "Help"         Help window
+   "Info"         Info panel
+   "QView"        Quick view panel
+   "Tree"         Tree panel
+   "Other"        Screen grabber, vertical menus
+   컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+
+   Each macro command has a separate branch in the registry. The name of the
+branch is the name of the key to which the macro command is  assigned.  Each
+macro command is described with the following parameters:
+
+   Parameter             Type       Default   Description
+   컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+   "Sequence"            REG_SZ               Macro key combination
+   "DisableOutput"       REG_DWORD  1         Disable screen output
+                                              while playing macro
+   "RunAfterFARStart"    REG_DWORD  0         Play macro after FAR start
+   "EmptyCommandLine"    REG_DWORD  0         Play macro when command
+                                              line is empty
+   "NotEmptyCommandLine" REG_DWORD  0         Play macro when command
+                                              line is not empty
+   "NoFilePanels"        REG_DWORD  0         Do not execute in file panels.
+   "NoPluginPanels"      REG_DWORD  0         Do not execute in plugin panels.
+   "NoFolders"           REG_DWORD  0         Do not execute if the current
+                                              object is a folder
+   "NoFolders"           REG_DWORD  0         Do not execute if the current
+                                              object is a folder
+   "NoFiles"             REG_DWORD  0         Do not execute if the current
+                                              object is a file
+   "Selection"           REG_DWORD  0         Execute only if there are
+                                              selected files/directories or
+                                              if a block is selected in the
+                                              editor.
+   "NoSelection"         REG_DWORD  0         Execute if there are no
+                                              selected files/directories or
+                                              no selected block in the
+                                              editor.
+   "Description"         REG_SZ               Comment (not used)
+   컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+   "Sequence" is a mandatory parameter, other values can be omitted and  use
+the default values.
+
+   The "Sequence" key combination contains the list of keys in the macro  in
+string form. Each key has its string equivalent, and keys are separated with
+spaces or Tab characters.
+
+FAR supports several special "pseudo-keys" that cannot be used when entering
+a  macro  in  the standard way. They can be added to a macro only by editing
+the registry or by using special programs or plugins.
+
+   $Date ["format"]
+       The current time is converted to a string according to the
+       format "format". If the "format" argument is not specified,
+       FAR will use the format string  "%a %b %d %H:%M:%S %Z %Y".
+       This format is similar to the one used by the Unix 'date' utility.
+       $Date supports the following date format specification (similar
+       to the format used by the strftime function):
+
+        %%   Percent sign
+        %a   Abbreviated weekday name (Sun)
+        %A   Full weekday name (Monday)
+        %b   Abbreviated month name (Jan)
+        %B   Full month name (January)
+        %c   Date and time representation in the format
+             "WDay Mnt Day HH:MM:SS yyyy"
+             (Mon Jan 10 04:11:54 2000)
+        %C   Century as a decimal number (00 - 99). 1992 => 19
+        %d   Day of the month as decimal number (01 - 31)
+        %D   Synonym for %x
+        %e   Synonym for %d, but the leading zero is replaced with a space
+        %h   Synonym for %b
+        %H   Hour in 24-hour format (00 - 23)
+        %I   Hour in 12-hour format (01 - 12)
+        %j   Day of year as decimal number (001 - 366)
+        %k   Synonym for %H, but the leading zero is replaced with a space
+        %l   Synonym for %I, but the leading zero is replaced with a space
+        %L   Trigger for switching the language of month and weekday
+             names - English/localized.
+             FAR requests two sets of names from the system:
+             1) English names of months and weekdays
+             2) names according to the settings of the current user
+             (LOCALE_USER_DEFAULT).
+             By default the English names are used.
+        %m   Month as decimal number (1 - 12)
+        %m0  Similar to %m, but with a leading zero (01 - 12)
+        %mh  Current month as hexadecimal number (1 - C)
+        %M   Minute as decimal number (00 - 59)
+        %n   Line break `\n'
+             Note: When using this in editor macros, auto-indent will not
+             work.
+        %p   AM or PM
+        %r   Synonym for %I:%M:%S %p
+        %R   Synonym for %H:%M
+        %S   Second as decimal number (00 - 59)
+        %t   Tab character `\t'
+        %T   Synonym for %X
+        %U   Week of year as decimal number, with Sunday as first day of week
+             (00 - 53)
+        %v   Date in the format dd-mmm-yyyy (the month name is uppercased)
+        %V   Week of year according to ISO 8601:
+             "If the week number containing January 1st has >= 4 days in the
+             new year, then it is week 1; otherwise, it is the last numbered
+             week of the previous year (52 or 53)"
+        %w   Week day as decimal number (0 - 6, Sunday is 0)
+        %U   Week of year as decimal number, with Monday as first day of week
+             (00 - 53)
+        %x   Date in the format dd<sep>mm<sep>yyyy (the separator <sep>
+             and the order of day, month and year are determined by the
+             regional settings)
+        %X   Time in the format HH<sep>MM<sep>SS (the separator <sep> is
+             determined by the regional settings)
+        %y   Year without century, as decimal number (00 - 99)
+        %Y   Year with century, as decimal number (19yy-20yy)
+        %Z   Time-zone name or abbreviation; no characters if time zone is
+             unknown
+
+       Arbitrary text in the format string must be in the OEM codepage.
+
+   $MMode 1
+       Change macro mode. Toggles the display mode ("DisableOutput"). Works as
+       a trigger.
+
+   $XLat
+       Invokes the transliteration function. Works independently of
+       what key is assigned in TechInfo#10.
+
+   Notes:
+   a) FAR does not read macros that have errors in macro key names or in
+      the key sequences.
+
+   b) The macro commands are case insensitive.
+
+   c)  It  is  not  possible to assign a macro to the Esc key interactively.
+   This   can   be   done   in   any   other   way;   for  an  example,  see
+   Addons\Macros\Esc.reg.
+
+   d) On startup, FAR loads all macro commands  contained  in  the  registry
+   into memory. After creating a new macro, it is saved  into  the  registry
+   immediately, if "Auto save setup" is enabled.
+
+   e) The flags "NoFilePanels" and  "NoPluginPanels"  have  higher  priority
+   than the flags "NoFolders" and "NoFiles".
+
+   f)  The  flags  "Selection"  and  "NoSelection"  have lower priority than
+   "NoFolders" and "NoFiles".
+
+   g) A macro command with the registry name starting with the character '~'
+   is considered inactive.
+
+   h) FAR Manager converts scrolling the mouse wheel into pseudo-keys:
+      - scrolling one notch up - "MsWheelUp"
+      - scrolling one notch down - "MsWheelDown"
+   These keys can be used together with the modifiers Ctrl, Shift and Alt.
+
+   i) To manipulate macro commands we recommend to use the  "Macro  browser"
+   plugin by Konstantin Melnikov. This  module  supports  viewing,  editing,
+   copying and moving macro commands to any areas, copying and moving  macro
+   commands to  other  FAR  users,  exporting  macro  commands  to  a  file,
+   inserting macro commands into the  editor,  entering  new,  removing  and
+   switching off macro commands installed in FAR.
+
+
+                                     [ FAR manager development group ]

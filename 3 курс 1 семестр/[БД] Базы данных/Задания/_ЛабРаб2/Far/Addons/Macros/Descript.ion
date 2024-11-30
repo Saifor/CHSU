@@ -1,0 +1,31 @@
+AltBS.reg Use Alt-BS to undo folder changes
+Esc.reg Use Esc to toggle panels on/off
+Del.reg Use Del to remove files
+BS.reg Use BS to go to upper folder
+Space.reg Use Space to select files
+Numpad.reg Use numpad keys in command line
+CtrlLeft.reg Use Ctrl-Left to change current drive to the previous
+CtrlRight.reg Use Ctrl-Right to change current drive to the next
+F9Table.reg Use F9 to change current table in viewer and editor
+AltMenu.reg Use Alt to activate menu
+AltSearch.reg Use Alt for search by name
+F3.reg Use internal editor as viewer
+ShiftInsSearch.reg Use Shift-Ins to search text from clipboard in internal viewer
+Lynx-mot.reg LYNX-style motion
+ShiftTab.reg Shift-Tab = Ctrl-Shift-Tab
+OpeningLastFile.reg Opening last view/edit of a file
+AltX.reg Alt-X - Close Viewer&Editor, Exit FAR
+descript.ion File descriptions
+ShiftF1.reg Select archive format
+CtrlShiftPgUpDn.reg In the previous/following folder on that a level
+CtrlW.reg Edito: Save File and Exit
+Apps.reg Apps - Change drive in current panel
+AltScreens.reg Use Alt-<digit> to switch between screens
+WheelScreenSwitch.reg Use Shift-MsWheel to switch between screens
+AltDown.reg Open combobox and history list (as Ctrl-Down pressed)
+ShiftBS.reg Converts the word befor cursor using XLat function.
+CtrlF10.reg Quit from editor/viewer and position to the current file
+CtrlUpDown.reg Scroll Up/Down text in internal viewer
+SwitchMainLanguage.reg Use Ctrl-Alt-F9 to switch main language
+CtrlS.reg Editor: Save File
+CtrlDel.reg Ctrl-Del removes selected editor block

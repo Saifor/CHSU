@@ -1,0 +1,545 @@
+                   FAR Registration and Support sites
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   The latest version of FAR and support conferences are available at
+the sites and BBS's listed below.  Most of them are FIDONET-nodes, so
+you can request the latest version of FAR, via file request, using
+the magic name of 'FAR'.
+
+NOTE:  This list is distributed with the current version of FAR and may not
+       be up-to-date.  For the latest FAR_SITE list please visit our website
+       at
+
+       http://www.rarsoft.com
+
+       There you will also find the latest versions of FAR as well as RAR,
+       the greatest archiver in the world.
+
+
+World-Wide distribution headquarters:
+
+FINLAND
+-------
+ Postal address                  Ordering information
+
+ Softronic Oy                    Fax         : +1 (609) 7718623
+ FAR HQ                          Voice       : +1 (609) 7718622
+ PL 97                           Email       : ron@rarsoft.com
+ 02101 Espoo
+ Finland
+
+
+North American Continent:
+
+
+USA
+---
+ Postal Address:                 Ordering Information:
+ ROG, Inc.                       Voice       : (617) 576 0082
+ WinRAR Sales and Support        Fax         : (617) 576 0082
+ 5 Upland Road                   Website     : http://www.winrar-rog.com
+ Cambridge, MA 02140             E-Mail      : info@winrar-rog.com
+ USA
+ Orders accepted by fax, mail, e-mail and via online ordering system.
+ Credit cards accepted:  Visa, Mastercard, American Express, Diner's Club
+
+
+
+SouthEastern US
+
+USA Wisconsin
+~~~~~~~~~~~~~
+ Postal Address:                 Ordering Information:
+
+ Brian Hertziger                 Voice       : 1-414-875-7831
+ Mr. Homies' Computex            BBS         : 1-414-875-7835
+ 3116 North 75th Street          FAX         : 1-414-875-7835
+ Milwaukee, WI  53216-2742       FidoNet     : 1:154/645
+ Email: support@rararchiver.com  WWW         : http://www.rararchiver.com
+
+                          Voice Hours:
+        Monday-Saturday  --  6:00pm   to  10:00pm (CST)
+        Sunday           --  10:00am  to  10:00pm (CST)
+
+ Orders accepted by:  Email, Web, Phone, snail-mail, Netmail, Fax and BBS.
+
+ Credit Cards accepted:  American Express, Visa, MasterCard, Discover,
+                                      and Novus cards.
+
+ Personal and Business Checks, Money Orders, or Cashier's Checks accepted;
+ make all checks payable to:  Mr. Homies' Computex.
+
+ NOTE:  Personal and Business checks require 7 working days to clear
+
+ Wisconsin residents add 5.6% sales tax.
+
+
+CANADA/USA
+----------
+ Postal Address:                 Ordering Information:
+ Darrell Harder                  Voice       : (604) 535 2678
+ Box 45527, Sunnyside Mall P.O.  Fax         : (604) 535 5638
+ Surrey, B.C.                    Website     : http://www.rarreg.com
+ V4A 9N3                         E-Mail      : sales@rarreg.com
+ Canada
+ Orders accepted by fax, mail, e-mail and online including Paypal payment.
+ Credit cards accepted:  Visa, Mastercard, American Express, Diner's Club
+
+ Personal and Business Checks, Money Orders, or Cashier's Checks accepted;
+ make all checks payable to:  Darrell Harder
+
+ NOTE:  Canada: Personal/Business checks require 7 working days to clear.
+        USA: Personal/Business checks require up to 21 working days to clear.
+
+
+
+Europe:
+
+Deutschland, Oesterreich und Schweiz
+------------------------------------
+
+ Postanschrift:                  Information:
+ ROG GmbH                        Telefon   : +49 6272-9214-20
+ WinRAR Support                  Fax       : +49 6272-9214-10
+ Wedekindweg 3                   Website   : www.winrar-rog.de
+ D-69434 Hirschhorn              E-Mail    : winrar@rog.de
+
+ Sie koennen Ihre Bestellung per Telefon, Fax, Post oder online
+ aufgeben. Kreditkartenzahlung ueber unsere Partner ShareIt und
+ JDS-Software ist sehr willkommen (Visa, Mastercard, American
+ Express, Diner's Club).
+
+ Auf www.winrar-rog.de erhalten Sie die aktuellen Programmversionen
+ sowie Infos und Support.
+
+
+Finland, Suomi
+--------------
+ Yritys osoite                   Ordering information
+
+ Softronic Oy                    Fax  : +1-609-7718623
+ PL 97                           email: sales@rarsoft.com
+ 02101 Espoo
+ FINLAND
+
+
+ Orders accepted by fax, mail or e-mail
+ Credit cards :  Visa, Mastercard
+
+
+France
+------
+ Postal Address                  Ordering information
+
+ ADC                             Voice:  +(33) (0) 1-47-80-58-83
+ 39, rue de 22 septembre         Fax  :  +(33) (0) 6-61-02-86-68
+ 92400 - COURBEVOIE              email:  ventes@adc-soft.com
+ France                          WWW  :  http://www.adc-soft.com
+
+Orders accepted by post, e-mail, online or fax
+
+
+Belgium, Netherlands and Luxembourg
+----------------------------------
+ Dutch / English:               Ordering information
+
+ Hendrik Desmet                 Phone  : +32 (0) 51 68 91 64
+ Abeelstraat, 6                 Fax    : +32 (0) 51 68 91 64
+ B-8755 Ruiselede               Mobile : +32 (0)478 43 50 80
+ Belgium                        E-mail : info@rarsoft.be
+                                         support@rarsoft.be
+                                         sales@rarsoft.be
+                                Web: http://www.rarsoft.be
+
+ Orders accepted by post, e-mail or fax.
+
+
+Italy
+-----
+ Postal Address:               Ordering Information:
+
+ Italsel srl                   Voice    : +39-051-320409
+                               Fax      : +39-051-320449
+ Via Lugo,1                    Website  : http://www.italsel.com
+ 40128 Bologna                 E-Mail   : info@italsel.com
+ ITALY
+
+ Orders accepted by fax, mail, e-mail and via online ordering system.
+ Credit cards accepted:  Visa, Mastercard,Carta Si
+
+
+Sweden
+-------
+ Postal address                  Ordering information
+
+ Definite Solutions              Voice: +46 (8) 6505087
+ Box 827                         Fax  : +46 (8) 6505071
+ S-101 36  Stockholm             BBS  : +46 (8) 4410010 (ISDN/V.34)
+ Sweden                                 +46 (8) 4410011 (ISDN/V.34)
+
+ FidoNet : 2:201/330, 2:201/329
+ Internet: sales@defsol.se
+ WWW     : http://www.defsol.se/
+
+ Orders accepted by Voice phone, FAX, Mail, crash NetMail
+ or BBS.  File request REGFORM.SWE for our Swedish order
+ form.  This form is also available on our web site.
+
+ Credit card orders require a signed order form to be mailed
+ or faxed due to local authorities' regulations for credit card
+ payments.
+
+ Credit cards accepted VISA, MasterCard, EuroCard,
+ BankKort, RiksKort, KopKort and SparbanksKort.
+
+
+Spain
+-----
+ Postal address                  Ordering information
+
+ On-Line Services 2000 S.L.      Voice support           +34-93 315 1593
+ Trafalgar 78 2 2 B              Fax                     +34-93 268 3590
+ 08010 Barcelona
+ Spain
+
+ E-Mail  rar@ols.es
+ WWW     http://rar.ols.es
+
+ We also accept VISA, Mastercard, 4B, american Express and VirtualCash.
+ Orders accepted by Voice phone, WWW, Mail and EMail.
+
+
+Czech Republic
+----------------
+ Postal Address                  Ordering Information
+
+ Viliam Mlich
+ Desna 70
+ 763 15 Slusovice                Voice       : +420-67-7986163
+ Czech Rep.                      Mobile      : +420-603-454069
+
+ e-mail: vmlich@mbox.vol.cz or vmlich@rar.cz
+ fidonet: 2:421/50
+ website: http://www.rar.cz/far.html
+
+ Orders accepted by Mail, E-Mail and via Internet at:
+ http://www.rar.cz/farreg.html
+
+
+Czech Republic
+--------------
+ Postal address                  Ordering Information
+
+ JIMAZ s.r.o.                    Voice: +420-2-33372301
+ Hermanova 37                    FAX:   +420-2-33370686
+ 170 00 Praha 7
+ CZECHIA                         Email: jimaz@jimaz.cz
+
+ Orders accepted by Voice phone, fax, mail and Internet Email.
+ Objednavky prijimame telefonicky, faxem, postou a elektronickou
+ postou.
+
+
+Hungary
+-------
+
+ Postal address/retail shop:     Ordering information:
+
+ KeSzo Kft.                      Voice : +36-1-332-8717 (Hungarian and English)
+ Falk Miksa u. 6                 Fax   : +36-1-302-5136
+ H-1055 Budapest                 e-mail: sales@keszo.com
+ Hungary
+
+ Internet: www.keszo.com
+
+ Orders accepted by Voice Phone, Fax, E-Mail, or personally in our shop.
+
+ Payments accepted by Cash, Bank Transfer.
+
+
+Slovakia
+--------
+ Postal address                  Ordering information
+
+ Ing.Peter Hubinsky - AVIR       Mobile  : +421 905 859812
+ L.Novomeskeho 48                FAX/TAM : +421 33 6401895
+ 902 01 Pezinok                  E-mail  : info@avir.sk
+ SLOVAKIA                        Web Site: http://www.avir.sk
+
+ Orders accepted by mail, phone, FAX and E-mail.
+
+
+Poland
+------
+ Postal Address                  Ordering Information
+
+Malgorzata Skulska
+Centrum Rejestracji Oprogramowania
+Kazimierzowska 62                Voice   : +48 (501) 140 196
+05-822 Milanowek                 Mobile  : +48 (501) 018 690
+                                 Fax     : +48 (22) 724 14 05
+
+e-mail: RAR.regsite@skulski.com
+Website:http://www.skulski.com
+
+
+Estonia
+-------
+ Postal address                  Ordering information:
+
+ A&Y Majandustarkvara OY
+ Karol Kislenko                    Voice : +372 7 40 99 99
+ Riia 26                           Fax   : +372 7 40 99 88
+ 50405 Tartu                       e-mail: rar@pcexpert.ee
+ Estonia
+
+ Internet: www.pcexpert.ee
+
+ Orders accepted by Voice Phone, Fax, E-Mail.
+ Payments accepted by Cash, Bank Transfer.
+
+
+Romania
+-------
+ Postal Address:                 Ordering Information:
+
+ ProVision Software Div. S.R.L      Voice: +40-1-3211568
+ P-ta Alba Iulia Nr.8, Bl.i7, Sc.3  FAX  : +40-1-3236570
+ et.2, ap.50, BUCHAREST
+ ROMANIA / 7000                     Email  : provision@pro.ro/alex@pro.ro
+                                    Website: http://www.pro.ro
+
+        Voice Hours:
+
+ Monday-Saturday  --  7.00pm   to  10:00pm
+ Sunday           --  10:00am  to  10:00pm
+
+ Orders accepted by Phone, Mail, e-mail, FAX,
+
+
+Russia
+------
+ Postal Address                  Ordering information
+
+ Felix Moochnick                 Voice: +7-095-215-6613
+ TFM&K                           Fax:   +7-095-215-6613
+ 21, of.801, Zvezdnyi bulevard,
+ Russia, 129085                  email: sales@tfmik.ru
+
+
+
+Australasia:
+
+Australia
+---------
+ Postal Address:                 Ordering Information:
+
+ Shareware-Australia             Phone (02) 9565-2339
+ PO Box 1075                     Fax   (02) 9565-2362
+ Maroubra NSW 2035               Email: sales@shareware-australia.com
+ AUSTRALIA                       Web Site http://www.shareware-
+australia.com
+
+ We accept payment by Cheque or Money Order made payable to
+ Shareware-Australia
+ Credit Cards accepted: Bankcard, Mastercard, Visacard, American Express.
+ Orders accepted by phone, fax, mail, email, Web Secure Server.
+
+
+Australia
+------
+ Postal Address:                 Ordering Information:
+
+ Australia Connect Pty Ltd       FAX:  +61 (02) 9387 5087
+ P.O.Box 861
+ Bondi Junction
+ NSW 1355                        Email: webmaster@acon.com.au
+ Australia                       Website: http://winrar.acon.com.au
+
+ Orders accepted by Fax, SnailMail, E-Mail.
+
+
+
+Australia
+---------
+  Postal address                  Ordering information
+
+  Secure Antivirus Systems        Voice      : +61 (0)7 3204 5000
+  PO Box 29                       fidonet    : 3:640/886
+  Kallangur                       internet   : ftp.st.net.au/pub/far
+  Australia 4503                  email      : rod@st.net.au
+
+
+  Orders accepted by phone/ mail / email
+
+  Credit cards : Bankcard / Mastercard / Visa
+
+
+New Zealand
+-----------
+  Postal address                   Ordering information
+
+  Arrow Computer Services Ltd      Fax       : +64 9 486-7606
+  30A Bracken Ave                  Voice     : +64 9 486-1012
+  Takapuna                         Orders    : +64 9 486-1012
+  North Shore City 1309
+  New Zealand
+
+  Internet:   arrowcomp@xtra.co.nz
+
+  Orders accepted by email, Voice phone, fax or mail
+  Credit card :  American Express
+
+
+South America:
+
+Brazil
+------
+  Endere§o Postal:                 Informa§åes de compra/Suporte T©cnico:
+  ATT: Fabio Becker                Voz     : 55-51-582-9682
+  FWA Com. Rep. e Ass. Tec. Ltda   FAX     : 55-51-593-3964
+  Rua Sao Francisco de Paula, 149
+  Novo Hamburgo, RS, 93410-330     E-mail  : admin@rarbrazil.com
+  Brasil                           WWW     : http://www.rarbrazil.com
+
+  Hor¡rio Telefänico:
+
+  Seg-Sex: 10:00 at© 16:00 (GMT -3)
+  Ordens de compra aceitas por: telefone, correio, e-mail, fax, ou online.
+
+  Cartåes de cr©dito aceitos: Visa (taxa de 6%)
+
+  Cheques Pessoais, Dinheiro s£o aceitos, e dever£o ser emitidos em nome de
+  Fabio A. Becker.
+  Ordens de Compra pelo Correio (n£o eletränico) tªm uma taxa adicional de
+  10% para registro postal.
+
+
+
+Columbia
+--------
+ Postal Address                  Ordering information:
+
+ A.P.C. LIMITADA.                   Voice : 57 - 4 - 2663614
+ CRA 43A No. 1 SUR -31 Oficina 503  Fax   : 57 - 4 - 3118905
+ El Poblado, Medellin.
+ Colombia                           Email : mcafeapc@col3.telecom.com.co
+
+
+ Postal Address                  Ordering information:
+
+ Expreso Tecnologico 2000 Ltda.     Voice : (57)(1) 2361696
+ Carrera 37 No. 89-99 Oficina 104   Sales : (57)(1) 2576169
+ Santafe de Bogota, Colombia        Fax   : (57)(1) 6357995
+
+                          Email-Marketing : inftec@colomsat.net.co
+                          Email-Sales     : exp2000@tutopia.com
+
+
+Far East:
+
+Korea
+-----
+ Postal Address:                 Ordering Information:
+
+ BuySoft Inc                     E-Mail : hsseo@buysoft.co.kr
+ #922 Daeyoung bldg., 44-1
+ Yoido-dong
+ Youngdeungpo-gu, 150-010
+ Seoul, Korea
+
+
+Korea
+-----
+ Postal Address:                 Ordering Information:
+
+ Robby Kang                      E-Mail : robbykang@jsresource
+ JS Resources & Co
+ 2030 E. 4th Street, #102
+ Santa Ana, CA 92705
+ USA
+
+
+Japan
+-----
+ Postal Address:                 Ordering Information:
+
+ Tencraft WinRAR                 E-Mail : winrar@diana.dti.ne.jp
+ Kudan Kita 1-3-5 6F             Website:
+http://www.diana.dti.ne.jp/~winrar/
+ Chiyoda-ku
+ Tokyo Japan
+
+ Orders accepted by SHARE-REGI and E-mail
+
+ Credit Cards accepted by SHARE-REGI:
+    VISA, MASTER, UC, SAISON, DC, NICOS, Orico and JCB cards.
+
+
+Taiwan, Rep. of China
+---------------------
+ Postal address                  Ordering information
+
+ LightBlue Technology Ltd., Co.  Fax         : 886-2-2307-4763
+ 2F, No. 97, Pao-Hsing St.       Voice       : 886-2-2301-1312
+ 108 Taipei, Taiwan
+
+ URL: http://rarsoft.com.tw
+ E-mail: sam@rarsoft.com.tw
+
+ Orders accepted by Fax, Mail or E-mail.
+
+
+INTERNET
+--------
+                 +------------------------------------+
+                 |  Visit our world wide web site at: |
+                 +------------------------------------+
+
+         Http://www.rarsoft.com
+
+On-Line registration
+--------------------
+
+  For your convenience we have contracted another company, to handle on-
+line secure credit card orders.  Please visit our website and you will see
+a link to the on-line credit card handling system on the main page.
+
+                +--------------------------------------+
+                |  FTP site to get latest FAR version  |
+                +--------------------------------------+
+
+ The official anonymous FTP sites for FAR are:
+
+                   ftp://ftp.cdrom.com/pub/cheats/dlh/far
+
+                   ftp://ftp.elf.stuba.sk/pub/pc/utilfile
+
+                  +----------------------------------+
+                  | FAR information via the Internet |
+                  +----------------------------------+
+
+
+ ftp.far@rarsoft.com             A list of ftp sites for FAR software
+ sites.far@rarsoft.com           A list of registration sites
+ whatsnew.far@rarsoft.com        Details of the latest version
+
+ The above targets are robots which will ignore the body of the message and
+ respond with a result file.
+
+ helpdesk@rarsoft.com                 Answers to technical questions
+
+ Messages addressed to helpdesk will be handled by staff proficient in the
+ usage of FAR and/or the author of the product.
+
+
+     SysOp:
+
+   Please place the FAR SFX archive on your BBS, but do not distribute
+FAR registration keys and cracks.
+
+
+     How to become an FAR Registration and Support Site:
+
+   If you want to be an FAR registration Site - write to the world-wide
+distribution center in Finland.

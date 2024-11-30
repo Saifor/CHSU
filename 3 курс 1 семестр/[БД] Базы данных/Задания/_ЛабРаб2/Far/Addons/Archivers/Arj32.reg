@@ -1,0 +1,19 @@
+REGEDIT4
+; http://www.arjsoftware.com/
+
+[HKEY_LOCAL_MACHINE\Software\Far\Plugins\MultiArc\ARJ]
+"Extract"="arj32 x -+ {-g%%P} -v -y -p1 -- %%A !%%LM"
+"ExtractWithoutPath"="arj32 e -+ {-g%%P} -v -y -p1 -- %%A !%%LM"
+"Test"="arj32 t -+ -y {-g%%P} -v -p1 -- %%A"
+"Delete"="arj32 d -+ -y {-w%%W} -p1 -- %%A !%%LNM"
+"Comment"="arj32 c -+ -y {-w%%W} -z -- %%A"
+"CommentFiles"="arj32 c -+ -y {-w%%W} -p1 -- %%A !%%LM"
+"SFX"="arj32 y -+ -je -y -p %%A"
+"Lock"=""
+"Protect"="arj32 t -hk -y %%A"
+"Recover"="arj32 q -y %%A"
+"Add"="arj32 a -+ -y -a1 {-g%%P} {-w%%W} -p {%%S} -- %%A !%%LM"
+"Move"="arj32 m -+ -y -a1 {-g%%P} {-w%%W} -p {%%S} -- %%A !%%LM"
+"AddRecurse"="arj32 a -+ -r -y -a1 {-g%%P} {-w%%W} -p {%%S} -- %%A !%%LM"
+"MoveRecurse"="arj32 m -+ -r -y -a1 {-g%%P} {-w%%W} -p {%%S} -- %%A !%%LM"
+"AllFilesMask"="*.*"

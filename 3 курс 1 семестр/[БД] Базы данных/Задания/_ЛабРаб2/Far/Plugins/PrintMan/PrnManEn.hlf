@@ -1,0 +1,170 @@
+.Language=English,English
+.PluginContents=Print manager
+
+
+@Contents
+$ #Print manager for FAR (version 1.7)#
+
+  ~Configuring manager~@mnuConfig@
+
+  ~Manage printers~@prnManage@
+
+  ~Printing documents~@prnPrint@
+
+  ~Alphabetical list~@AlphaList@
+
+@mnuConfig
+$ #Configure Print manager#
+
+  Before using of Print manager, you may need to configure some parameters.
+
+  #Interface options#
+
+  #-#  Set startup view mode for print manager. Mode 0 are redefined
+     for the most suitable viewing information about printers and jobs.
+
+  #-#  Tell Print manager to open ~Printer panel~@prnManage@ after
+     printing.
+                                                        
+  #-#  Turn on of real-time monitoring for printers. In this mode the 
+     information about printers/documents will be updated each several 
+     seconds...
+
+
+  #Default options#
+     In this dialogue you may define options for "Print" dialogue,
+   that appear before printing.
+
+  #Source table#  - Character table for data to be printed.
+
+  #Printer table# - Charatcer table, installed on the printer.
+
+  #Send before printing#/
+  #Send after printing# - You may send special data to printer
+                        before/after printing. If first char is
+                        "@@", next part is file name to be send
+                        to printer. You may define data in hexadecimal:
+                        "%0C" - Form feed character
+
+  Also you may see ~About~@dlgAbout@ dialog box.
+
+
+
+  ~Go to main screen~@Contents@
+
+@prnManage
+$ #Manage printers#                                      
+
+  Print panel presents from itself two-level file panel. On the first level
+you may see all installed printers on your machine. There available next
+combinations of a keys:
+
+  #F5#           - Resume printing for selected printers.
+                
+  #F6#           - Pause printing for selected printers.
+                
+  #F8#           - Purge all jobs for selected printers.
+                
+  #ENTER#        - Show current jobs for selected printer.
+
+
+  In FAR version 1.70 or above available additional functions:
+
+  #SHIFT+F7#     - ~Add printer~@prnAdd@.
+
+  #ALT+SHIFT+F7# - Add printer connection.
+
+  #SHIFT+F8#     - Delete printer.
+
+
+  On the second level you may see all jobs for the printer. There you may use
+next combinations of a keys:
+
+  #F5# - Resume printing for selected jobs.
+
+  #F6# - Pause printing for selected jobs.
+
+  #F7# - Restart selected jobs.
+
+  #F8# - Delete selected jobs from queue.
+
+
+
+  ~Go to main screen~@Contents@
+
+@prnPrint
+$ #Printing documents#
+
+  When you have opened Priners panel, you may print any files, simply
+copying its on Printers panel by <F5> key.
+
+  Also you may print any files from command line by typing:
+  #prn:<FileName># (without angle brackets) - for printing <FileName> file
+  #prn:selected:# (#prn:sel:#)                - for printing selected
+                                            files on file panel.
+  #prn:current:# (#prn:cur:#)                 - for printing current
+                                            file on file panel.
+
+  For printing from editor, press F11 and choose "Print manager". If you
+have FAR maneger version 1.52 or above, "Source table" parameter will equal
+to selected character table for editor. You may print either selected block
+or all file.
+
+
+
+  ~Go to main screen~@Contents@
+
+@dlgAbout
+$ #About Print manager for FAR#
+
+  Print manager for FAR. Version 1.7 beta 6
+
+  Copyright (c), 2000-2001 Vasily V. Moshninov [ FAR group ]
+
+     e-mail:  ~proxykit@@newmail.ru~@mailto:proxykit@@newmail.ru@
+
+       fido:  #2:5004/18.32@@fidonet.org#
+
+        ICQ:  #17217849#
+
+  Home page:  ~http://proxykit.newmail.ru~@http://proxykit.newmail.ru@
+
+
+
+  ~Go to main screen~@Contents@
+
+@prnAdd
+$ #Add new printer# dialogue
+  You may add new printer into your system. You must fill all fields in
+this dialogue for install of new printer.
+
+  #Printer name#    - Unique name for you printer.
+                    (ex.: "My local printer")
+
+  #Description#     - Description of printer to be installed.
+
+  #Printer port#    - Port name for printer.
+                    (ex.: "LPT1:" or "\\SERVER\PRINTER_QUEUE")
+
+  #Printer driver#  - Select printer driver. If you need to specified
+                    additional driver for printer, you must use
+                    "Add new hardware" in "Control panel"
+
+  #Print processor# - Default print processor for printer.
+
+
+
+  ~Go to main screen~@Contents@
+
+@AlphaList
+$ #Alphabetical list#
+
+  ~About print manager~@dlgAbout@
+  ~Add printer~@prnAdd@
+  ~Configuring manager~@mnuConfig@
+  ~Manage printers~@prnManage@
+  ~Printing documents~@prnPrint@
+
+
+
+  ~Go to main screen~@Contents@

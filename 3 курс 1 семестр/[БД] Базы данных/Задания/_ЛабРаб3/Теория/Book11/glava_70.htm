@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>17.1. Оператор выделения памяти под дескриптор</title>
+		    <style type="text/css">
+A.noneline { font-family: Arial, Serif; text-decoration: none; }
+FONT.arial { font-family: Arial, Serif; }
+TD.arial   { font-family: Arial, Serif; }
+TH.arial   { font-family: Arial, Serif; }
+PRE        { font-family: Monospace; color: navy; }
+SAMP       { font-family: Monospace; color: navy; }
+TT         { font-family: Monospace; color: navy; }
+VAR        { font-family: Monospace; color: navy; }
+</style>
+</head>
+<body bgcolor="#FFF5EE" text="#000000" link="#FF0000" alink="#FF0000" vlink="#A52A2A">
+<basefont size="3">
+<center>
+<table width=100% border=0 cellpadding=0>
+<tr valign=top><td class=arial><a href="http://www.citforum.ru/"><img height=50 width=150 src="_pic_/logo3D.gif" alt="Server for Information Technologies" border=0></a><br>
+</td>
+<td align=right class=arial>
+<font size="-2">
+Сервер поддерживается<br>
+<a class=noneline href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>
+(095) 932-9212, 932-9213, 939-0783<br>
+E-mail: <a class=noneline href="mailto:info@citforum.ru?Subject='From page topic CIT-FORUM'">info@citforum.ru</a></font>
+</tr>
+<tr>
+<th colspan=2 class=arial>
+<font color=#000080 size=2><a href="http://www.citforum.ru" class=noneline>Сервер Информационных Технологий</a> содержит море(!) аналитической информации</font>
+<hr noshade>
+</th>
+</tr>
+</table>
+</center>
+<h4><a name="_5_5_1">17.1. Оператор выделения памяти под дескриптор</a></h4>
+<pre>&lt;allocate descriptor statement&gt; ::=
+   ALLOCATE DESCRIPTOR &lt;descriptor name&gt;
+  [WITH MAX &lt;occurrences&gt;]
+&lt;occurences&gt; ::= &lt;simple value specification&gt;
+&lt;descriptor name&gt; ::=
+ (&lt;scope option&gt;] &lt;simple value specification&gt;
+  &lt;scope option&gt; ::= GLOBAL | LOCAL
+&lt;simple value specification&gt; ::=
+  &lt;parameter name&gt;
+ (&lt;embedded variable name&gt;
+ (&lt;literal&gt;</pre>
+<p>
+<i>Комментарий:</i>
+<p>
+Дескриптор, это динамически выделяемая часть памяти прикладной программы, служащая для принятия информации о результате или параметрах динамически подготовленного оператора SQL или задания параметров такого оператора. Смысл того, что для выделения памяти используется оператор SQL, а не просто стандартная функция alloc или какая-нибудь другая функция динамического запроса памяти, состоит в том, что прикладная программа не знает структуры дескриптора и даже его адреса. Это позволяет не привязывать SQL к особенностям какой-либо системы программирования или ОС. Все обмены информацией между собственно прикладной программой и дескрипторами производятся также с помощью специальных операторов SQL (GET и SET, см. ниже).
+<p>
+Второй вопрос: зачем вообще выделять память под дескрипторы динамически. Это нужно потому, что в общем случае прикладная программа, использующая динамический SQL, не знает в статике число одновременно действующих динамических операторов SQL, описание которых может потребоваться. С этим же связано то, что имя дескриптора может задаваться как литеральной строкой символов, так и через строковую переменную включающего языка, т.е. его можно генерировать во время выполнения программы.
+<p>
+В операторе ALLOCATE DESCRIPTOR, помимо прочего, может указываться число описательных элементов, на которое он рассчитан. Если, например, при выделении памяти под дескриптор в разделе WITH MAX указано целое положительное число N, а потом дескриптор используется для описания M (M&gt;N) элементов (например, M столбцов результата запроса), то это приводит к возникновению исключительной ситуации.
+<p><center><a href="glava_69.htm">Предыдущая глава</a> || <a href="contents.htm">Оглавление</a> || <a href="glava_71.htm">Следующая глава</a><p>
+<p></p>
+<hr noshade>
+<center>
+<font size=1 class=arial>
+Comments: <a href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM'" class=noneline>info@citmgu.ru</a><br>
+Copyright &copy; <a href="http://www.citmgu.ru/" class=noneline>CIT</a>
+</font></center></body></html>

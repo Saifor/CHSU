@@ -1,0 +1,464 @@
+@import url(normalize.css);
+@font-face {
+   font-family: 'Neue Machina';
+   font-style: normal;
+   font-weight: 700;
+   src: local("Neue Machina Bold"), local("Neue-Machina-Bold"), url("../fonts/NeueMachina-Bold.woff2") format("woff2"), url("../fonts/NeueMachina-Bold.woff") format("woff"), url("../fonts/NeueMachina-Bold.ttf") format("ttf");
+}
+
+* {
+   box-sizing: border-box;
+}
+
+.section-inner {
+   width: 1170px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.section-header {
+   color: #ffffff;
+   background: url("../images/header-shadow.png") no-repeat, url("../images/header-bg.png") no-repeat, url("../images/header-bg-green2.png") no-repeat;
+   background-size: 100%;
+   height: 130px;
+}
+
+.section-header-inner {
+   width: 1170px;
+   margin: 0 auto;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.section-header-top {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 36px;
+   margin: 0 auto;
+}
+
+.section-header-top-logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-basis: 375px;
+   z-index: 4;
+}
+
+.section-header-top-logo__title {
+   font-family: 'Manrope', sans-serif;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 27px;
+   max-width: 200px;
+   z-index: 10;
+   padding-left: 20px;
+}
+
+.section-header-top-logo__title a {
+   color: #ffffff;
+   font-family: 'Manrope', sans-serif;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 27px;
+   text-decoration: none;
+   color: #61c17f;
+}
+
+.section-header-top-logo__title a:hover {
+   color: white;
+}
+
+.section-header-top-logo__ico {
+   max-width: 60;
+}
+
+.section-header-top-navigation {
+   display: flex;
+   flex-basis: 870px;
+   z-index: 4;
+   justify-content: space-between;
+}
+
+.section-header-top-navigation__menu {
+   display: flex;
+   flex-basis: 870px;
+   justify-content: space-around;
+   padding: 0;
+   list-style: none;
+}
+
+.section-header-top-navigation__menu li {
+   display: flex;
+   flex-grow: 1;
+   font-family: 'Manrope', sans-serif;
+}
+
+.section-header-top-navigation__menu li a { 
+   color: #61c17f;
+   font-weight: bold;
+   line-height: 27px;
+   text-decoration: underline;
+}
+
+.section-header-top-navigation__menu li a:not(.selected) {
+   color: #ffffff;
+   font-size: 16px;
+   line-height: 27px;
+   text-decoration: none;
+}
+
+.section-header-top-navigation__menu li a:hover {
+   color: #61c17f;
+   text-decoration: underline;
+}
+
+.section-header-top-social {
+   z-index: 4;
+   display: flex;
+   align-items: center;
+   flex-basis: 670px;
+   justify-content: space-around;
+}
+
+.section-header-top-social__inst {
+   display: flex;
+   justify-content: center;
+   flex-grow: 1;
+}
+
+.section-header-top-social__inst img {
+   cursor: pointer;
+}
+
+.section-header-top-social__inst img:hover {
+   opacity: 0.7;
+}
+
+.section-header-top-social__phone {
+   display: flex;
+   justify-content: center;
+   flex-grow: 1;
+   font-family: 'Manrope', sans-serif;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.section-header-top-social__phone:hover {
+	color: #61c17f;
+}
+
+.section-header-top-social__order-call {
+   flex-grow: 1;
+}
+
+.section-header-top-social__order-call input {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   border: none;
+   background: #66bd7f;
+   color: #ffffff;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   cursor: pointer;
+   width: 225px;
+   height: 50px;
+   border-radius: 30px;
+   font-size: 16px;
+}
+
+.section-header-top-social__order-call input:hover {
+   background: #31623f;
+}
+
+.section-header-details {
+   display: flex;
+   flex-basis: 85px;
+   align-items: center;
+   justify-content: center;
+   z-index: 3;
+}
+
+.section-header-details-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.section-header-details-wrapper:hover {
+   cursor: pointer;
+}
+
+.section-header-details__text {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   color: #444444;
+   margin-left: 20px;
+}
+
+.section-header-details__text:hover {
+   color: #61c17f;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.section-promo {
+   height: 900px;
+   display: flex;
+   margin-top: 45px;
+   padding-top: 45px;
+}
+
+.section-promo-title {
+   display: flex;
+   justify-content: center;
+}
+
+.section-promo-title__text {
+   color: #66bd7f;
+   font-family: 'Neue Machina';
+   font-size: 42px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.section-promo-content {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+}
+
+.section-promo-content__item {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 235px;
+}
+
+.section-promo-content__item__icon {
+   width: 125px;
+   height: 125px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 35px;
+   margin: 0 auto 35;
+}
+
+.section-promo-content__item__title {
+   text-align: center;
+   margin: 0 auto 30;
+   font-family: "Neue Machina";
+   color: #444444;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 34px;
+}
+
+.section-promo-content__item__content {
+   text-align: center;
+   margin: 0 auto;
+   font-family: 'Manrope', sans-serif;
+   color: #898989;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 30px;
+}
+
+.section-promo-content__item-ellipse-secondary {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: #d0e1b8;
+   width: 125px;
+   height: 125px;
+}
+
+.section-promo-content__item-ellipse-main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: #66bd7f;
+   width: 105px;
+   height: 105px;
+}
+
+.section-promo-content__item-ellipse-main:hover {
+   background: #71bd66;
+}
+
+.section-promo2 {
+   display: flex;
+   margin-top: 5px;
+   background: url("../images/background-promo2-2.png") no-repeat, #ffffff;
+   background-size: 100% 100%;
+   z-index: 1;
+   height: auto;
+   background-blend-mode: multiply;
+}
+
+.section-promo2-wrapper {
+   display: flex;
+   flex-basis: 1920px;
+   justify-content: center;
+   margin: auto;
+   margin-top: 60px;
+   height: auto;
+}
+
+.section-promo2__photo {
+   display: flex;
+   flex-basis: 505px;
+   height: 505px;
+   margin-right: 45px;
+}
+
+.section-promo2__block {
+   display: flex;
+   flex-direction: column;
+   background: #ffffff;
+   flex-basis: 1000px;
+   height: auto;
+   margin-bottom: 100px;
+}
+
+.section-promo2__block-wrapper {
+   padding-left: 50px;
+   padding-top: 45px;
+   padding-bottom: 50px;
+}
+
+.section-promo2__block__title {
+   color: #66bd7f;
+   font-family: "Neue Machina";
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 48px;
+   text-align: left;
+   text-transform: uppercase;
+   padding-bottom: 30px;
+}
+
+.section-promo2__block__text {
+   color: #444444;
+   font-family: 'Manrope', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 30px;
+   text-align: left;
+   padding-bottom: 25px;
+   max-width: 900px;
+}
+
+.section-promo2__block__image {
+   max-width: 900px;
+   width: auto;
+}
+
+.section-promo2__block__button_btn {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   border: none;
+   background: #66bd7f;
+   color: #ffffff;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   cursor: pointer;
+   width: 270px;
+   height: 60px;
+   border-radius: 30px;
+   margin-bottom: 45px;
+}
+
+.section-promo2__block__button_btn:hover {
+   background: #087e45;
+}
+
+.section-promo3 {
+   display: flex;
+   margin-top: -25px;
+   z-index: 1;
+   height: 450px;
+   background: url("../images/background-promo3.png") no-repeat, #66bd7f;
+   background-blend-mode: multiply;
+   background-size: 100% 100%;
+}
+
+.section-promo3-wrapper {
+   display: flex;
+   flex-basis: 1920px;
+   margin-top: 85px;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   height: 335px;
+}
+
+.section-promo3__photo {
+   display: flex;
+   flex-basis: 505px;
+   height: 400px;
+}
+
+.section-promo3__block {
+   display: flex;
+   height: 280px;
+   flex-direction: column;
+}
+
+.section-promo3__block__title {
+   color: #ffffff;
+   font-family: "Neue Machina";
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 58px;
+   text-align: left;
+   text-transform: uppercase;
+   padding-bottom: 35px;
+}
+
+.section-promo3__block__text {
+   color: #444444;
+   font-family: 'Manrope', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 30px;
+   text-align: left;
+   padding-bottom: 35px;
+   max-width: 570px;
+   color: #ffffff;
+}
+
+.section-promo3__block-button {
+   display: flex;
+}
+
+.section-promo3__block-button__btn {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   border: none;
+   background: #ffffff;
+   color: #444444;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   cursor: pointer;
+   width: 333px;
+   height: 60px;
+   border-radius: 30px;
+   margin-right: 65px;
+}
+
+.section-promo3__block-button__btn:hover {
+   background: #d9d9d9;
+}
+/* Created by Vladislav Maslov (Saifor). */

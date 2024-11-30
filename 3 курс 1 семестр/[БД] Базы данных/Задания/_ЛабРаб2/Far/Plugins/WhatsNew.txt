@@ -1,0 +1,764 @@
+
+                    The FAR File and Archive Manager
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                What's new in plugins in the latest version
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[!] Important
+[+] New
+[-] Fixed error
+[*] Changes
+
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+FAR 1.70 beta 4 (build 1282) (13.03.2002)
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+   All the plugins supplied with the FAR Manager are designed only for the
+version of FAR with which they are supplied. It is not guaranteed that
+the standard plugins will function correctly with different FAR versions.
+
+EMenu
+~~~~~
+[!] Completely rewritten.
+
+
+Network
+~~~~~~~
+[-] Network Browser could not enter a network share if it was mapped to
+    the root directory of a drive and that directory was empty.
+
+[-] Jumping from a network drive to the network and the option "Show
+    local network" did not work for some Microsoft networks for which
+    it could possibly work.
+
+[*] Now it is possible to disable setting the Hidden attribute for ]
+    hidden shares (see TechInfo#35).
+
+[*] Added a history list to the edit line for entering the user name
+    in the password input dialog.
+
+[+] Now displaying hidden shares works also under Windows 95/98/Me.
+
+[*] Displaying hidden shares under Windows NT/2000/XP no longer requires
+    administrator privileges.
+
+[*] When trying to disconnect a network drive mapped to multiple drive
+    letters, a dialog is shown allowing to choose which letter is to
+    be disconnected.
+
+[-] Fixed problems with handling Cyrillic computer names.
+
+
+MultiArc
+~~~~~~~~
+[-] LZH.FMT did not recognize archives created by later versions of
+    the LHA archivers.
+
+[-] CAB.FMT didn't work correctly with some SFX archives, for example,
+    ar500enu.exe - installation of Adobe Acrobat Reader 5.0.
+
+[!] The default settings of CAB.FMT are now designed to work with
+    MsCab.exe version 0.60b3 or later. The latest versions of the
+    archiver can be downloaded here: http://mateuszb.republika.pl/
+
+[-] "Empty" volumes in multi-volume CAB files (when the beginning of
+    the file is in the previous volume and the end is in the next one)
+    are now handled correctly when extracting by Shift-F2.
+
+[-] CUSTOM.FMT: corrected the behaviour of the "*" modifier in the
+    archiver listing description. Previously one character was always
+    handled, even if it was a space or a line break.
+
+[*] CUSTOM.FMT now intercepts archiver error messages that are
+    written to the standard error stream.
+
+[!] ACE.FMT correctly shows the dictionary size and is supplied with
+    the source code (see PlugDoc.rar::Examples\MultiArc\Formats\ace.cpp).
+
+[!] TAR.FMT correctly handles archives with filenames starting with "./".
+
+[+] For TAR archives, added support for a GNU extension allowing to
+    store filenames longer than 100 characters. Previously such names
+    were shown as files ".\.\@LongLink" visible in each archive
+    directory.
+
+[!] Every archiver has a separate history list for the "Switches" edit
+    box (Add files dialog).
+
+[+] New option "Use last command from history" - when adding files to
+    archives, the most recently used value of the archiver command line
+    parameters will be placed in the "Switches" edit field.
+
+[+] New function GetSFXPos() for second-level plugins. Returns the start
+    offset of the archive. MultiArc chooses the SFX module that has
+    returned the lowest value (closer to the beginning of a file). This
+    fixes a situation when, for example, an uncompressed ARJ archive is
+    stored in a ZIP file called "N3gk8v1t.106". Previous versions of
+    MultiArc showed the ARJ archive, and not the ZIP archive, when
+    entering such a file.
+
+[+] New option in specific archiver settings - "Archive extension",
+    allowing to handle the case when the archiver and the FMT module
+    have different opinions regarding the default archive extension.
+
+[+] New utility ma_emu.cpp facilitating the debugging of second-level
+    plugin modules (see PlugDoc.rar::Examples\MultiArc\Formats\ma_emu.cpp)
+
+[!] Pressing Shift-F1 in the "Add files" dialog shows the "Select
+    archiver" menu.
+
+[*] Added a new useful parameter "{-ap%%R}" to RAR command lines. This
+    allows to pack files not only to the archive root and to extract
+    files without creating the full directory tree up to the folder
+    from which files are extracted.
+
+[*] Significantly reworked the algorithm for generating archive names
+    and fixed a whole bunch of bugs.
+
+[-] Names with dots are handled correctly.
+
+[-] When adding files to an archive that has a non-default extension,
+    MultiArc no longer corrupts the archive file name. Such archives
+    can be created using the "Exact archive filename" checkbox.
+
+[!] IMPORTANT: For those who use pkzip archivers, it is strongly
+    recommended to add the parameter "-nozipextension" to all command
+    lines. This also applies to other archivers that automatically add
+    a default extension to the name of a newly created archiver - the
+    archiver, if possible, should not interfere into the generation of
+    archive names.
+
+[*] The default archive name in the "Add to archive" dialog is no
+    longer converted to lower case if it contains mixed case
+    characters.
+
+[-] Commands from the "Archive commands" menu (Shift-F3) are no longer
+    executed in the background.
+
+[*] An archive command line that is present in the registry but empty
+    is no longer replaced with the default line from the FMT module.
+    This is needed because the archiver used by the user (for example,
+    InfoZip) may not support all commands (conversion to SFX) of the
+    default archiver (pkzip/pkunzip).
+
+[*] The line "Archive operation" no longer flashes when searching in
+    archives.
+
+
+ProcList
+~~~~~~~~
+[!] The internal process list is updated asynchronously in the special
+    background thread, so the plugin works well with remote computers on
+    slow network connections (e.g. over phone lines).
+
+[+] All panel modes are overridden to display miscellaneous process
+    details. These modes are configurable (only via the registry in
+    this version; see Help).
+
+[+] Module and handle list is included into the process information exported
+    on F3. You can enable module versions and descriptions there;
+    by default they are not displayed.
+
+[+] More performance data counters (actually, all of them) are displayed
+    under NT.
+
+[+] New items in config dialog; Alt-Shift-F9 calls this dialog from the
+    plugin panel.
+
+[+] New sorting modes were added (Ctrl-F12).
+
+[+] Ctrl-F inserts the full exe pathname into the command line.
+
+[+] Parent PID is displayed in Win9x/ME.
+
+[*] Process "size", date and time are displayed in the status line
+
+[*] Version info added.
+
+[*] History in the Select Computer dialog added.
+
+[-] Far crashed on attempt to view process info from the Search Results dialog.
+
+[-] Switching to another process didn't work under Windows 98+.
+
+[-] You cannot switch to hidden windows now; also, visible windows
+   take priority to appear in the Description column.
+
+[-] Data with international characters were displayed incorrectly.
+
+
+FARCmds
+~~~~~~~
+[+] New commands "macro:save", "macro:load", "macro:post" and "ln:".
+
+[!] The separator between the command and its parameters can now be
+    configured only through the registry.
+
+[-] The "goto" command was unable to handle a path containing spaces
+    if it was not quoted.
+
+[-] Incorrect handling of square brackets in the "edit:" command (for
+    example, for a file named [1].txt).
+
+
+TmpPanel
+~~~~~~~~~
+[!] The command line syntax has been changed. The new syntax doesn't
+    cause ambiguities when opening list files with names starting
+    with characters A or R.
+
+[+] New configuration option specifying whether the "Temporary panel"
+    item is added to the plugins menu.
+
+[+] If the option "Use common panel" is turned on, the plugin allows
+    to use up to 10 panels, each of them containing a separate list
+    of files. To switch between panels, one can use a menu
+    (Alt-Shift-F12) or hotkeys for direct switching (Alt-Shift-0 to
+    Alt-Shift-9.
+
+[+] The option "New panel for search results" (works when "Use common
+    panel" is enabled) allows to put the search results (Alt-F7 ->
+    Panel) to a free temporary panel. This allows to save the results
+    of multiple search operations and work with them at the same time.
+
+[+] The hotkey Alt-Shift-F2 allows to save the current contents of
+    the panel to a list file.
+
+[+] The option "Safe panel mode" disables all operations with panel
+    elements (copying, moving, deleting etc.), except for changing
+    into a directory and copying names to the command line.
+
+[+] The option "Any elements in panel" turns off checks for filename
+    validity before a file is added to the panel. Pressing Enter on
+    a line that doesn't correspond to a real filename copies the
+    line to the FAR command line.
+
+[+] New option "Menu from file list". If this option is enabled,
+    pressing Enter on a list file doesn't open a panel, but rather
+    shows a menu containing all lines in the list file.
+
+[+] It is possible to configure column types and widths for the
+    temporary panel and the status line.
+
+[+] Option "Full screen mode".
+
+[+] Now the list file is searched not only in the current directory
+    but also in the directories accessible through %PATH%.
+
+[+] It is now possible to capture a list of files written to the
+    standard output stream by an external program and to put those
+    files to the temporary panel.
+
+[-] List files with empty first line were handled incorrectly.
+
+[-] The panel number was shown incorrectly if both FAR panels had
+    the TmpPanel plugin open.
+
+PrintMan
+~~~~~~~~
+[-] <Line feed> was sent to the printer after each 8k
+
+
+Advanced Compare
+~~~~~~~~~~~~~~~~
+[!] The names of the HLF and LNG files have been changed back to the
+    ones used in FAR 1.65 (CmpEng.hlf/CmpRus.hlf,
+    CompEng.lng/CompRus.lng).
+
+[!] The plugin is supplied with source code (see
+    PlugDoc.rar::Examples\Compare).
+
+[+] File name processing speed has been increased by
+     - using sorted file name lists for directories;
+     - comparing directory contents during recursive processing
+       instead of building the full list of files in a subtree right
+       from the start
+
+[*] The width of the dialog in which the name of the currently
+    compared element is shown is selected dynamically based on the
+    current console height.
+
+[*] If there are no selected items on either panel, the option
+    "Selected items only" is marked as disabled.
+
+[*] To further speed up processing:
+     - the dialog with the names of compared files is redrawn at most
+       1..2 times per second;
+     - checking for Esc is done also 1..2 times per second.
+
+[+] While comparing, the title of the console window shows "Comparing
+    files..."
+
+[*] When file contents is compared, the files are now opened with the
+    option FILE_SHARE_WRITE.
+
+
+FARFtp
+~~~~~~
+[!] New advanced options configurable through the Windows registry
+    (see "TechInfoFTP.txt")
+
+[!] A new feature "resume all", and a corresponding button in the
+    overwrite dialog. (The button "resume" is shown only if the server
+    supports resuming. The possibility of resuming is now shown in the
+    information window.)
+
+[!] Changed the mechanism for editing and using the data in host records.
+    The username and password now have separate edit fields in the dialog,
+    and the data entered in those fields takes precedence over the username
+    and password specified in the host name string.
+
+[!] Changed the mechanism for saving host records to the registry:
+     - if a record with a duplicate host name is entered, it no longer
+       silently overwrites the old record;
+     - there is no limit on the number of records with the same host
+       name;
+     - all existing records will be automatically converted to the new
+       format as soon as the user confirms the change (presses OK in the
+       host parameters dialog)
+     - changed/improved the mechanism for exporting records
+     - exporting a folder with a description from the plugin panel
+       to a file causes the description to be lost
+
+[!] The plugin does not work in passive mode all the time.
+
+[!] Any operation can be interrupted by pressing Esc at any time.
+    Ctrl-Break can no longer be used to interrupt operations. It is
+    also possible to show an interrupt confirmation (see TechInfoFTP.txt
+    #4).
+
+[+] Advanced FTP command window. The size of the window is
+    configurable (see TechInfoFTP.txt #5, #6)
+
+[+] Possibility of keeping a log of the FTP server commands and
+    responses (see TechInfoFTP.txt #8, #9, #16).
+
+[+] Possibility to beep after long operations (see TechInfoFTP.txt#11).
+
+[+] Pressing Ctrl+F on a file in the FTP panel now generates a full
+    URL with all information about the file, including the username and
+    the password.
+
+[+] It is now possible to specify descriptions also for folders
+    in the hosts panel. (There is a new field in the "Make folder" dialog,
+    and it is disabled when a directory on the FTP server is created.)
+    The description can be added or edited by pressing F4 on the folder
+    name.
+
+[+] Two new columns in the hosts list: path and username.
+
+[+] Added display of the current and total bytes copied in the copy dialog
+    (can be turned off by the rule TechInfoFTP.txt #18)
+
+[*] All possible text messages have been moved from the plugin code
+    to language files.
+
+[*] Possibility to configure the digits separator in the copy dialog
+    (see TechInfoFTP.txt#1, #2). If the separator is set to 0, its value
+    is taken from the locale settings for the current user.
+
+[*] The password text is never shown in the panel caption, log or the
+    command window. It is replaced with the string "*hidden*".
+
+[*] Changed the algorithm for sorting host records: now the records are
+    compared by server name, then by user name, then by description, and
+    so on (that is, if the server names are equal, the user names are
+    compared, and so on).
+
+[*] The entry ".." is now shown in the hosts panel.
+
+[*] Changed the algorithm for displaying numbers when copying: the size
+    of the copy dialog is now selected automatically based on the size
+    of the largest number, and the maximum value that can be correctly
+    displayed is 2^64.
+
+[*] When counting the size of files to be copied, the message "Scanning..."
+    is no longer shown.
+
+[*] The status of the active scanning operation is now displayed in the
+    lower part of the FTP command window.
+
+[*] The plugin version information now contains the version of the
+    plugin in the FileVersion field and the version of FAR in the
+    ProductVersion field.
+
+[*] Numbers displaying the current CPS are abbreviated to Mbytes and Kbytes.
+
+[*] Idle mode information can be displayed in the console title or on the
+    screen (TechInfoFTP.txt#19)
+
+[*] The plugin panel mode is saved and restored when the plugin is next
+    activated.
+
+[*] All settings are saved to the registry when the configuration dialog
+    is closed by pressing "Ok"
+
+[*] A correct error message is shown if the socket library initialization
+    fails.
+
+[-] Could not connect to some sites (for example, to those that showed
+    greetings with Cyrillic characters).
+
+[-] Did not work correctly with the "Advanced Compare" plugin.
+
+[-] If an operation is interrupted by the user, breaks the connection.
+
+[-] Does not continue download or upload operations if the previous
+    operation was interrupted by the user.
+
+[-] Entered data was lost if the host name was left empty in the host
+    parameters dialog.
+
+[-] Copying to/from the hosts panel handles directories correctly.
+
+[-] The plugin no longer crashes when getting the URL of the current
+    element.
+
+[-] Does not delete files from FTP if the server does not support
+    relative file paths.
+
+[-] When the connection is cancelled, the plugin does not close altogether,
+    but returns to the hosts panel instead.
+
+[-] Directory shortcuts pointing to the hosts panel of the plugin did not
+    work.
+
+[-] Copying host records from one instance of the plugin to another instance
+    opened on the passive panel did not work.
+
+[-] The plugin crashed when trying to upload a file through a symbolic link.
+
+[-] Does not connect if the file "services" is removed or renamed in the
+    Windows system directory.
+
+
+
+HlfViewer
+~~~~~~~~~
+[+] New option specifying whether unsaved changes are shown when
+    invoking HlfViewer from the internal editor.
+
+
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+FAR 1.70 beta 3 (build 591) (19.04.2001)
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+EMenu
+~~~~~
+[+] New plugin, allowing to run Windows Explorer context menu commands for
+    the current file/folder on a FAR Manager panel.
+[!] The plugin works only under FAR 1.70 build 321 or later.
+[+] If possible, all context menu items are shown.
+[-] The shortcut key in the menu caption was highlighted, though it's not
+    needed there at all.
+[-] File selection is not lost.
+[+] Backspace, Ctrl-Left, Ctrl-PgUp - jump to the previous menu
+[+] Space, Ctrl-Right, Ctrl-PgDn - works the same as pressing Enter
+[+] The menu caption always shows the file name.
+[+] Graphical menu instead of text (optional).
+
+Network
+~~~~~~~
+[+] An informational message is shown while performing long operations.
+[!] The "memory" mechanism is removed (it made the plugin unusable)
+[+] It is possible to show hidden system shares under Windows NT/2000.
+[!] Now pressing Ctrl-PgUp or changing to the directory ".." of the root
+    directory of an UNC disk shows the corresponding share in the Network
+    Browser. (Works only for Microsoft Windows networks.)
+[+] Now it is possible to go to the list of shares of a server by entering
+    in the command line
+      net:<server name>
+    or
+      net:\\<server name>
+    or (when the plugin is open)
+      cd \\<server name>
+    (Works only for Microsoft Windows networks.)
+[*] Now the current network path is shown in the panel title.
+[*] Correct handling of Ctrl-F.
+[-] Now pressing F3 or Alt-F3 in the Network Browser panel is ignored.
+    Earlier it caused a full network scan, which took a lot of time and
+    was completely unnecessary.
+[+] The option "Skip top level screen" is replaced with the option "Show
+    local network". If this option is enabled, then, when the Network
+    Browser is first opened, it will show the network neighborhood of
+    the current computer (computers in the same domain or workgroup).
+    The option works only for Microsoft Windows networks.
+[+] It is possible to toggle the connection type (permanent/temporary) in
+    the drive letter selection menu (F6/Shift-F6).
+[+] Added a dialog to confirm unmapping a network drive. The dialog allows
+    to choose whether the mapping should be restored at logon. The
+    respective option from the configuration dialog has been deleted.
+[*] Now when trying to enter an unavailable resource, the plugin checks
+    the availability before changing the directory, and not after that.
+    Thus the situation when an empty panel is shown is excluded.
+
+Advanced Compare
+~~~~~~~~~~~~~~~~
+[*] All functions present in the FSF (FAR Standard Functions) were removed
+    from the plugin sources; now the plugin works only under FAR 1.70.
+[*] Small optimizations of loops, checks and function calls.
+[*] When checking for Esc, CONIN$ is used instead of the standard input -
+    for the unlikely case that someone will run FAR with standard input
+    redirection.
+[-] The flag "two seconds precision" had an opposite effect.
+[-] Memory leak after interrupting a subdirectory compare by pressing Esc.
+[-] When comparing file contents, Esc interrupted only the compare of the
+    current file, but not the process as a whole.
+[-] Comparing files on panels (when neither file contents nor
+    subdirectories were compared) couldn't be interrupted by pressing Esc,
+    no matter how many files there are.
+[*] When comparing files on the panels and in each subdirectory checking
+    for Esc is done only once after every 256 compares - to reduce the
+    overhead of calling console input reading functions. When comparing
+    file contents, the check is done after reading each block (32K) -
+    a disk operation takes much longer than any console operations.
+[*] When interrupting the compare by pressing Esc, the panel selection is
+    not changed, so as not to give partially incorrect results to the
+    user. Possibly a future version of the plugin will have an option to
+    control this behaviour.
+[+] Added options "Process selected items only" and "Display message when
+    no differences found". The option "Process selected items only" is
+    ignored for panels on which nothing is selected - in this case the
+    entire contents of the panel is compared.
+[+] If at least one of the panels is a plugin panel, the message saying
+    that "Two usual file panels are required for this operation" when trying
+    to compare file contents or subdirectories is not shown, but instead the
+    options for comparing contents or subdirectories are shown as
+    "disabled" and "deselected".
+
+FileCase
+~~~~~~~~
+[+] Can process subdirectories.
+[+] Works on the temporary panel. Changes the file case, but this is not
+    displayed by the temporary panel (this is a feature of the temporary
+    panel).
+
+Brackets
+~~~~~~~~
+[*] The rule "after bracket" has lower priority than "on bracket":
+    > Incorrectly jumps on brackets in cases if there are enclosed
+    > brackets of different types, for example:
+    >   (myarray[x])
+    > Cursor jumps from the closing round bracket to the opening square
+    > bracket.
+
+MultiArc
+~~~~~~~~
+[!] Default settings for the ARJ.FMT module are changed in view of
+    last versions of ARJ archiver.
+[+] The background process window is minimized.
+[*] Continious reset of the "Background" option.
+
+FARCmds
+~~~~~~~
+[+] The leading spaces are removed in the command being processed.
+[+] New command "clip" - put data in the Windows clipboard
+[+] New command "whereis" - find and jump to the given object
+[+] When capturing the output of external programs, it is possible to
+    capture the text written by a program directly to the console
+    (and not through the standard output stream). This screen output
+    can be seen after pressing Ctrl+O if the prefix "<<" was specified
+    instead of "<" or if the respective option is enabled in the
+    plugin settings.
+[+] It is possible to execute an external command in a directory
+    different from the current directory by specifying "|path|command"
+    instead of "command".
+
+PrintMan
+~~~~~~~~
+[+] "Interface options"/"Show 'Print parameters' dialogue before printing"
+[+] New options: "Chars per line" and "Copies"
+[+] New option when printing from panels: "Print as binary file"
+[-] Fixed bug with printing selected block in editor.
+[-] Fixed bug with "empty lines".
+[!] Invoked only for normal (non-plugin) panels. In plugin panels the
+    standard printing code of the FAR Manager is used.
+[!] Redraw of file panels after executing from QuickView/Info panels.
+
+HlfViewer
+~~~~~~~~~
+[-] Bug when searching in archives (OpenFilePlugin). As a result, pressing
+    Enter on a HLF file no longer views it. If you want this feature to
+    come back, you should create an association for *.hlf files with the
+    following Execute command: hlf:!.!
+[*] Hyperlinks are handled correctly in help files opened from plugins
+    (for example, HLFViewer).
+
+TmpPanel
+~~~~~~~~~
+[+] It is possible to specify that the list file is in the ANSI codepage -
+    for this you should capitalize the first letter of the command (see
+    the help). Otherwise the list file is treated as OEM codepage.
+
+ProcList
+~~~~~~~~
+[-] Process name was not shown in some cases.
+[!] The plugin works correctly under Windows XP (Whistler).
+
+
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+FAR 1.70 beta 2 (build 321) (16.12.2000)
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+ProcList
+~~~~~~~~
+[+] Configuration block is added. Plugin can be called, shown and hidden from
+    the plugins menu or the disks menu.
+
+PrintMan
+~~~~~~~~
+[+] New option: "Lines per page"
+[+] Now the plugin is shown in the list of plugins in the viewer
+[*] Help files updated...
+[-] Some little bugs fixed...
+
+Brackets
+~~~~~~~~
+[!] Completely rewritten. Can find/select single and double brackets.
+    Brackets type can be adjusted. For specific information see help.
+    Hotkeys examples see in %FAR%\Plugins\Editor\Brackets\BrackEng.reg and
+    BrackRus.reg, if FAR interface is English and Russian respectively.
+
+
+DrawLine
+~~~~~~~~
+[*] Fixed "strange flashing" of text in the status bar when pressing and
+    holding the Shift key for a few seconds.
+
+
+HlfViewer
+~~~~~~~~~
+[+] New plugin to view HLF files.  It will be useful both for plugin
+    developers (viewing the current help topic in editor) and for ordinary
+    users.
+
+
+FARCmds
+~~~~~~~
+[+] Trailing spaces are removed from the command being processed.
+[-] Quoted file names are correctly processed in commands like:
+       >view:"my file"
+[*] Fixed a bug with separators (DI_TEXT|DIF_DIVIDER).
+[-] Cursor could not be positioned to a file with a name containing square
+    brackets.
+
+
+FileCase
+~~~~~~~~
+[-] Incorrect processing of Russian filenames.
+
+MultiArc
+~~~~~~~~
+[-] Spelling mistakes in ArcRus.lng.
+
+FARFtp
+~~~~~~
+[-] 100% processor load during plugin operations.
+[*] "{xx%} Upload - Far" is written in the FAR console title instead of
+    "Upload {xx%} - Far".
+
+Network
+~~~~~~~
+[*] "Reconnect deleted share" in the NetEng.lng is replaced with
+    "Persistent connection".
+[+] NetEng.hlf: information about "Persistent connection".
+[+] New parameter in options - "Remember last visited host".
+
+TmpPanel
+~~~~~~~~~
+[*] Trims leading and trailing spaces in the file name when putting it
+    on the panel.
+
+
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+FAR 1.70 beta 1 build 272 (21.11.2000)
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+ProcList
+~~~~~~~~
+[+] You can view the process list on remote machines running under Windows
+    NT or Windows 2000 (by pressing the F6 key). You must have Administrator
+    privileges to use this feature. To view remote processes from
+    Windows 95/98/ME, you must have access to the remote machine's registry
+    (winreg.dll is required for that). Shift-F6 returns to the local machine.
+[+] You can raise and lower the priority class for local processes
+    (Shift-F1/Shift-F2).
+[+] The number of threads and several performance counters are shown
+    in View mode for local and remote machines running NT or Windows 2000.
+    (The number of counters depends on the OS version of the target machine.)
+    Full pathnames are shown in this mode too (local machines only).
+[+] The process command line and environment are shown in View mode
+    for local machines running NT/2000.
+[+] The process I/O counters and the count of GUI object handles
+    are shown in View mode for local machines running Windows 2000.
+[+] More extended window styles are recognized in View mode.
+[+] Under NT or Windows 2000 you can kill services and other
+    processes which were "unkillable" before. This feature works only if
+    you have Administrator privileges. BE CAREFUL!
+[+] Under NT/2000, the date/time columns show the process start time.
+
+
+FARFtp
+~~~~~~
+[-] Fixed a bug causing FAR to crash when the user pressed Ctrl-Break at
+    the moment of connecting to the server.
+
+
+MultiArc
+~~~~~~~~
+[!] In the plugin configuration menu now there is only one item
+    "Archive support configuration". Pressing it will pop up a submenu.
+[+] New archiving option "Background" - runs an archiving process
+    in a separate console window.
+[+] ACE.fmt - FAR archive support module for the ACE archiver.
+    Because of some incompatibility of different versions of ACE, some archive
+    commands may not work correctly. It occurs because of new keys appeared
+    in the new version (the plugin is designed to work with ACE 1.2a).
+    If you receive an error message, go in FAR in:
+    Options|Plugins configuration|Archive support|Command lines|ACE
+    and remove everywhere you find the parameter {-t %%W}.
+
+
+TmpPanel
+~~~~~~~~~
+[+] The temporary panel can read the list of its items from a file.
+[+] Prefix - "tmp".
+
+
+PrintMan
+~~~~~~~~
+[+] New plugin. Is able to print from viewer, editor and file panels.
+
+
+FARCmds
+~~~~~~~
+[+] New plugin gives additional possibilities that can be used in
+    panels, user menu, file association menu or command line, namely:
+    opening a file in the viewer/editor, show any program's stdout
+    interception in the viewer/editor, "smart" go to the necessary
+    directory/file and also setting the same directory on the passive
+    panel as on active. See the plugin help for details.
+
+Brackets
+~~~~~~~~
+[+] The processing of angular brackets '<' and '>' is added.
+
+EditCase
+~~~~~~~~
+[!] Completely rewritten and is able to process the text in the
+    following modes:
+      * all lower case
+      * Begin With Capital
+      * ALL CAPITAL
+      * cHANGE tHE cASE
+      * Cyclic change
+[+] The current word is processed if no block is marked.
+
+
+Network
+~~~~~~~
+[-] Fixed a bug with sending the login and password in OEM-codepage.
+[+] New configuration option allowing to add the "Network" item to
+    the plugins menu.
+[+] New option "Restore connection". If this option is set, deleted shared
+    disks will be restored after the reboot. If it is not set, shared
+    disks will be deleted permanently.
+
+
+                                     [ FAR manager development group ]

@@ -1,0 +1,17 @@
+     Internet distribution:
+
+   1. http://www.farmanager.com
+      (contact mailto:admin@farmanager.com when problems with access)
+
+   2. http://www.rarsoft.com
+      (contact mailto:ron@rarsoft.com when problems with access)
+
+   3. ftp://ftp.elf.stuba.sk/pub/pc/utilfile/
+      (contact mailto:hubak@elf.stuba.sk when problems with access)
+
+   4. http://plugring.farmanager.com/
+      (contact mailto:plugring@farmanager.com when problems with access)
+
+
+   Please send your comments and bug reports to support@farmanager.com
+   Please send registration related questions to ron@rarsoft.com

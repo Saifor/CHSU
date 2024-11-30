@@ -1,0 +1,15 @@
+C:\Users\VoVcHiC\Desktop\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+C:\Users\VoVcHiC\Desktop\Project1\Project1\x64\Debug\Project1.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\VoVcHiC\Desktop\Project1\Project1\x64\Debug\Project1.MyForm.resources
+C:\Users\VoVcHiC\Desktop\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
+E:\БритвинКР_по_СП\Программа\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+E:\БритвинКР_по_СП\Программа\Project1\Project1\x64\Debug\Project1.MyForm.resources
+E:\БритвинКР_по_СП\Программа\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
+D:\БритвинКР_по_СП\Программа\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+D:\БритвинКР_по_СП\Программа\Project1\Project1\x64\Debug\Project1.vcxproj.SuggestedBindingRedirects.cache
+D:\БритвинКР_по_СП\Программа\Project1\Project1\x64\Debug\Project1.MyForm.resources
+D:\БритвинКР_по_СП\Программа\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
+C:\Users\aay27\Desktop\Структурное программирование\курсач\КРСП\программа\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+C:\Users\aay27\Desktop\Структурное программирование\курсач\КРСП\программа\Project1\Project1\x64\Debug\Project1.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\aay27\Desktop\Структурное программирование\курсач\КРСП\программа\Project1\Project1\x64\Debug\Project1.MyForm.resources
+C:\Users\aay27\Desktop\Структурное программирование\курсач\КРСП\программа\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache

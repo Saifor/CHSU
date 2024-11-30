@@ -1,0 +1,226 @@
+.section-header {
+   color: #ffffff;
+   background: url("../images/header-shadow.png") no-repeat, url("../images/header-bg.png") no-repeat, url("../images/header-bg-green2.png") no-repeat;
+   background-size: 100% 90%;
+   z-index: 3;
+   height: 100vh;
+}
+
+.section-header-content {
+   z-index: 4;
+   display: flex;
+   flex-grow: 1;
+   align-items: center;
+}
+
+.section-header-content-wrapper {
+   display: flex;
+   justify-content: space-between;
+   flex-basis: 1170px;
+}
+
+.section-header-content-left {
+   z-index: 4;
+}
+
+.section-header-content-left__title {
+   font-family: 'Neue Machina';
+   max-width: 500px;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 52px;
+   line-height: 60px;
+   padding-bottom: 25px;
+}
+
+.section-header-content-left__title:hover {
+   color: #66bd7f;
+}
+
+.section-header-content-left__subtitle {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   line-height: 28px;
+   padding-bottom: 25px;
+   max-width: 420px;
+}
+
+.section-header-content-left__subtitle:hover {
+   font-weight: bold;
+   color: #61c17f;
+   font-weight: bold;
+}
+
+.section-header-content-left__button input {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   border: none;
+   background: #66bd7f;
+   color: #ffffff;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   cursor: pointer;
+   width: 304px;
+   height: 68px;
+   border-radius: 34px;
+   font-size: 18px;
+}
+
+.section-header-content-left__button input:hover {
+   background: #087e45;
+   text-decoration: underline;
+}
+
+.section-header-content-right {
+   display: flex;
+   margin-top: 25px;
+   flex-basis: 300px;
+}
+
+.section-header-content-right__weather {
+   display: flex;
+   justify-content: center;
+}
+
+.section-header-content-right__weather_ellipse-secondary {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: #29804a;
+   width: 77px;
+   height: 81px;
+}
+
+.section-header-content-right__weather_ellipse-main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: #29804a;
+   width: 65px;
+   height: 69px;
+}
+
+.section-header-content-right__weather_ellipse-main:hover {
+   background: #66bd7f;
+}
+
+.section-header-content-right__info {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   line-height: 28px;
+   color: #ffffff;
+   max-height: 46px;
+   max-width: 170px;
+   padding-left: 15px;
+   padding-top: 10px;
+}
+
+.section-header-details {
+   display: flex;
+   flex-basis: 85px;
+   align-items: center;
+   justify-content: center;
+   z-index: 3;
+}
+
+.section-header-details-wrapper {
+   display: flex;
+   align-items: center;
+}
+
+.section-header-details-wrapper:hover {
+   cursor: pointer;
+}
+
+.section-header-details__text {
+   font-family: 'Manrope', sans-serif;
+   font-size: 18px;
+   color: #444444;
+   margin-left: 20px;
+}
+
+.section-header-details__text:hover {
+   color: #61c17f;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.section-header-top {
+	height: 10vh;
+}
+
+.section-promo2 {
+   margin-top: 90px;
+   background: url("../images/background-promo2.png") no-repeat, #ffffff;
+   background-size: 100% 100%;
+   height: 820px;
+}
+
+.section-promo2-wrapper {
+   margin-top: 210px;
+   height: 610px;
+}
+
+.section-promo2__block {
+   display: flex;
+   flex-basis: 720px;
+   height: 510px;
+   flex-direction: column;
+   background: #ffffff;
+}
+
+.section-promo2__block__text {
+   max-width: 620px;
+}
+
+.section-promo2__block__button {
+	display: flex;
+	max-width: 400px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.section-promo2__block__button_btn#btn_h {
+   font-size: 16px;
+   background: #4d48ec;
+   color: #ffffff;
+   width: 300px;
+   height: 50px;
+   margin-bottom: 15px;
+   margin-right: 30px;
+}
+
+.section-promo2__block__button_btn#btn_h:hover {
+   background: #fb7c82;
+}
+
+.section-promo2__block__button_btn#btn_t {
+   font-size: 16px;
+   background: #6678bd;
+   color: #ffffff;
+   width: 300px;
+   height: 50px;
+   margin-bottom: 15px;
+   margin-right: 30px;
+}
+
+.section-promo2__block__button_btn#btn_t:hover {
+   background: #fb7c82;
+}
+
+.section-promo2__block__button_btn#btn_m {
+   font-size: 16px;
+   background: #66bda5;
+   color: #ffffff;
+   width: 300px;
+   height: 50px;
+   margin-bottom: 15px;
+}
+
+.section-promo2__block__button_btn#btn_m:hover {
+   background: #fb7c82;
+}

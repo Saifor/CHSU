@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>16.3. Встроенный SQL</title>
+		    <style type="text/css">
+A.noneline { font-family: Arial, Serif; text-decoration: none; }
+FONT.arial { font-family: Arial, Serif; }
+TD.arial   { font-family: Arial, Serif; }
+TH.arial   { font-family: Arial, Serif; }
+PRE        { font-family: Monospace; color: navy; }
+SAMP       { font-family: Monospace; color: navy; }
+TT         { font-family: Monospace; color: navy; }
+VAR        { font-family: Monospace; color: navy; }
+</style>
+</head>
+<body bgcolor="#FFF5EE" text="#000000" link="#FF0000" alink="#FF0000" vlink="#A52A2A">
+<basefont size="3">
+<center>
+<table width=100% border=0 cellpadding=0>
+<tr valign=top><td class=arial><a href="http://www.citforum.ru/"><img height=50 width=150 src="_pic_/logo3D.gif" alt="Server for Information Technologies" border=0></a><br>
+</td>
+<td align=right class=arial>
+<font size="-2">
+Сервер поддерживается<br>
+<a class=noneline href="http://www.citmgu.ru">Центром Информационных Технологий</a><br>
+(095) 932-9212, 932-9213, 939-0783<br>
+E-mail: <a class=noneline href="mailto:info@citforum.ru?Subject='From page topic CIT-FORUM'">info@citforum.ru</a></font>
+</tr>
+<tr>
+<th colspan=2 class=arial>
+<font color=#000080 size=2><a href="http://www.citforum.ru" class=noneline>Сервер Информационных Технологий</a> содержит море(!) аналитической информации</font>
+<hr noshade>
+</th>
+</tr>
+</table>
+</center>
+<h4><a name="_5_4_3">16.3. Встроенный SQL</a></h4>
+<p>
+Поскольку в стандарте SQL/89 не специфицированы (даже в приложениях) правила встраивания SQL в язык Си, мы приведем только общие синтаксические правила встраивания, используемые для любого языка. Это поможет оценить &quot;степень стандартности&quot; конкретной реализации.
+<pre>&lt;embedded SQL statement&gt; ::=
+  &lt;SQL prefix&gt;
+{ &lt;declare cursor&gt;
+| &lt;embedded exception declaration&gt;
+| &lt;SQL statement&gt;}
+ [&lt;SQL terminator&gt;]
+&lt;SQL prefix&gt; ::= EXEC SQL
+&lt;SQL terminator&gt; ::= END EXEC | ;
+&lt;embedded SQL declare section&gt; ::=
+  &lt;embedded SQL begin declare&gt;
+ (&lt;host variable definition&gt;...]
+  &lt;embedded SQL end declare&gt;
+&lt;embedded SQL begin declare&gt; ::=
+  &lt;SQL prefix&gt; BEGIN DECLARE SECTION [&lt;SQL terminator&gt;]
+&lt;embedded SQL end declare&gt; ::=
+  &lt;SQL prefix&gt; END DECLARE SECTION [&lt;SQL terminator&gt;]
+&lt;embedded variable name&gt; ::= :&lt;host identifier&gt;
+&lt;embedded exception declaration&gt; ::=
+   WHENEVER &lt;condition&gt; &lt;exception action&gt;
+&lt;condition&gt; ::= SQLERROR | NOT FOUND
+&lt;exception action&gt; ::= CONTINUE | &lt;go to&gt;
+&lt;go to&gt; ::= { GOTO | GO TO } &lt;target&gt;
+&lt;target&gt; ::= :&lt;host identifier&gt; | &lt;unsigned integer&gt;</pre>
+<p>
+Встраиваемые операторы SQL, включая объявления курсора, а также разделы объявления исключительных ситуаций и переменных основной программы, должны быть окружены скобками EXEC SQL и END EXEC. Объявление курсора должно встречаться текстуально раньше любого оператора, ссылающегося на этот курсор. Все переменные основной программы, используемые во встроенных операторах SQL, должны быть объявлены в текстуально предшествующем этому оператору разделе объявления переменных основной программы. При этом синтаксис объявления переменной соответствует синтаксису основного языка программирования, но имени переменной предшествует двоеточие.
+<p>
+Механизм обработки исключительных ситуаций в SQL/89 исключительно прост (можно сказать, примитивен). Можно задавать реакцию на возникновение двух видов условий: SQLERROR - это условие появления в переменной SQLCODE после выполнения встроенного оператора отрицательного значения; NOT FOUND - условие появления в SQLCODE значения +100 (этот код означает исчерпание курсора). Реакция может состоять в выполнении безусловного перехода на метку основной программы (действие GO TO), или отсутствовать (действие CONTINUE). Срабатывает тот оператор определения реакции на исключительную ситуацию, который текстуально ближе от начала программы к данному оператору SQL.
+<p>
+Заметим, что во многих реализациях поддерживается два вида кодов ответа при выполнении операторов SQL (встроенных или взятых из модуля): через переменную SQLCODE с кодами ответа, представляемыми целыми числами и через переменную SQLSTATE с кодами ответа, кодируемыми десятичными числами, представленными в текстовой форме. Имеется тенденция к переходу на использование только механизма SQLSTATE, но в стандартных реализациях должен поддерживаться механизм SQLCODE.
+<p><center><a href="glava_65.htm">Предыдущая глава</a> || <a href="contents.htm">Оглавление</a> || <a href="glava_67.htm">Следующая глава</a><p>
+<p></p>
+<hr noshade>
+<center>
+<font size=1 class=arial>
+Comments: <a href="mailto:info@citmgu.ru?Subject='From bottom of CIT FORUM'" class=noneline>info@citmgu.ru</a><br>
+Copyright &copy; <a href="http://www.citmgu.ru/" class=noneline>CIT</a>
+</font></center></body></html>

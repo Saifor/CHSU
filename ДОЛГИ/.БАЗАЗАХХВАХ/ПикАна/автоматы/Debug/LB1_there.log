@@ -1,0 +1,1604 @@
+﻿  MyForm.cpp
+C:\LB1_there\MyForm.h(773,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(777,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(781,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(785,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(789,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(793,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(797,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(801,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(805,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(809,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(813,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(817,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(821,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(825,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(829,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(833,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(837,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(841,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(845,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(849,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(854,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(859,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(864,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(870,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(874,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(879,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(884,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(889,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(894,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(899,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(904,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(909,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(914,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(919,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(924,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(934,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(938,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(942,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(946,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(958,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(962,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(966,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(978,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(982,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(994,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(998,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1002,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1006,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1018,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1022,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1026,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1030,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1042,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1046,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1058,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1062,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1074,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1078,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1082,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1094,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1098,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1110,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1114,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1126,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1130,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1134,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1146,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1150,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1162,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1166,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1170,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1174,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1186,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1198,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1210,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1214,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1226,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1238,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1242,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1246,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1258,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1270,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1282,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1286,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1290,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1302,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1314,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1318,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1322,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1334,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1346,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1358,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1370,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1374,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1378,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1390,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1402,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1406,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1418,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1430,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1434,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1446,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1458,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1462,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1474,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1478,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1490,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1502,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1514,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1526,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1538,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1542,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1554,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1566,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1578,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1591,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1595,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1607,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1619,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1631,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1643,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1655,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1667,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1679,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1683,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1695,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1707,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1719,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1731,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1743,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1755,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1767,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1779,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1791,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1803,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1815,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1819,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1831,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1835,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1847,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1859,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1871,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1883,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1895,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1907,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1919,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1931,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1943,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1947,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1959,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1971,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1983,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(1995,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2007,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2019,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2031,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2035,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2047,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2059,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2071,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2083,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2095,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2107,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2111,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2123,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2135,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2147,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2159,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2171,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2183,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2195,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2207,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2219,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2231,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2243,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2255,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2267,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2279,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2291,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2303,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2315,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2327,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2339,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2351,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2363,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2375,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2387,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2399,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2411,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2423,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2435,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2447,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2459,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2471,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2483,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2495,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2507,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2519,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2531,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2543,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2555,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2567,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2579,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2591,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2603,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2615,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2627,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2639,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2651,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2663,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2675,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2687,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2699,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2711,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2723,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2735,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2747,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2759,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2771,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2783,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2795,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2807,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2819,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2831,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2843,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2855,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2867,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2879,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2891,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2903,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2915,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2927,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2939,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2951,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2963,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2975,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2987,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(2999,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3011,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3023,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3035,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3047,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3059,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3071,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3083,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3095,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3107,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3119,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3131,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3143,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3155,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3167,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3179,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3191,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3203,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3215,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3227,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3239,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3251,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3263,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3275,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3287,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3299,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3311,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3323,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3335,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3347,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3359,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3371,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3383,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3395,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3407,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3419,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3431,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3443,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3455,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3472,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3476,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3481,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3523,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3535,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3554,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3573,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3592,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3596,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3615,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3619,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3638,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3658,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3677,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3681,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3700,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3704,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3728,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3732,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3744,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3775,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3789,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3793,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3814,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3819,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3832,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3845,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3850,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3863,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3869,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3877,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3890,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3903,16): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3918,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3935,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3947,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3959,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3971,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3983,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(3995,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(4007,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(4019,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(4031,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(4043,17): warning C4244: аргумент: преобразование "wchar_t" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\LB1_there\MyForm.h(5191,21): warning C4101: e: неиспользованная локальная переменная
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  LB1_there.vcxproj -> C:\LB1_there\Debug\LB1_there.exe

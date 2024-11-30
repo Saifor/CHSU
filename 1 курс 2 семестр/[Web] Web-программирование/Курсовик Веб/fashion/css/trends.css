@@ -1,0 +1,51 @@
+.section-promo2__block__text {
+   padding-bottom: 15px;
+}
+
+.section-promo2__block__choose {
+   display: flex;
+   width: 900px;
+   padding-bottom: 25px;
+}
+
+.section-promo2__block__choose table {
+	width: 900px;
+}
+
+.section-promo2__block__choose td {
+	padding: 5px;
+}
+
+.section-promo2__block__info {
+   max-width: 900px;
+   display: block;
+   height: auto;
+}
+
+.section-promo2__block__info iframe {
+   display: flex;
+   width: 900px;
+   height: 85vh;
+   border: 0;
+   overflow: hidden;
+}
+
+.section-promo2__block__button {
+   font-family: 'Manrope', sans-serif;
+   font-size: 16px;
+   border: none;
+   background: #66bd7f;
+   color: #ffffff;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   cursor: pointer;
+   width: 220px;
+   height: 50px;
+   border-radius: 30px;
+}
+
+.section-promo2__block__button:hover {
+   background: #087e45;
+}

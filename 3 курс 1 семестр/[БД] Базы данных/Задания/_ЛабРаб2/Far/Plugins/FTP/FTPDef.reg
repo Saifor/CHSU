@@ -1,0 +1,20 @@
+REGEDIT4
+
+;
+;Here is some useful setting for FAR FTP plugin
+;See a "!TechInfo" for detailed description of each setting
+;
+
+[HKEY_CURRENT_USER\Software\Far\Users\PLGTest\Plugins\FTP]
+"CmdLogFile"="FARFtpCmd.log"
+"DigitDelimit"=dword:00000001
+"DigitDelimiter"=dword:00000000
+"WaitTimeout"=dword:0000000a
+"AskAbort"=dword:00000001
+"CmdLength"=dword:0000014
+"CmdLine"=dword:00000078
+"IOBuffSize"=dword:00005000
+"WaitIdle"=dword:00000001
+"TimeoutRetry"=dword:00000001
+"LogOutput"=dword:00000001
+

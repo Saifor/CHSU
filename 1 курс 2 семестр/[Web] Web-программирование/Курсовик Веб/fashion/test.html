@@ -1,0 +1,143 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="./images/icons/moda.png">
+     <title>Онлайн-тестирование</title>
+     <link href="css/style.css" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+     <section class="section-header">
+       <div class="section-header-top">
+            <div class="section-header-top-logo">
+              <div class="section-header-top-logo__ico">
+                <a href="index.html"><img class="section-header-top-logo__ico" src="images/icons/moda.png" alt=""></a>
+              </div>
+              <div class="section-header-top-logo__title">
+                <a href="index.html">Развитие модных стилей одежды</a>
+              </div>
+            </div>
+            <div class="section-header-top-navigation">
+              <ul class="section-header-top-navigation__menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="history.html">История моды</a></li>
+                <li><a href="trends.html">Современные тренды</a></li>
+                <li><a href="models.html">Топовые модные стили</a></li>
+                <li><a href="test.html" class="selected">Онлайн-тест</a></li>
+              </ul>
+            </div>
+            <div class="section-header-top-social">
+              <div class="section-header-top-social__inst">
+                <img src="images/icons/instagram.png" alt="">
+              </div>
+              <div class="section-header-top-social__phone">
+                +7 (960) 297-59-26
+              </div>
+              <div class="section-header-top-social__order-call">
+                <a href="call.html"><input type="button" class="section-header-top-social__order-call-btn" value="Заказать звонок"></a>
+              </div>
+            </div>
+         </div>
+     </section>
+     <section class="section-promo2">   
+       <div class="section-promo2-wrapper">
+         <div class="section-promo2__block">
+            <div class="section-promo2__block-wrapper">
+              <div class="section-promo2__block__text">
+                <form action="#" method="post" target="_blank">
+                  <h2>Онлайн-тест на определение стиля в одежде</h2>
+
+                  <h3>Чтобы пройти тест, необходимо указать данные о себе</h3>
+                  <fieldset>
+                     <legend>Ваши персональные данные</legend>
+                     <ul>
+                       <li>
+                         <label for="name">ФИО:*</label>
+                         <input type="text" name="name" placeholder="Иванов Иван Иванович" id="name" required>
+                       </li>
+                       <li>
+                         <label for="age">Возраст:*</label>
+                         <input type="number" name="age" placeholder="16" id="age" min="0" max="150" required>
+                       </li>
+                     </ul>
+                  </fieldset>
+                  <fieldset>
+                     <legend>Контакты</legend>
+                     <ul>
+                       <li>
+                         <label for="email">E-mail:*</label>
+                         <input type="email" name="mail" placeholder="Ваш email@gmail.com" id="email" required>
+                       </li>
+                       <li>
+                         <label for="number">Телефон:*</label>
+                         <input type="tel" name="phone" placeholder="+7 777 777-77-77" id="number" maxlength="21" required>
+                       </li>
+                     </ul>
+                  </fieldset>
+                  <h3><label for="message">Тест:</label></h3>
+                  <fieldset>
+                     <legend>1. Какие цвета в одежде вы предпочитаете?</legend>
+                     <ul>
+                       <li>
+                         <input type="radio" name="color" id="one" value="one">
+                         <label for="one">Яркие: розовый, оранжевый, красный.</label>
+                       </li>
+                       <li>
+                         <input type="radio" name="color" id="two" value="two">
+                         <label for="two">Пастельного цвета: бежевый, светло-голубой, лавандовый.</label>
+                       </li>
+                       <li>
+                         <input type="radio" name="color" id="three" value="three">
+                         <label for="three">Стандартные цвета: белый, черный, красный, синий.</label>
+                       </li>
+                       <li>
+                         <input type="radio" name="color" id="four" value="four">
+                         <label for="four">Темные: черный, бордовый, темно-синий, серый.</label>
+                       </li>
+                       <li>
+                         <input type="radio" name="color" id="four" value="five">
+                         <label for="five">Мне все равно на цвет одежды.</label>
+                       </li>
+                     </ul>
+                  </fieldset>
+                  <fieldset>
+                     <legend>2. Что вы цените в одежде больше всего?</legend>
+                     <ul>
+                       <li>
+                         <input type="radio" name="color" id="1" value="1">
+                         <label for="1">Удобство и практичность.</label>
+                       </li>
+                       <li>
+                         <input type="radio" name="color" id="2" value="2">
+                         <label for="2">Комфорт и эстетика.</label>
+                       </li>
+                       <li>
+                         <input type="radio" name="color" id="3" value="3">
+                         <label for="3">Простота, но при этом чтобы выглядело дорого.</label>
+                       </li>
+                       <li>
+                         <input type="radio" name="color" id="4" value="4">
+                         <label for="4">Мне все равно, что носить.</label>
+                       </li>
+                       <li>
+                         <input type="radio" name="color" id="5" value="5">
+                         <label for="5">Для меня вообще одежда не имеет никакой ценности.</label>
+                       </li>
+                     </ul>
+                  </fieldset>
+                  <div class="button-submit">
+                     <p>* - Обязательные поля</p><button type="reset" id="resetbtn">Очистить</button> 
+                     <h1><label>Просим прощения, к сожалению, в данный момент тест недоступен, так как находится в разработке...</label></h1>
+                  </div> 
+                </form>
+              </div>
+            </div>
+         </div>
+       </div>
+     </section>
+   </body>
+</html>
+<!-- Created by Vladislav Maslov (Saifor) -->

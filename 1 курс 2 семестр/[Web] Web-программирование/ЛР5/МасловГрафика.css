@@ -1,0 +1,33 @@
+BODY {
+	background-image: url("images/bg.jpg");
+	background-size: cover;
+	background-size: 169%;
+	background-attachment: fixed
+}
+
+
+
+h1 {
+	font-family: Arial;
+	color: #sdsds;
+	text-align: center;
+}
+
+h2 {
+	font-family: Courier New;
+	color: red;
+-webkit-linear-gradient(#eee, #333);
+}
+
+h3 {
+	font-family: Cooper Black;
+}
+
+.imgsmile-alert {
+	width: 30%;
+}
+
+.imgsmile {
+	width: 250 px;
+	height: 100 px;
+}

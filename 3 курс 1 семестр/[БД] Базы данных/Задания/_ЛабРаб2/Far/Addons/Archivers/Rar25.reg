@@ -1,0 +1,18 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Far\Plugins\MultiArc\RAR]
+"Extract"="rar x -av- {-p%%P} {-ap%%R} -y -c- -kb -- %%A @%%LNM"
+"ExtractWithoutPath"="rar e -av- {-p%%P} -y -c- -kb -- %%A @%%LNM"
+"Test"="rar t -y {-p%%P} -- %%A"
+"Delete"="rar d -y {-w%%W} -- %%A @%%LNM"
+"Comment"="rar c -y {-w%%W} -- %%A"
+"CommentFiles"="rar cf -y {-w%%W} -- %%A @%%LNM"
+"SFX"="rar s -y -- %%A"
+"Lock"="rar k -y -- %%A"
+"Protect"="rar rr -y -- %%A"
+"Recover"="rar r -y -- %%A"
+"Add"="rar a -y {-p%%P} {-ap%%R} {-w%%W} {%%S} -- %%A @%%LN"
+"Move"="rar m -y {-p%%P} {-ap%%R} {-w%%W} {%%S} -- %%A @%%LN"
+"AddRecurse"="rar a -r0 -y {-p%%P} {-ap%%R} {-w%%W} {%%S} -- %%A @%%LN"
+"MoveRecurse"="rar m -r0 -y {-p%%P} {-ap%%R} {-w%%W} {%%S} -- %%A @%%LN"
+"AllFilesMask"="*.*"

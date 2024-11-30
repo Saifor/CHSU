@@ -1,0 +1,300 @@
+File_id.diz
+README.TXT
+WhatsNew.txt
+WhatsNew.Rus.txt
+Far.bat
+Far.exe
+FarEng.hlf
+FarEng.lng
+FarRus.hlf
+FarRus.lng
+License.txt
+Uninstall.lst
+PlugDoc.rar
+Far.ico
+RestoreSettings.bat
+SaveSettings.bat
+ClearPluginsCache.bat
+Far_Site.txt
+TechInfo.txt
+TechInfo.Rus.txt
+REGISTER.FRM
+License.xUSSR.txt
+REGISTER.TXT
+Contacts.txt
+Uninstall.exe
+FarFAQ.txt
+ArcSupport.Rus.txt
+ArcSupport.txt
+Macros.Rus.txt
+Macros.txt
+Descript.ion
+Addons\README.TXT
+Addons\Descript.ion
+Addons\Macros\Descript.ion
+Addons\Macros\AltBS.reg
+Addons\Macros\AltDown.reg
+Addons\Macros\AltMenu.reg
+Addons\Macros\AltScreens.reg
+Addons\Macros\AltSearch.reg
+Addons\Macros\AltX.reg
+Addons\Macros\Apps.reg
+Addons\Macros\BS.reg
+Addons\Macros\CtrlDel.reg
+Addons\Macros\CtrlF10.reg
+Addons\Macros\CtrlLeft.reg
+Addons\Macros\CtrlRight.reg
+Addons\Macros\CtrlShiftPgUpDn.reg
+Addons\Macros\CtrlUpDown.reg
+Addons\Macros\CtrlS.reg
+Addons\Macros\CtrlW.reg
+Addons\Macros\Del.reg
+Addons\Macros\Esc.reg
+Addons\Macros\F3.reg
+Addons\Macros\F9Table.reg
+Addons\Macros\Lynx-mot.reg
+Addons\Macros\Numpad.reg
+Addons\Macros\OpeningLastFile.reg
+Addons\Macros\ShiftBS.reg
+Addons\Macros\ShiftF1.reg
+Addons\Macros\ShiftInsSearch.reg
+Addons\Macros\ShiftTab.reg
+Addons\Macros\Space.reg
+Addons\Macros\SwitchMainLanguage.reg
+Addons\Macros\WheelScreenSwitch.reg
+Addons\Macros
+Addons\Archivers\Descript.ion
+Addons\Archivers\Arj32.reg
+Addons\Archivers\FarUC2.reg
+Addons\Archivers\InfoZIP.reg
+Addons\Archivers\LGHA.reg
+Addons\Archivers\Lha32.reg
+Addons\Archivers\Lha32a.reg
+Addons\Archivers\Lha32b.reg
+Addons\Archivers\LhArk.reg
+Addons\Archivers\PkZip25.reg
+Addons\Archivers\PkZip25Dos.reg
+Addons\Archivers\PkZip4.reg
+Addons\Archivers\Rar25.reg
+Addons\Archivers\WinZipCL.reg
+Addons\Archivers
+Addons\Colors\Custom Highlighting\black_from_Fonarev.reg
+Addons\Colors\Custom Highlighting\black_from_july.reg
+Addons\Colors\Custom Highlighting\black_from_Myodov.reg
+Addons\Colors\Custom Highlighting\Colors_from_admin_essp_ru.reg
+Addons\Colors\Custom Highlighting\Colors_from_Gernichenko.reg
+Addons\Colors\Custom Highlighting\Colors_from_Sadovoj.reg
+Addons\Colors\Custom Highlighting\dn_like.reg
+Addons\Colors\Custom Highlighting\FARColors242.reg
+Addons\Colors\Custom Highlighting\GreenMile.reg
+Addons\Colors\Custom Highlighting\hell.reg
+Addons\Colors\Custom Highlighting\import_colors.bat
+Addons\Colors\Custom Highlighting\nc5pal2.reg
+Addons\Colors\Custom Highlighting\Rodion_Doroshkevich.reg
+Addons\Colors\Custom Highlighting\VaxColors.reg
+Addons\Colors\Custom Highlighting\Descript.ion
+Addons\Colors\Custom Highlighting
+Addons\Colors\Default Highlighting\black_from_Fonarev.reg
+Addons\Colors\Default Highlighting\black_from_july.reg
+Addons\Colors\Default Highlighting\black_from_Myodov.reg
+Addons\Colors\Default Highlighting\Colors_from_admin_essp_ru.reg
+Addons\Colors\Default Highlighting\Colors_from_Gernichenko.reg
+Addons\Colors\Default Highlighting\Colors_from_Sadovoj.reg
+Addons\Colors\Default Highlighting\dn_like.reg
+Addons\Colors\Default Highlighting\FARColors242.reg
+Addons\Colors\Default Highlighting\GreenMile.reg
+Addons\Colors\Default Highlighting\hell.reg
+Addons\Colors\Default Highlighting\import_colors.bat
+Addons\Colors\Default Highlighting\nc5pal2.reg
+Addons\Colors\Default Highlighting\Rodion_Doroshkevich.reg
+Addons\Colors\Default Highlighting\VaxColors.reg
+Addons\Colors\Default Highlighting\Descript.ion
+Addons\Colors\Default Highlighting
+Addons\Colors\export_colors.bat
+Addons\Colors\import_colors.bat
+Addons\Colors\Descript.ion
+Addons\Colors
+Addons\Shell\Descript.ion
+Addons\Shell\FARHere.inf
+Addons\Shell
+Addons\Tables\Descript.ion
+Addons\Tables\README.TXT
+Addons\Tables\Cyrillic\Descript.ion
+Addons\Tables\Cyrillic\CP-1251.reg
+Addons\Tables\Cyrillic\ISO 8859-5.reg
+Addons\Tables\Cyrillic\Mac (Apple Standard Cyrillic).reg
+Addons\Tables\Cyrillic\Russian\Descript.ion
+Addons\Tables\Cyrillic\Russian\DKOI8.reg
+Addons\Tables\Cyrillic\Russian\DM.reg
+Addons\Tables\Cyrillic\Russian\Dist.Rus.reg
+Addons\Tables\Cyrillic\Russian\EMailRus.reg
+Addons\Tables\Cyrillic\Russian\KOI8-r.reg
+Addons\Tables\Cyrillic\Russian
+Addons\Tables\Cyrillic\Ukrainian\Descript.ion
+Addons\Tables\Cyrillic\Ukrainian\Dist.Ukr.reg
+Addons\Tables\Cyrillic\Ukrainian\Gost.reg
+Addons\Tables\Cyrillic\Ukrainian\KOI8-u.reg
+Addons\Tables\Cyrillic\Ukrainian
+Addons\Tables\Cyrillic
+Addons\Tables\German\Descript.ion
+Addons\Tables\German\Dist.Ger.reg
+Addons\Tables\German\Mac.Ger.reg
+Addons\Tables\German
+Addons\Tables\Hebrew\Descript.ion
+Addons\Tables\Hebrew\CP-1255.reg
+Addons\Tables\Hebrew
+Addons\Tables\Slavic (CE)\Descript.ion
+Addons\Tables\Slavic (CE)\ISO 8859-2.reg
+Addons\Tables\Slavic (CE)\CP-1250.reg
+Addons\Tables\Slavic (CE)\Czech\Descript.ion
+Addons\Tables\Slavic (CE)\Czech\Kamenicti.reg
+Addons\Tables\Slavic (CE)\Czech
+Addons\Tables\Slavic (CE)\Hungarian\Descript.ion
+Addons\Tables\Slavic (CE)\Hungarian\cwi.reg
+Addons\Tables\Slavic (CE)\Hungarian
+Addons\Tables\Slavic (CE)\Polish\Descript.ion
+Addons\Tables\Slavic (CE)\Polish\Mazovia.reg
+Addons\Tables\Slavic (CE)\Polish
+Addons\Tables\Slavic (CE)
+Addons\Tables
+Addons\SetUp\Descript.ion
+Addons\SetUp\Default165.reg
+Addons\SetUp
+Addons\XLat\Russian\Qwerty.reg
+Addons\XLat\Russian\AltR.reg
+Addons\XLat\Russian\CtrlR.reg
+Addons\XLat\Russian\Apps.reg
+Addons\XLat\Russian\CtrlShiftX.reg
+Addons\XLat\Russian\Descript.ion
+Addons\XLat\Russian
+Addons\XLat\Descript.ion
+Addons\XLat
+Addons
+Plugins\Descript.ion
+Plugins\InstallPlugins.txt
+Plugins\InstallPlugins.Rus.txt
+Plugins\WhatsNew.txt
+Plugins\WhatsNew.Rus.txt
+Plugins\Review.Rus.txt
+Plugins\Review.txt
+Plugins\MultiArc\MULTIARC.DLL
+Plugins\MultiArc\ArcEng.lng
+Plugins\MultiArc\ArcEng.hlf
+Plugins\MultiArc\ArcRus.hlf
+Plugins\MultiArc\ArcRus.lng
+Plugins\MultiArc\Formats\Custom.fmt
+Plugins\MultiArc\Formats\Custom.ini
+Plugins\MultiArc\Formats\Ha.fmt
+Plugins\MultiArc\Formats\Zip.fmt
+Plugins\MultiArc\Formats\Ace.fmt
+Plugins\MultiArc\Formats\Arj.fmt
+Plugins\MultiArc\Formats\Rar.fmt
+Plugins\MultiArc\Formats\Lzh.fmt
+Plugins\MultiArc\Formats\TarGz.fmt
+Plugins\MultiArc\Formats\Cab.fmt
+Plugins\MultiArc\Formats
+Plugins\MultiArc
+Plugins\FTP\FARFTP.DLL
+Plugins\FTP\FtpEng.lng
+Plugins\FTP\FtpRus.lng
+Plugins\FTP\FtpEng.hlf
+Plugins\FTP\FtpRus.hlf
+Plugins\FTP\FTPDef.reg
+Plugins\FTP\TechInfoFTP.Rus.txt
+Plugins\FTP\TechInfoFTP.txt
+Plugins\FTP
+Plugins\EMenu\EMENU.DLL
+Plugins\EMenu\EMenuDel.reg
+Plugins\EMenu\EMenuEng.hlf
+Plugins\EMenu\EMenuEng.lng
+Plugins\EMenu\EMenuRus.hlf
+Plugins\EMenu\EMenuRus.lng
+Plugins\EMenu\Hotkey.reg
+Plugins\EMenu\Hotkey Clipboard.reg
+Plugins\EMenu\Hotkey Properties.reg
+Plugins\EMenu
+Plugins\FileCase\FILECASE.DLL
+Plugins\FileCase\CaseEng.hlf
+Plugins\FileCase\CaseEng.lng
+Plugins\FileCase\CaseRus.hlf
+Plugins\FileCase\CaseRus.lng
+Plugins\FileCase
+Plugins\Network\NETWORK.DLL
+Plugins\Network\NetEng.lng
+Plugins\Network\NetEng.hlf
+Plugins\Network\NetRus.hlf
+Plugins\Network\NetRus.lng
+Plugins\Network\whatsnew.txt
+Plugins\Network
+Plugins\TmpPanel\TMPPANEL.DLL
+Plugins\TmpPanel\TmpEng.lng
+Plugins\TmpPanel\TmpEng.hlf
+Plugins\TmpPanel\TmpRus.hlf
+Plugins\TmpPanel\TmpRus.lng
+Plugins\TmpPanel\CtrlBS.reg
+Plugins\TmpPanel\shortcuts.temp
+Plugins\TmpPanel
+Plugins\ProcList\PROCLIST.DLL
+Plugins\ProcList\ProcEng.lng
+Plugins\ProcList\ProcRus.lng
+Plugins\ProcList\ProcEng.hlf
+Plugins\ProcList\ProcRus.hlf
+Plugins\ProcList\whatsnew.txt
+Plugins\ProcList
+Plugins\Compare\COMPARE.DLL
+Plugins\Compare\CompRus.lng
+Plugins\Compare\CompEng.lng
+Plugins\Compare\CmpRus.hlf
+Plugins\Compare\CmpEng.hlf
+Plugins\Compare
+Plugins\FARCmds\FARCMDS.DLL
+Plugins\FARCmds\FARCmdsEng.lng
+Plugins\FARCmds\FARCmdsEng.hlf
+Plugins\FARCmds\FARCmdsRus.hlf
+Plugins\FARCmds\FARCmdsRus.lng
+Plugins\FARCmds
+Plugins\PrintMan\PRINTMAN.DLL
+Plugins\PrintMan\prnmanen.hlf
+Plugins\PrintMan\prnmanen.lng
+Plugins\PrintMan\prnmanru.hlf
+Plugins\PrintMan\prnmanru.lng
+Plugins\PrintMan
+Plugins\HlfViewer\HLFVIEWER.DLL
+Plugins\HlfViewer\HlfViewerEng.hlf
+Plugins\HlfViewer\HlfViewerEng.lng
+Plugins\HlfViewer\HlfViewerRus.hlf
+Plugins\HlfViewer\HlfViewerRus.lng
+Plugins\HlfViewer
+Plugins\Editor\Descript.ion
+Plugins\Editor\Align\ALIGN.DLL
+Plugins\Editor\Align\AlignEng.lng
+Plugins\Editor\Align\AlignRus.lng
+Plugins\Editor\Align
+Plugins\Editor\AutoWrap\AUTOWRAP.DLL
+Plugins\Editor\AutoWrap\WrapEng.lng
+Plugins\Editor\AutoWrap\WrapRus.lng
+Plugins\Editor\AutoWrap
+Plugins\Editor\Brackets\BRACKETS.DLL
+Plugins\Editor\Brackets\BrackEng.hlf
+Plugins\Editor\Brackets\BrackEng.lng
+Plugins\Editor\Brackets\BrackRus.hlf
+Plugins\Editor\Brackets\BrackRus.lng
+Plugins\Editor\Brackets\BrackDel.reg
+Plugins\Editor\Brackets\BrackEng.reg
+Plugins\Editor\Brackets\BrackRus.reg
+Plugins\Editor\Brackets
+Plugins\Editor\DrawLine\DRAWLINE.DLL
+Plugins\Editor\DrawLine\DrawRus.lng
+Plugins\Editor\DrawLine\DrawEng.lng
+Plugins\Editor\DrawLine\DrawEng.hlf
+Plugins\Editor\DrawLine\DrawRus.hlf
+Plugins\Editor\DrawLine
+Plugins\Editor\EditCase\EDITCASE.DLL
+Plugins\Editor\EditCase\ECaseEng.lng
+Plugins\Editor\EditCase\ECaseRus.lng
+Plugins\Editor\EditCase\ECaseEng.hlf
+Plugins\Editor\EditCase\ECaseRus.hlf
+Plugins\Editor\EditCase\EditCase.reg
+Plugins\Editor\EditCase
+Plugins\Editor
+Plugins

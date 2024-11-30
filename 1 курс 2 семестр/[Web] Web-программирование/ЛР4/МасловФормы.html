@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>МасловФормы</title>
+	<meta name="description" content="Страница-форма">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/jobs-and-occupations-3/64/Programmer-job-avatar-profession-occupation-website-coding-programing-backend-developer-1024.png" type="image/png">
+</head>
+<body>
+	<form action="#" method="post" target="_blank">
+	<h2>Форма</h2>
+	<fieldset>
+		<legend>Ваши персональные данные</legend>
+			<ul>
+				<li>
+					<label for="name">ФИО:*</label>
+					<input type="text" name="name" placeholder="Иванов Иван Иванович" id="name" required>
+				</li>
+				<li>
+					<label for="age">Возраст:</label>
+					<input type="number" name="age" placeholder="18" id="age" min="0" max="150">
+				</li>
+			</ul>
+        	</fieldset>
+        	<fieldset>
+		<legend>Контакты</legend>
+			<ul>
+				<li>
+					<label for="email">E-mail:*</label>
+					<input type="email" name="mail" placeholder="Ваш email@gmail.com" id="email" required>
+				</li>
+            				<li>
+					<label for="number">Телефон:*</label>
+					<input type="tel" name="phone" placeholder="+7 777 777-77-77" id="number" maxlength="21" required>
+            				</li>
+			</ul>
+	</fieldset>
+	<div>
+			<label for="message">О себе: </label>
+			<textarea name="comment" placeholder="Расскажите о Ваших увлечениях..." id="message"></textarea>
+	</div>
+	<fieldset>
+		<legend>Как Вы проходите обучение?</legend>
+			<ul>
+				<li>
+					<input type="checkbox" name="intensive-courses" id="courses" checked>
+					<label for="courses">Прохожу курсы</label>
+				</li>
+				<li>
+					<input type="checkbox" name="books" id="books">
+					<label for="books">Читаю книги</label>
+				</li>
+				<li>
+					<input type="checkbox" name="video" id="video">
+					<label for="video">Смотрю видео</label>
+				</li>
+				<li>
+					<input type="checkbox" name="study" id="study">
+					<label for="study">Учусь в университете/колледже</label>
+				</li>
+			</ul>
+        	</fieldset>
+	<fieldset>
+            		<legend>Сколько часов в день Вы уделяете обучению программированию?</legend>
+            		<select атрибуты>
+			<option атрибуты>0</option> 
+                		<option атрибуты>1</option>
+                		<option атрибуты>2</option>
+                		<option атрибуты>3</option>
+                		<option атрибуты>4</option> 
+                		<option атрибуты>5</option> 
+               			<option атрибуты>6</option> 
+                		<option атрибуты>7</option> 
+                		<option атрибуты>8</option> 
+                		<option атрибуты>9</option> 
+                		<option атрибуты>10 и более</option> 
+		</select>
+        	</fieldset>
+        	<fieldset>
+            		<legend>На каком Вы сейчас курсе?</legend>
+            			<ul>
+				<li>
+					<input type="radio" name="course" id="one" value="one-course">
+					<label for="one">1</label>
+				</li>
+				<li>
+					<input type="radio" name="course" id="two" value="two-course">
+					<label for="two">2</label>
+				</li>
+				<li>
+					<input type="radio" name="course" id="three" value="three-course">
+					<label for="three">3</label>
+                			</li>
+                			<li>
+					<input type="radio" name="course" id="four" value="four-course">
+                    				<label for="four">4</label>
+                			</li>
+            			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Ступень образования</legend>
+				<select>
+					<option hidden></option>
+					<option атрибуты>Начальная школа</option>
+					<option атрибуты>Средняя школа</option>
+					<option атрибуты>Бакалавриат</option>
+					<option атрибуты>Специалитет</option> 
+					<option атрибуты>Магистратура</option> 
+					<option атрибуты>Аспирантура</option> 
+				</select>
+		</fieldset>
+        		<fieldset>
+			<legend>Ваши предпочтения: </legend>
+				<ul>
+					<li>
+						<input type="radio" name="preference" id="front" value="frontend" checked>
+						<label for="front">Фронтенд-разработка</label>
+					</li>
+					<li>
+						<input type="radio" name="preference" id="back" value="backend">
+						<label for="back">Бэкенд-разработка</label>
+					</li>
+					<li>
+						<input type="radio" name="preference" id="full" value="full-stack">
+						<label for="full">Фулстек-разработка</label>
+					</li>
+				</ul>
+		</fieldset>
+	<div>
+		<button type="submit">Отправить</button>
+		<p>* - Обязательные поля</p>
+	</div>
+	</form>
+</body>
+</html>
