@@ -1,3 +1,0 @@
-﻿  Source.cpp
-C:\Users\User\Pictures\5лаб\Source.cpp(6,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  5лаб.vcxproj -> C:\Users\User\Pictures\5лаб\x64\Debug\5лаб.exe

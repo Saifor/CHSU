@@ -1,5 +1,0 @@
-D:\автоматы\Project5\x64\Debug\Project5.vcxproj.AssemblyReference.cache
-D:\автоматы\Project5\x64\Debug\Project5.vcxproj.SuggestedBindingRedirects.cache
-D:\автоматы\Project5\x64\Debug\Project5.exe
-D:\автоматы\Project5\x64\Debug\Project5.MyForm.resources
-D:\автоматы\Project5\x64\Debug\Project5.vcxproj.GenerateResource.cache

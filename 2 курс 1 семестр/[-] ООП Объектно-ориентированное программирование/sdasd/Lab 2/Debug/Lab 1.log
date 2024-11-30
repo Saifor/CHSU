@@ -1,7 +1,0 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Lab 1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Lab2.cpp
-  Appliances.cpp
-  Создание кода...
-  LINK : не найден или не выполнена сборка D:\CHSU\2 курс 1 семестр\ООП Объектно-ориентированное программирование\sdasd\Lab 2\Debug\Lab 2.exe при последней инкрементной компоновке; выполняется полная компоновка
-  Lab 1.vcxproj -> D:\CHSU\2 курс 1 семестр\ООП Объектно-ориентированное программирование\sdasd\Lab 2\Debug\Lab 2.exe
-  Lab 1.vcxproj -> D:\CHSU\2 курс 1 семестр\ООП Объектно-ориентированное программирование\sdasd\Lab 2\Debug\Lab 2.pdb (Partial PDB)
