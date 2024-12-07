@@ -1,4 +1,4 @@
 ﻿  Main.cpp
-D:\GitHub\CHSU\ДОЛГИ\СиАОД Структуры и алгоритмы обработки данных\ЛР2\Project1\Main.cpp(31,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\GitHub\CHSU\ДОЛГИ\СиАОД Структуры и алгоритмы обработки данных\ЛР2\Project1\Main.cpp(99,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Project1.vcxproj -> D:\GitHub\CHSU\ДОЛГИ\СиАОД Структуры и алгоритмы обработки данных\ЛР2\Project1\x64\Debug\Project1.exe
+D:\GitHub\CHSU\ДОЛГИ\СиАОД Структуры и алгоритмы обработки данных\ЛР4\Project1\Main.cpp(30,27): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\GitHub\CHSU\ДОЛГИ\СиАОД Структуры и алгоритмы обработки данных\ЛР4\Project1\Main.cpp(96,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Project1.vcxproj -> D:\GitHub\CHSU\ДОЛГИ\СиАОД Структуры и алгоритмы обработки данных\ЛР4\Project1\x64\Debug\Project1.exe

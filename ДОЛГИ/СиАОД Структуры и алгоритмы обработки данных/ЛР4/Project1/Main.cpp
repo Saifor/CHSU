@@ -1,61 +1,113 @@
 #include <iostream>
-#include <time.h>
-#include <cmath>
 #include <fstream>
+#include <string>
+#include <cmath>
+
 using namespace std;
 
-void bininc(string znaki[], int N) {
-	int i = N - 2;
-	while (i >= 0 && znaki[i] == 1) {
-		znaki[i] = 0;
-		i--;
-	}
-	if (i >= 0) {
-		znaki[i] = 1;
-	}
+// Функция для преобразования строки к нижнему регистру
+void ToLowerCase(string& str) {
+    for (size_t i = 0; i < str.length(); i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] = str[i] + ('a' - 'A');
+        }
+    }
+}
+
+// Функция для удаления пробелов из строки
+void RemoveSpaces(string& str) {
+    string result;
+    for (char c : str) {
+        if (c != ' ') {
+            result += c;
+        }
+    }
+    str = result;
+}
+
+// Функция для генерации всех возможных комбинаций
+void GenerateCombinations(int n, string firstLine, string secondLine, ofstream& outputFile) {
+    int totalCombinations = pow(2, n); // Общее количество комбинаций
+
+    for (int i = 0; i < totalCombinations; i++) {
+        string modifiedLine = firstLine;
+        int indices[20]; // Массив для хранения индексов символов, которые будут вычеркнуты
+        int count = 0;
+
+        // Перебираем биты числа i
+        for (int j = 0; j < n; j++) {
+            if (i & (1 << j)) {
+                indices[count++] = j; // Сохраняем индекс вычеркиваемого символа
+            }
+        }
+
+        // Вычеркиваем символы по номерам из массива индексов, перебирая его в обратном порядке
+        for (int j = count - 1; j >= 0; j--) {
+            modifiedLine.erase(modifiedLine.begin() + indices[j]);
+        }
+
+        // Если полученная строка равна второй строке, записываем комбинацию в текстовый файл
+        if (modifiedLine == secondLine) {
+            for (int j = 0; j < count; j++) {
+                outputFile << (indices[j] + 1) << " "; // +1 для записи номера символа
+            }
+            outputFile << endl;
+        }
+    }
 }
 
 int main() {
-	int N, num, k, o;
-	o = 0;
-	cout << "A="; cin >> k;
-	cout << "N="; cin >> N;
-	ofstream file("input.txt");
-	cout << "Enter " << N << " natural numbers separating with enter:" << endl;
-	for (int i = 0; i < N; ++i) {
-		cin >> num;
-		file << num << endl;
-	}
+    setlocale(LC_ALL, "rus");
+    // Чтение текстового файла
+    ifstream inputFile("input.txt");
+    if (!inputFile.is_open()) {
+        cout << "Не удается открыть файл input.txt" << endl;
+        return 1;
+    }
 
-	file.close();
-	ifstream f("input.txt");
-	int* numbers = new int[N];
-	for (int i = 0; i < N; i++) {
-		f >> numbers[i];
-	}
-	f.close();
-	ofstream fo("output.txt");
-	int* znaki = new int[N - 1];
-	for (int i = 0; i < N - 1; i++) {
-		znaki[i] = 0;
-	}
-	for (int t = 0; t<int(pow(2, N - 1)); t++) {
-		int sum = numbers[0];
-		for (int i = 1; i < N; i++) {
-			if (znaki[i - 1] == 0) sum -= numbers[i];
-			if (znaki[i - 1] == 1) sum += numbers[i];
-			if (sum == k && i == N - 1) {
-				o++;
-				fo << numbers[0];
-				for (int j = 1; j < N; j++) {
-					if (znaki[j - 1] == 0) fo << "-";
-					else fo << "+";
-					fo << numbers[j];
-				}
-				fo << endl;
-			}
-		}
-		bininc(znaki, N);
-	}
-	fo << o;
-	fo.close();
+    string firstLine, secondLine;
+    getline(inputFile, firstLine);
+    getline(inputFile, secondLine);
+    inputFile.close();
+
+    if (firstLine.empty() || secondLine.empty()) {
+        cout << "Должно быть 2 строки" << endl;
+        return 1;
+    }
+
+    // Приведение строк к нижнему регистру и удаление пробелов
+    ToLowerCase(firstLine);
+    RemoveSpaces(firstLine);
+
+    ToLowerCase(secondLine);
+    RemoveSpaces(secondLine);
+
+    // Проверка на равенство строк
+    if (firstLine == secondLine) {
+        cout << "Строки изначально равны" << endl;
+        return 0;
+    }
+
+    if (firstLine.length() < secondLine.length()) {
+        cout << "Невозможно привести к одинаковому виду" << endl;
+        return 1;
+    }
+
+    int n = firstLine.length();
+    if (n > 20) {
+        cout << "Ошибка выполнения, элементов должно быть меньше или равно 20" << endl;
+        return 1;
+    }
+
+    // Генерация всех возможных комбинаций вычеркнутых символов
+    ofstream outputFile("output.txt");
+    if (!outputFile.is_open()) {
+        cout << "Не удается открыть файл output.txt" << endl;
+        return 1;
+    }
+
+    GenerateCombinations(n, firstLine, secondLine, outputFile);
+    outputFile.close();
+
+    return 0;
+}
