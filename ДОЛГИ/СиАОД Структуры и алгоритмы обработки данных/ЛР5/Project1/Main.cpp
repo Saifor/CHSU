@@ -1,149 +1,152 @@
 #include <iostream>
 #include <fstream>
 #include <Windows.h>
+#include <iomanip>
 using namespace std;
 
 int main() {
-	ifstream input("input.txt");
-	if (!input.is_open()) {
-		cout << "Не удается открыть файл input.txt" << endl;
-		return 1;
-	}
+    setlocale(LC_ALL, "rus");
+    ifstream input("input.txt");
+    if (!input.is_open()) {
+        cout << "Не удается открыть файл input.txt" << endl;
+        return 1;
+    }
 
-	// Чтение начальных и конечных координат
-	int i1, j1, i2, j2;
-	cout << "i1 = ";
-	cin >> i1;
-	cout << "j1 = ";
-	cin >> j1;
-	cout << "i2 = ";
-	cin >> i2;
-	cout << "j2 = ";
-	cin >> j2;
+    int N1, N2;
+    input >> N1 >> N2;
+    if (N1 > 20 || N2 > 20) {
+        cout << "Размеры массива не должны превышать 20!" << endl;
+        return 2;
+    }
+    else if (N1 < 0 || N2 < 0) {
+        cout << "Размеры массива не могут быть меньше 0!" << endl;
+        return 3;
+    }
+    else {
+        cout << "N1 = " << N1 << ", N2 = " << N2 << endl << endl;
+    }
 
-	int N1, N2; //инициализация размера массива
-	input >> N1 >> N2;
-	if (N1 > 20 || N2 > 20) {
-		cout << "Размеры массива не должны превышать 20!" << endl;
-		return 1;
-	}
+    int i1, j1, i2, j2;
+    cout << "Введите координаты первой точки:\nx = ";
+    cin >> i1;
+    cout << "x = ";
+    cin >> j1;
+    cout << "Введите координаты второй точки:\ny = ";
+    cin >> i2;
+    cout << "y = ";
+    cin >> j2;
+    cout << endl;
 
-	int sum = 1;
-	int** data = new int* [N1];
-	for (int i = 0; i < N1; i++) {
-		data[i] = new int[N2];
-		for (int j = 0; j < N2; j++) {
-			input >> data[i][j];
-			sum += data[i][j];
-		}
-	}
+    if (i1 >= N1 || i2 >= N2 || j1 >= N1 || j2 >= N2) {
+        cout << "Координаты клетки не могут выходить за пределы числового массива!" << endl;
+        return 4;
+    }
+    else if (i1 < 0 || i2 < 0 || j1 < 0 || j2 < 0) {
+        cout << "Координаты клетки не могут выходить за пределы числового массива!" << endl;
+        return 5;
+    }
 
-	int** sums = new int* [N1];
-	for (int i = 0; i < N1; i++) {
-		sums[i] = new int[N2];
-		for (int j = 0; j < N2; j++) {
-			sums[i][j] = sum;
-		}
-	}
-	sums[i1][j1] = data[i1][j1]; // Начальная сумма
+    int** data = new int* [N1];
+    for (int i = 0; i < N1; i++) {
+        data[i] = new int[N2];
+        for (int j = 0; j < N2; j++) {
+            input >> data[i][j];
+        }
+    }
+    
+    if (!data[i1][j1]) {
+        cout << "Клетка начальных координат с нулём. В клетки с нулями заходить нельзя." << endl;
+    } else if(!data[i2][j2]) {
+        cout << "Клетка конечных координат с нулём. В клетки с нулями заходить нельзя." << endl;
+    }
 
-	char** way = new char* [N1];
-	for (int i = 0; i < N1; i++) {
-		way[i] = new char[N2];
-		for (int j = 0; j < N2; j++) {
-			way[i][j] = '0';
-		}
-	}
+    int** minSum = new int* [N1];
+    for (int i = 0; i < N1; i++) {
+        minSum[i] = new int[N2];
+        for (int j = 0; j < N2; j++) {
+            minSum[i][j] = 1e9; // Инициализация большим значением
+        }
+    }
+    minSum[i1][j1] = data[i1][j1];
 
-	bool IsChanged = true; //Флаг изменения (прошли ли вершину)
-	while (IsChanged == true) {
-		IsChanged = false;
+    char** way = new char* [N1];
+    for (int i = 0; i < N1; i++) {
+        way[i] = new char[N2];
+        for (int j = 0; j < N2; j++) {
+            way[i][j] = '0';
+        }
+    }
 
-		for (int i = 0; i < N1; i++) {
-			for (int j = 0; j < N2; j++) {
-				if (!(i == i1 && j == j1) && data[i][j] != 0) {
-					if (j - 1 >= 0) {
-						if (data[i][j] + sums[i][j - 1] < sums[i][j]) { // Если соседняя левая клетка меньше sums
-							sums[i][j] = data[i][j] + sums[i][j - 1];
-							way[i][j] = '<';
-							IsChanged = true;
-						}
-					}
+    bool IsChanged = true;
+    while (IsChanged) {
+        IsChanged = false;
+        for (int i = 0; i < N1; i++) {
+            for (int j = 0; j < N2; j++) {
+                int dx[] = { -1, 0, 1, 0 };
+                int dy[] = { 0, 1, 0, -1 };
+                char dir[] = { '^', '>', 'v', '<' };
 
-					if (i - 1 >= 0) {
-						if (data[i][j] + sums[i - 1][j] < sums[i][j]) { // Если соседняя верхняя клетка меньше sums
-							sums[i][j] = data[i][j] + sums[i - 1][j];
-							way[i][j] = '^';
-							IsChanged = true;
-						}
-					}
+                for (int k = 0; k < 4; ++k) {
+                    int ni = i + dx[k];
+                    int nj = j + dy[k];
+                    if (ni >= 0 && ni < N1 && nj >= 0 && nj < N2) { // Не граница ли
+                        if (data[ni][nj] != 0) { // Не 0 ли
+                            if (data[i][j] + minSum[ni][nj] < minSum[i][j]) { // Минимальный ли
+                                minSum[i][j] = data[i][j] + minSum[ni][nj];
+                                way[i][j] = dir[k];
+                                IsChanged = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-					if (j + 1 < N2) {
-						if (data[i][j] + sums[i][j + 1] < sums[i][j]) { //если соседняя правая клетка меньше sums
-							sums[i][j] = data[i][j] + sums[i][j + 1];
-							way[i][j] = '>';
-							IsChanged = true;
-						}
-					}
+    bool** color = new bool* [N1];
+    for (int i = 0; i < N1; i++) {
+        color[i] = new bool[N2];
+        for (int j = 0; j < N2; j++) {
+            color[i][j] = false;
+        }
+    }
 
-					if (i + 1 < N1) {
-						if (data[i][j] + sums[i + 1][j] < sums[i][j]) { // Если соседняя нижняя клетка меньше sums
-							sums[i][j] = data[i][j] + sums[i + 1][j];
-							way[i][j] = 'v';
-							IsChanged = true;
-						}
-					}
-				}
-			}
-		}
-	}
+    int x = i2;
+    int y = j2;
+    if (minSum[x][y] == 1e9) {
+        cout << "Пути между координатами нет!" << endl;
+        return 6;
+    }
 
-	bool** color = new bool* [N1]; // Массив цветов
-	for (int i = 0; i < N1; i++) {
-		color[i] = new bool[N2];
-		for (int j = 0; j < N2; j++) {
-			color[i][j] = false; // Пройден
-		}
-	}
+    while (x != i1 || y != j1) {
+        color[x][y] = true;
+        if (way[x][y] == '<') y--;
+        else if (way[x][y] == '^') x--;
+        else if (way[x][y] == '>') y++;
+        else if (way[x][y] == 'v') x++;
+    }
+    color[x][y] = true;
 
-	int x = i2; // Элементы матрицы стрелочек (меток)
-	int y = j2;
-	while (x != i1 || y != j1) { // Идем обратно - ищем путь
-		color[x][y] = true;
-		if (way[x][y] == '<') {
-			y--;
-		}
-		else if (way[x][y] == '^') {
-			x--;
-		}
-		else if (way[x][y] == '>') {
-			y++;
-		}
-		else if (way[x][y] == 'v') {
-			x++;
-		}
-	}
-	color[x][y] = true;
-	int ko = 0;
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	cout << endl;
-	for (int i = 0; i < N1; i++) {
-		for (int j = 0; j < N2; j++) {
-			if (color[i][j] == true) { // Если элемент тот, что нам нужен, то закрашиваем
-				SetConsoleTextAttribute(hConsole, 12);// Изменение цвета
-				cout << data[i][j] << " "; // Выводим закрашенный элемент
-				ko += data[i][j];
-				SetConsoleTextAttribute(hConsole, 7);// Изменение цвета в белый
-			}
-			else {//иначе просто выводим элемент клетки
-				cout << data[i][j] << " ";
-			}
-		}
-		cout << endl;
+    int totalSum = 0;
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    
+    for (int i = 0; i < N1; i++) {
+        for (int j = 0; j < N2; j++) {
+            if (color[i][j]) {
+                SetConsoleTextAttribute(hConsole, 12);
+                cout << setw(2) << data[i][j];
+                cout << " ";
+                totalSum += data[i][j];
+                SetConsoleTextAttribute(hConsole, 7);
+            }
+            else {
+                cout << setw(2) << data[i][j] << " ";
+            }
+        }
+        cout << endl;
+    }
 
-	}
-	cout << "Sum: " << ko << endl << endl;
-
-	system("pause");
-	return 0;
+    cout << endl << "Минимальная сумма чисел пути: " << totalSum << endl << endl;
+    system("pause");
+    return 0;
 }
