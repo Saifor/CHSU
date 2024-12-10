@@ -1,152 +1,117 @@
 #include <iostream>
 #include <fstream>
-#include <Windows.h>
-#include <iomanip>
+#include <limits>
+
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "rus");
-    ifstream input("input.txt");
-    if (!input.is_open()) {
-        cout << "Не удается открыть файл input.txt" << endl;
+    int n1, n2, i1, i2, j1, j2;
+
+    ifstream inputFile("input.txt");
+    if (!inputFile.is_open()) {
+        cerr << "Error opening file!" << endl;
         return 1;
     }
 
-    int N1, N2;
-    input >> N1 >> N2;
-    if (N1 > 20 || N2 > 20) {
-        cout << "Размеры массива не должны превышать 20!" << endl;
-        return 2;
-    }
-    else if (N1 < 0 || N2 < 0) {
-        cout << "Размеры массива не могут быть меньше 0!" << endl;
-        return 3;
-    }
-    else {
-        cout << "N1 = " << N1 << ", N2 = " << N2 << endl << endl;
+    inputFile >> n1 >> n2;
+
+    if (n1 > 20 || n2 > 20 || n1 <= 0 || n2 <= 0) {
+        cerr << "Invalid array dimensions!" << endl;
+        return 1;
     }
 
-    int i1, j1, i2, j2;
-    cout << "Введите координаты первой точки:\nx = ";
-    cin >> i1;
-    cout << "x = ";
-    cin >> j1;
-    cout << "Введите координаты второй точки:\ny = ";
-    cin >> i2;
-    cout << "y = ";
-    cin >> j2;
-    cout << endl;
-
-    if (i1 >= N1 || i2 >= N2 || j1 >= N1 || j2 >= N2) {
-        cout << "Координаты клетки не могут выходить за пределы числового массива!" << endl;
-        return 4;
-    }
-    else if (i1 < 0 || i2 < 0 || j1 < 0 || j2 < 0) {
-        cout << "Координаты клетки не могут выходить за пределы числового массива!" << endl;
-        return 5;
-    }
-
-    int** data = new int* [N1];
-    for (int i = 0; i < N1; i++) {
-        data[i] = new int[N2];
-        for (int j = 0; j < N2; j++) {
-            input >> data[i][j];
+    int arr[20][20];
+    for (int i = 0; i < n1; ++i) {
+        for (int j = 0; j < n2; ++j) {
+            inputFile >> arr[i][j];
         }
     }
-    
-    if (!data[i1][j1]) {
-        cout << "Клетка начальных координат с нулём. В клетки с нулями заходить нельзя." << endl;
-    } else if(!data[i2][j2]) {
-        cout << "Клетка конечных координат с нулём. В клетки с нулями заходить нельзя." << endl;
+    inputFile.close();
+
+    cout << "Enter i1, j1, i2, j2: ";
+    cin >> i1 >> j1 >> i2 >> j2;
+
+    if (i1 < 0 || i1 >= n1 || j1 < 0 || j1 >= n2 || i2 < 0 || i2 >= n1 || j2 < 0 || j2 >= n2) {
+        cerr << "Invalid start or end coordinates." << endl;
+        return 1;
     }
 
-    int** minSum = new int* [N1];
-    for (int i = 0; i < N1; i++) {
-        minSum[i] = new int[N2];
-        for (int j = 0; j < N2; j++) {
-            minSum[i][j] = 1e9; // Инициализация большим значением
-        }
-    }
-    minSum[i1][j1] = data[i1][j1];
+    long long dist[20][20];
+    int path[20][20][2];
+    int result_arr[20][20];
+    bool visited[20][20] = { false }; // Массив для отметки посещенных клеток
 
-    char** way = new char* [N1];
-    for (int i = 0; i < N1; i++) {
-        way[i] = new char[N2];
-        for (int j = 0; j < N2; j++) {
-            way[i][j] = '0';
+    for (int i = 0; i < n1; ++i) {
+        for (int j = 0; j < n2; ++j) {
+            dist[i][j] = numeric_limits<long long>::max();
+            path[i][j][0] = -1;
+            path[i][j][1] = -1;
+            result_arr[i][j] = arr[i][j];
         }
     }
 
-    bool IsChanged = true;
-    while (IsChanged) {
-        IsChanged = false;
-        for (int i = 0; i < N1; i++) {
-            for (int j = 0; j < N2; j++) {
-                int dx[] = { -1, 0, 1, 0 };
-                int dy[] = { 0, 1, 0, -1 };
-                char dir[] = { '^', '>', 'v', '<' };
+    dist[i1][j1] = 0;
+    visited[i1][j1] = true;
 
-                for (int k = 0; k < 4; ++k) {
-                    int ni = i + dx[k];
-                    int nj = j + dy[k];
-                    if (ni >= 0 && ni < N1 && nj >= 0 && nj < N2) { // Не граница ли
-                        if (data[ni][nj] != 0) { // Не 0 ли
-                            if (data[i][j] + minSum[ni][nj] < minSum[i][j]) { // Минимальный ли
-                                minSum[i][j] = data[i][j] + minSum[ni][nj];
-                                way[i][j] = dir[k];
-                                IsChanged = true;
-                            }
-                        }
-                    }
+    for (int count = 0; count < n1 * n2; ++count) {
+        int best_i = -1, best_j = -1;
+        long long min_dist = numeric_limits<long long>::max();
+
+        for (int i = 0; i < n1; ++i) {
+            for (int j = 0; j < n2; ++j) {
+                if (arr[i][j] != 0 && dist[i][j] < min_dist && !visited[i][j]) {
+                    min_dist = dist[i][j];
+                    best_i = i;
+                    best_j = j;
+                }
+            }
+        }
+
+        if (best_i == -1) break; // Нет непосещенных клеток с доступными путями
+
+        visited[best_i][best_j] = true;
+
+
+        int dx[] = { 0, 0, 1, -1 };
+        int dy[] = { 1, -1, 0, 0 };
+
+        for (int k = 0; k < 4; ++k) {
+            int ni = best_i + dx[k];
+            int nj = best_j + dy[k];
+
+            if (ni >= 0 && ni < n1 && nj >= 0 && nj < n2 && arr[ni][nj] != 0) {
+                if (dist[best_i][best_j] + arr[ni][nj] < dist[ni][nj]) {
+                    dist[ni][nj] = dist[best_i][best_j] + arr[ni][nj];
+                    path[ni][nj][0] = best_i;
+                    path[ni][nj][1] = best_j;
                 }
             }
         }
     }
 
-    bool** color = new bool* [N1];
-    for (int i = 0; i < N1; i++) {
-        color[i] = new bool[N2];
-        for (int j = 0; j < N2; j++) {
-            color[i][j] = false;
-        }
+    if (dist[i2][j2] == numeric_limits<long long>::max()) {
+        cout << "No path found." << endl;
+        return 0;
     }
 
-    int x = i2;
-    int y = j2;
-    if (minSum[x][y] == 1e9) {
-        cout << "Пути между координатами нет!" << endl;
-        return 6;
+    cout << "Minimal sum: " << dist[i2][j2] << endl;
+
+    int cur_i = i2, cur_j = j2;
+    while (cur_i != -1) {
+        result_arr[cur_i][cur_j] *= -1;
+        int prev_i = path[cur_i][cur_j][0];
+        int prev_j = path[cur_i][cur_j][1];
+        cur_i = prev_i;
+        cur_j = prev_j;
     }
 
-    while (x != i1 || y != j1) {
-        color[x][y] = true;
-        if (way[x][y] == '<') y--;
-        else if (way[x][y] == '^') x--;
-        else if (way[x][y] == '>') y++;
-        else if (way[x][y] == 'v') x++;
-    }
-    color[x][y] = true;
-
-    int totalSum = 0;
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    
-    for (int i = 0; i < N1; i++) {
-        for (int j = 0; j < N2; j++) {
-            if (color[i][j]) {
-                SetConsoleTextAttribute(hConsole, 12);
-                cout << setw(2) << data[i][j];
-                cout << " ";
-                totalSum += data[i][j];
-                SetConsoleTextAttribute(hConsole, 7);
-            }
-            else {
-                cout << setw(2) << data[i][j] << " ";
-            }
+    cout << "Result matrix:" << endl;
+    for (int i = 0; i < n1; ++i) {
+        for (int j = 0; j < n2; ++j) {
+            cout << result_arr[i][j] << "\t";
         }
         cout << endl;
     }
 
-    cout << endl << "Минимальная сумма чисел пути: " << totalSum << endl << endl;
-    system("pause");
     return 0;
 }
