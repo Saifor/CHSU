@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "ce4b082ae53a3b06",
+    "type": "split",
+    "children": [
+      {
+        "id": "716bc5622078c32c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b80802349a813238",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 курс 1 семестр/[БД] Базы данных/Лабы/02. Физическая организация файлов баз данных/02. Физическая организация файлов баз данных.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02. Физическая организация файлов баз данных"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cc9fafb15c4056a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "b90a227eaa748dc7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93477b351b11115d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "13a2baf957158b44",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "48814040b2f252bd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a1bf19708f6d01d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "afcad25a91fc6621",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f787fc5343d9e02f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3 курс 1 семестр/[ММРЗ ИИ] ММ реш задач ИИ/Лекции/02. Моделирование.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для 02. Моделирование"
+            }
+          },
+          {
+            "id": "3f6c5613d1115787",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3 курс 1 семестр/[ММРЗ ИИ] ММ реш задач ИИ/Лекции/02. Моделирование.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из 02. Моделирование"
+            }
+          },
+          {
+            "id": "70bb647455c19035",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "3c58d4cddf575d99",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3 курс 1 семестр/[ММРЗ ИИ] ММ реш задач ИИ/Лекции/02. Моделирование.md"
+              },
+              "icon": "lucide-list",
+              "title": "Структура 02. Моделирование"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "b80802349a813238",
+  "lastOpenFiles": [
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/07. Взаимодействие с БД Access из приложения, созданного на ЯВУ/~$ркелов_ЛР7.docx",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/06. SQL. Язык манипулирования данными (DML)/~$ркелов_ЛР6.docx",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/05. SQL/~$ркелов_ЛР5.docx",
+    "3 курс 1 семестр/[БД] Базы данных/Задания/_ЛабРаб5/~$абРаб5.doc",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/04. Управление транзакциями. Журнализация изменений БД/~WRL2839.tmp",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/04. Управление транзакциями. Журнализация изменений БД/~WRD2812.tmp",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/04. Управление транзакциями. Журнализация изменений БД/~WRL0674.tmp",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/04. Управление транзакциями. Журнализация изменений БД/~WRD0650.tmp",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/04. Управление транзакциями. Журнализация изменений БД/~WRL2180.tmp",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/04. Управление транзакциями. Журнализация изменений БД/~WRD2156.tmp",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/04. Управление транзакциями. Журнализация изменений БД/~WRD2169.tmp",
+    "3 курс 1 семестр/[БД] Базы данных/Лабы/01. Системы управления базами данных. СУБД Microsoft Access/01. Системы управления базами данных. СУБД Microsoft Access.md",
+    "3 курс 1 семестр/[ММРЗ ИИ] ММ реш задач ИИ/Лекции/02. Моделирование.md",
+    "3 курс 1 семестр/[ММРЗ ИИ] ММ реш задач ИИ/Лекции/01. Искусственный интеллект.md",
+    "3 курс 1 семестр/[ММРЗ ИИ] ММ реш задач ИИ/Лекции/00. Общая информация.md"
+  ]
+}
