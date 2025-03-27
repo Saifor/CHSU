@@ -1,0 +1,21 @@
+C:\Users\den12\source\repos\A_1\A_1\x64\Debug\A_1.vcxproj.AssemblyReference.cache
+C:\Users\den12\source\repos\A_1\A_1\x64\Debug\A1.MyForm.resources
+C:\Users\den12\source\repos\A_1\A_1\x64\Debug\A_1.vcxproj.GenerateResource.cache
+D:\ТА\A_1\A_1\x64\Debug\A_1.vcxproj.AssemblyReference.cache
+D:\ТА\A_1\A_1\x64\Debug\A1.MyForm.resources
+D:\ТА\A_1\A_1\x64\Debug\A_1.vcxproj.GenerateResource.cache
+F:\desktop\A_1\A_1\x64\Debug\A_1.vcxproj.AssemblyReference.cache
+F:\desktop\A_1\A_1\x64\Debug\A1.MyForm.resources
+F:\desktop\A_1\A_1\x64\Debug\A_1.vcxproj.GenerateResource.cache
+F:\desktop\лб3\A_1\x64\Debug\A_1.vcxproj.AssemblyReference.cache
+F:\desktop\лб3\A_1\x64\Debug\A1.MyForm.resources
+F:\desktop\лб3\A_1\x64\Debug\A_1.vcxproj.GenerateResource.cache
+Z:\2022_1ПИб-02-1оп-22\Харламов Денис\2курс\ТА\лб3\лб3\A_1\x64\Debug\A_1.vcxproj.AssemblyReference.cache
+Z:\2022_1ПИб-02-1оп-22\Харламов Денис\2курс\ТА\лб3\лб3\A_1\x64\Debug\A1.MyForm.resources
+Z:\2022_1ПИб-02-1оп-22\Харламов Денис\2курс\ТА\лб3\лб3\A_1\x64\Debug\A_1.vcxproj.GenerateResource.cache
+C:\Users\student\Desktop\раб\лб3\A_1\x64\Debug\A_1.vcxproj.AssemblyReference.cache
+C:\Users\student\Desktop\раб\лб3\A_1\x64\Debug\A1.MyForm.resources
+C:\Users\student\Desktop\раб\лб3\A_1\x64\Debug\A_1.vcxproj.GenerateResource.cache
+Z:\2022_1ПИб-02-1оп-22\Харламов Денис\2курс\ТА\лб3\раб\лб3\A_1\x64\Debug\A_1.vcxproj.AssemblyReference.cache
+Z:\2022_1ПИб-02-1оп-22\Харламов Денис\2курс\ТА\лб3\раб\лб3\A_1\x64\Debug\A1.MyForm.resources
+Z:\2022_1ПИб-02-1оп-22\Харламов Денис\2курс\ТА\лб3\раб\лб3\A_1\x64\Debug\A_1.vcxproj.GenerateResource.cache
