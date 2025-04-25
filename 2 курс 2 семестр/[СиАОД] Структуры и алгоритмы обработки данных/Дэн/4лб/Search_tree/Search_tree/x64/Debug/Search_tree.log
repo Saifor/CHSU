@@ -1,0 +1,9 @@
+﻿  MyForm.cpp
+F:\desktop\Учёба\2курс\4семка\СиА\4лб\Search_tree\Search_tree\MyForm.h(321,24): warning C4129: w: неизвестная escape-последовательность
+  (компиляция исходного файла "MyForm.cpp")
+  
+F:\desktop\Учёба\2курс\4семка\СиА\4лб\Search_tree\Search_tree\MyForm.h(321,24): warning C4129: d: неизвестная escape-последовательность
+  (компиляция исходного файла "MyForm.cpp")
+  
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Search_tree.vcxproj -> F:\desktop\Учёба\2курс\4семка\СиА\4лб\Search_tree\x64\Debug\Search_tree.exe

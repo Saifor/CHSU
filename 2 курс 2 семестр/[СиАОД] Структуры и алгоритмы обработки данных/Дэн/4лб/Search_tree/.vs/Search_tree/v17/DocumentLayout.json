@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D051214D-CF3C-415E-BF26-8B6E82B05065}|Search_tree\\Search_tree.vcxproj|C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D051214D-CF3C-415E-BF26-8B6E82B05065}|Search_tree\\Search_tree.vcxproj|solutionrelative:Search_tree\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D051214D-CF3C-415E-BF26-8B6E82B05065}|Search_tree\\Search_tree.vcxproj|C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{D051214D-CF3C-415E-BF26-8B6E82B05065}|Search_tree\\Search_tree.vcxproj|solutionrelative:Search_tree\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D051214D-CF3C-415E-BF26-8B6E82B05065}|Search_tree\\Search_tree.vcxproj|C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D051214D-CF3C-415E-BF26-8B6E82B05065}|Search_tree\\Search_tree.vcxproj|solutionrelative:Search_tree\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyForm.cpp",
+              "DocumentMoniker": "C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.cpp",
+              "RelativeDocumentMoniker": "Search_tree\\MyForm.cpp",
+              "ToolTip": "C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.cpp",
+              "RelativeToolTip": "Search_tree\\MyForm.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-22T12:46:30.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyForm.h",
+              "DocumentMoniker": "C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.h",
+              "RelativeDocumentMoniker": "Search_tree\\MyForm.h",
+              "ToolTip": "C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.h",
+              "RelativeToolTip": "Search_tree\\MyForm.h",
+              "ViewState": "AQIAAHEBAAAAAAAAAAAAALcBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-22T13:34:40.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyForm.h [Design]",
+              "DocumentMoniker": "C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.h",
+              "RelativeDocumentMoniker": "Search_tree\\MyForm.h",
+              "ToolTip": "C:\\Users\\youss\\OneDrive\\Desktop\\\u041A\u0440\u0438\u0441\u0438\u043A\\Search_tree\\Search_tree\\MyForm.h [Design]",
+              "RelativeToolTip": "Search_tree\\MyForm.h [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-22T12:46:05.517Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

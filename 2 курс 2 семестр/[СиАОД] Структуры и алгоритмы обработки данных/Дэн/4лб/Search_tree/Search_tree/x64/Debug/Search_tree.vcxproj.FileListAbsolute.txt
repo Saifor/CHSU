@@ -1,0 +1,9 @@
+D:\y2k\Структуры и алгоритмы данных\ЛР4\Search_tree\Search_tree\x64\Debug\Search_tree.vcxproj.AssemblyReference.cache
+D:\y2k\Структуры и алгоритмы данных\ЛР4\Search_tree\Search_tree\x64\Debug\Searchtree.MyForm.resources
+D:\y2k\Структуры и алгоритмы данных\ЛР4\Search_tree\Search_tree\x64\Debug\Search_tree.vcxproj.GenerateResource.cache
+C:\Users\youss\OneDrive\Desktop\Крисик\Search_tree\Search_tree\x64\Debug\Search_tree.vcxproj.AssemblyReference.cache
+C:\Users\youss\OneDrive\Desktop\Крисик\Search_tree\Search_tree\x64\Debug\Searchtree.MyForm.resources
+C:\Users\youss\OneDrive\Desktop\Крисик\Search_tree\Search_tree\x64\Debug\Search_tree.vcxproj.GenerateResource.cache
+F:\desktop\Учёба\2курс\4семка\СиА\4лб\Search_tree\Search_tree\x64\Debug\Search_tree.vcxproj.AssemblyReference.cache
+F:\desktop\Учёба\2курс\4семка\СиА\4лб\Search_tree\Search_tree\x64\Debug\Searchtree.MyForm.resources
+F:\desktop\Учёба\2курс\4семка\СиА\4лб\Search_tree\Search_tree\x64\Debug\Search_tree.vcxproj.GenerateResource.cache

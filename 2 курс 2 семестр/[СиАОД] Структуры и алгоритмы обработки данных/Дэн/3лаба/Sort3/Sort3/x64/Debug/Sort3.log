@@ -1,0 +1,3 @@
+﻿  Source.cpp
+F:\desktop\Учёба\2курс\4семка\СиА\3лаба\Sort3\Sort3\Source.cpp(113,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Sort3.vcxproj -> F:\desktop\Учёба\2курс\4семка\СиА\3лаба\Sort3\x64\Debug\Sort3.exe
