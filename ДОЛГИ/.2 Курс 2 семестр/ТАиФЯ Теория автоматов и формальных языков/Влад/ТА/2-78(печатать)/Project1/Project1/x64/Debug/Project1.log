@@ -1,0 +1,143 @@
+﻿  MyForm.cpp
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(346,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(352,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(356,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(360,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(365,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(369,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(377,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(386,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(393,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(403,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(408,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(413,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(419,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(426,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(433,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(437,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(443,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(447,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(451,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(458,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(462,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(466,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(472,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(476,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(480,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(484,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(491,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(495,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(502,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(506,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(510,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(519,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(524,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(528,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(535,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(539,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(548,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(552,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(557,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(561,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(568,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(572,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(581,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(586,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(590,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+D:\Учёба\Автомат\2-78\Project1\Project1\MyForm.h(594,13): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Создание кода...
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Project1.vcxproj -> D:\Учёба\Автомат\2-78\Project1\x64\Debug\Project1.exe

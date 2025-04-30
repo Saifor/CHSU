@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u0421\u0438\u0410\u041E\u0414\\\u0414\u043B\u044F \u0415\u0433\u043E\u0440\u0430\\2\u041B\u0411\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0423\u0447\u0451\u0431\u0430\\\u0421\u0438\u0410\u041E\u0414\\\u0414\u043B\u044F \u0415\u0433\u043E\u0440\u0430\\2\u041B\u0411\\ConsoleApp1\\ConsoleApp1\\bin\\Debug\\net9.0\\INPUT.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleApp1\\bin\\Debug\\net9.0\\INPUT.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF09B2B6-EFB6-427A-B9BF-7A44E3FCAD6A}|ConsoleApp1\\ConsoleApp1.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u0441\u0438\u0430\u043E\u0434\\\u0434\u043B\u044F \u0435\u0433\u043E\u0440\u0430\\2\u043B\u0431\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF09B2B6-EFB6-427A-B9BF-7A44E3FCAD6A}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "INPUT.txt",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u0421\u0438\u0410\u041E\u0414\\\u0414\u043B\u044F \u0415\u0433\u043E\u0440\u0430\\2\u041B\u0411\\ConsoleApp1\\ConsoleApp1\\bin\\Debug\\net9.0\\INPUT.txt",
+              "RelativeDocumentMoniker": "ConsoleApp1\\bin\\Debug\\net9.0\\INPUT.txt",
+              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u0421\u0438\u0410\u041E\u0414\\\u0414\u043B\u044F \u0415\u0433\u043E\u0440\u0430\\2\u041B\u0411\\ConsoleApp1\\ConsoleApp1\\bin\\Debug\\net9.0\\INPUT.txt*",
+              "RelativeToolTip": "ConsoleApp1\\bin\\Debug\\net9.0\\INPUT.txt*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-30T11:38:16.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u0421\u0438\u0410\u041E\u0414\\\u0414\u043B\u044F \u0415\u0433\u043E\u0440\u0430\\2\u041B\u0411\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u0421\u0438\u0410\u041E\u0414\\\u0414\u043B\u044F \u0415\u0433\u043E\u0440\u0430\\2\u041B\u0411\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAQwHwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T11:36:46.918Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 6,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\Учёба\Автомат\курсач\Анализируемая программа\Project1\Project1\Source.cpp(3,6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\Учёба\Автомат\курсач\Анализируемая программа\Project1\Project1\Source.cpp(7,10): warning C4305: инициализация: усечение из "double" в "float"
+  Project1.vcxproj -> D:\Учёба\Автомат\курсач\Анализируемая программа\Project1\x64\Debug\Project1.exe

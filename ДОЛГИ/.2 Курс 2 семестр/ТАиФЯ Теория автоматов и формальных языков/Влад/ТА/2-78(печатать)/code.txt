@@ -1,0 +1,2559 @@
+for each (Char c in text) {
+	switch (s)
+	{
+	case 0:// проверка на число
+		if (c == '-') {
+			s = 1;
+			st = st + c;
+			prev = c;
+		}
+		else if ((c == '0' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6'
+			|| c == '7' || c == '8' || c == '9') && (Char::IsWhiteSpace(prev) || prev == NULL)) {
+			s = 1;
+			prev = c;
+			st = st + c;
+		}
+		else if (c == '/') {
+			prev = c;
+			s = 8;
+		}
+		else if (c == 's') {
+			s = 2;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'c') {
+			s = 18;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'b') {
+			s = 22;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'i') {
+			s = 27;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'f') {
+			s = 29;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'd') {
+			s = 32;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'e') {
+			s = 39;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'r') {
+			s = 43;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'u') {
+			s = 49;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'n') {
+			s = 54;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'v') {
+			s = 63;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'm') {
+			s = 97;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == '"') {
+			s = 109;
+			prev = c;
+		}
+		else if (c == '\'') {
+			s = 113;
+			prev = c;
+		}
+		else {
+			if (c == '\n') {
+				counter += 1;
+			}
+			s = 0;
+			prev = c;
+		}
+		break;
+	case 1:
+		if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6'
+			|| c == '7' || c == '8' || c == '9') {
+			st = st + c;
+			prev = c; 
+			s = 1;
+		}
+		else if (c == '.') {
+			st = st + c;
+			s = 3;
+			prev = c;
+		}
+		else if (Char::IsWhiteSpace(c) || c == ',' || c == ';') {
+			if (c == '\n') {
+				counter += 1;
+			}
+			bool flag = false;
+			String^ searchValue = st;
+			for (int i = 0; i < IntVal->Rows->Count; i++) {
+				if (IntVal->Rows[i]->Cells["Number"]->Value != nullptr && IntVal->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					flag = true;
+					break;
+				}
+			}
+			if (!flag) {
+				IntVal->Rows->Add(in.ToString(), st, st);
+				in++;
+			}
+			richTextBox1->AppendText(st);
+			for (int i = 0; i < IntVal->Rows->Count; i++) {
+				if (IntVal->Rows[i]->Cells["Number"]->Value != nullptr &&
+					IntVal->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(10, " + IntVal->Rows[i]->Cells["10"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		else {
+			st = "";
+			code = 0;
+			s = 7;
+			prev = c;
+		}
+		break;
+	case 2:
+		if (c == 'w') {
+			prev = c;
+			s = 13;
+			st = st + c;
+		}
+		else if (c == 't') {
+			prev = c;
+			s = 79;
+			st = st + c;
+		}
+		else if (c == 'y') {
+			prev = c;
+			s = 115;
+			st = st + c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 3:
+		if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6'
+			|| c == '7' || c == '8' || c == '9') {
+			st = st + c;
+			s = 3;
+			prev = c;
+		}
+		else if (Char::IsWhiteSpace(c) || c == ',' || c == ';') {
+			if (prev != '.') {
+				bool flag = false;
+				String^ searchValue = st;
+				for (int i = 0; i < doubleVal->Rows->Count; i++) {
+					if (doubleVal->Rows[i]->Cells["Number"]->Value != nullptr && doubleVal->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						flag = true;
+						break;
+					}
+				}
+				if (!flag) {
+					doubleVal->Rows->Add(dou.ToString(), st, st);
+					dou++;
+				}
+				richTextBox1->AppendText(st);
+				for (int i = 0; i < doubleVal->Rows->Count; i++) {
+					if (doubleVal->Rows[i]->Cells["Number"]->Value != nullptr &&
+						doubleVal->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(20, " + doubleVal->Rows[i]->Cells["20"]->Value->ToString() + ")");
+					}
+				}
+			}
+			if (c == '\n') {
+				counter += 1;
+			}
+			prev = c;
+			s = 0;
+			st = "";
+		}
+		else if ((c == 'e' || c == 'E') && (prev == '0' || prev == '1' || prev == '2' || prev == '3' || prev == '4' || prev == '5' || prev == '6'
+			|| prev == '7' || prev == '8' || prev == '9')) {
+			st = st + c;
+			s = 4;
+			prev = c;
+		}
+		else {
+			st = "";
+			code = 1;
+			s = 7;
+			prev = c;
+		}
+		break;
+	case 4:
+		if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6'
+			|| c == '7' || c == '8' || c == '9') {
+			prev = c;
+			s = 6;
+			st = st + c;
+		}
+		else if (c == '+' || c == '-') {
+			s = 5;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (c == '\n') {
+				counter += 1;
+			}
+			st = "";
+			code = 1;
+			s = 7;
+			prev = c;
+		}
+		break;
+	case 5:
+		if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6'
+			|| c == '7' || c == '8' || c == '9') {
+			s = 6;
+			prev = c;
+			st = st + c;
+		}
+		else {
+			if (c == '\n') {
+				counter += 1;
+			}
+			st = "";
+			code = 2;
+			prev = c;
+			s = 7;
+		}
+		break;
+	case 6:
+		if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6'
+			|| c == '7' || c == '8' || c == '9') {
+			st = st + c;
+			s = 6;
+			prev = c;
+		}
+		else if (Char::IsWhiteSpace(c) || c == ',' || c == ';') {
+			if (c == '\n') {
+				counter += 1;
+			}
+			bool flag = false;
+			String^ searchValue = st;
+			for (int i = 0; i < floatVal->Rows->Count; i++) {
+				if (floatVal->Rows[i]->Cells["Number"]->Value != nullptr && floatVal->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					flag = true;
+					break;
+				}
+			}
+			if (!flag) {
+				floatVal->Rows->Add(fl.ToString(), st, st);
+				fl++;
+			}
+			richTextBox1->AppendText(st);
+			for (int i = 0; i < floatVal->Rows->Count; i++) {
+				if (floatVal->Rows[i]->Cells["Number"]->Value != nullptr &&
+					floatVal->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(30, " + floatVal->Rows[i]->Cells["30"]->Value->ToString() + ")");
+				}
+			}
+
+			prev = c;
+			s = 0;
+			st = "";
+		}
+		else {
+			st = "";
+			code = 2;
+			prev = c;
+			s = 7;
+		}
+		break;
+	case 7:
+		if (code == 0) {
+			MessageBox::Show("Проверьте строку " + counter + " возможно там ошибка связанная с типом int", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+			s = 0;
+			if (c == '\n') {
+				counter += 1;
+			}
+			prev = c;
+		}
+		if (code == 1) {
+			MessageBox::Show("Проверьте строку " + counter + " возможно там ошибка связанная с типом double/float", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+			s = 0;
+			if (c == '\n') {
+				counter += 1;
+			}
+			prev = c;
+		}
+		if (code == 2) {
+			MessageBox::Show("Проверьте строку " + counter + " возможно там ошибка связанная с типом float", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+			s = 0;
+			if (c == '\n') {
+				counter += 1;
+			}
+			prev = c;
+		}
+		break;
+	case 8:
+		if (c == '/') {
+			s = 9;
+		}
+		else if (c == '*') {
+			s = 10;
+		}
+		break;
+	case 9:
+		if (c == '\n') {
+			prev = c;
+			s = 0;
+		}
+		else {
+			s = 9;
+		}
+		break;
+	case 10:
+		if (c == '*') {
+			s = 11;
+		}
+		else {
+			s = 10;
+		}
+		break;
+	case 11:
+		if (c == '/') {
+			//prev = ' ';
+			s = 12;
+		}
+		else {
+			s = 10;
+		}
+		break;
+	case 12:
+		if (Char::IsWhiteSpace(c)) {
+			s = 0;
+			prev = c;
+		}
+		else {
+			s = 0;
+			prev = c;
+		}
+		break;
+	case 13:
+		if (c == 'i') {
+			s = 14;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 14:
+		if (c == 't') {
+			s = 15;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 15:
+		if (c == 'c') {
+			s = 16;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 16:
+		if (c == 'h') {
+			s = 17;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 17:
+		if (Char::IsWhiteSpace(c) || c == '(') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 18:
+		if (c == 'a') {
+			s = 19;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'o') {
+			s = 101;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'i') {
+			s = 104;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'h') {
+			s = 110;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 19:
+		if (c == 's') {
+			s = 20;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 20:
+		if (c == 'e') {
+			s = 21;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 21:
+		if (Char::IsWhiteSpace(c) || c == ':') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 22:
+		if (c == 'r') {
+			s = 23;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 23:
+		if (c == 'e') {
+			s = 24;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 24:
+		if (c == 'a') {
+			s = 25;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 25:
+		if (c == 'k') {
+			s = 26;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 26:
+		if (Char::IsWhiteSpace(c) || c == ';') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 27:
+		if (c == 'f') {
+			s = 28;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'n') {
+			s = 67;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'o') {
+			s = 89;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 28:
+		if (Char::IsWhiteSpace(c) || c == '(') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 29:
+		if (c == 'o') {
+			s = 30;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'l') {
+			s = 69;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 30:
+		if (c == 'r') {
+			s = 31;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 31:
+		if (Char::IsWhiteSpace(c) || c == '(') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 32:
+		if (c == 'e') {
+			s = 33;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'o') {
+			s = 74;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 33:
+		if (c == 'f') {
+			s = 34;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 34:
+		if (c == 'a') {
+			s = 35;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 35:
+		if (c == 'u') {
+			s = 36;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 36:
+		if (c == 'l') {
+			s = 37;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 37:
+		if (c == 't') {
+			s = 38;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 38:
+		if (Char::IsWhiteSpace(c) || c == ':') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 39:
+		if (c == 'l') {
+			s = 40;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'n') {
+			s = 106;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 40:
+		if (c == 's') {
+			s = 41;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 41:
+		if (c == 'e') {
+			s = 42;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 42:
+		if (Char::IsWhiteSpace(c) || c == '{') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 43:
+		if (c == 'e') {
+			s = 44;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 44:
+		if (c == 't') {
+			s = 45;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 45:
+		if (c == 'u') {
+			s = 46;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 46:
+		if (c == 'r') {
+			s = 47;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 47:
+		if (c == 'n') {
+			s = 48;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 48:
+		if (Char::IsWhiteSpace(c) || c == ';') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 49:
+		if (c == 's') {
+			s = 50;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 50:
+		if (c == 'i') {
+			s = 51;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 51:
+		if (c == 'n') {
+			s = 52;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 52:
+		if (c == 'g') {
+			s = 53;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 53:
+		if (Char::IsWhiteSpace(c)) {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 54:
+		if (c == 'a') {
+			s = 55;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 55:
+		if (c == 'm') {
+			s = 56;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 56:
+		if (c == 'e') {
+			s = 57;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 57:
+		if (c == 's') {
+			s = 58;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 58:
+		if (c == 'p') {
+			s = 59;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 59:
+		if (c == 'a') {
+			s = 60;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 60:
+		if (c == 'c') {
+			s = 61;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 61:
+		if (c == 'e') {
+			s = 62;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 62:
+		if (Char::IsWhiteSpace(c)) {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 63:
+		if (c == 'o') {
+			s = 64;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 64:
+		if (c == 'i') {
+			s = 65;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 65:
+		if (c == 'd') {
+			s = 66;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 66:
+		if (Char::IsWhiteSpace(c)) {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 67:
+		if (c == 't') {
+			s = 68;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'c') {
+			s = 84;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 68:
+		if (Char::IsWhiteSpace(c)) {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 73;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 69:
+		if (c == 'o') {
+			s = 70;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 70:
+		if (c == 'a') {
+			s = 71;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 71:
+		if (c == 't') {
+			s = 72;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 72:
+		if (Char::IsWhiteSpace(c)) {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 73;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 73:
+		if (!Char::IsWhiteSpace(c) && c != ';' && c != '=') {
+			st = st + c;
+			s = 73;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		break;
+	case 74:// остановка
+		if (c == 'u') {
+			s = 75;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 75:
+		if (c == 'b') {
+			s = 76;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 76:
+		if (c == 'l') {
+			s = 77;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 77:
+		if (c == 'e') {
+			s = 78;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 78:
+		if (Char::IsWhiteSpace(c)) {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 73;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 79:
+		if (c == 'r') {
+			s = 80;
+			st = st + c;
+			prev = c;
+		}
+		else if (c == 'd') {
+			s = 96;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 80:
+		if (c == 'i') {
+			s = 81;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 81:
+		if (c == 'n') {
+			s = 82;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 82:
+		if (c == 'g') {
+			s = 83;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 83:
+		if (Char::IsWhiteSpace(c)) {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 73;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 84:
+		if (c == 'l') {
+			s = 85;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 85:
+		if (c == 'u') {
+			s = 86;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 86:
+		if (c == 'd') {
+			s = 87;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 87:
+		if (c == 'e') {
+			s = 88;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 88:
+		if (Char::IsWhiteSpace(c)) {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 89:
+		if (c == 's') {
+			s = 90;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 90:
+		if (c == 't') {
+			s = 91;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 91:
+		if (c == 'r') {
+			s = 92;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 92:
+		if (c == 'e') {
+			s = 93;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 93:
+		if (c == 'a') {
+			s = 94;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 94:
+		if (c == 'm') {
+			s = 95;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 95:
+		if (Char::IsWhiteSpace(c) || c == '>') {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 96:
+		if (Char::IsWhiteSpace(c) || c == ';') {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 97:
+		if (c == 'a') {
+			s = 98;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 98:
+		if (c == 'i') {
+			s = 99;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 99:
+		if (c == 'n') {
+			s = 100;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 100:
+		if (Char::IsWhiteSpace(c) || c == '(') {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 101:
+		if (c == 'u') {
+			s = 102;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 102:
+		if (c == 't') {
+			s = 103;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 103:
+		if (Char::IsWhiteSpace(c) || c == '<') {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 104:
+		if (c == 'n') {
+			s = 105;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 105:
+		if (Char::IsWhiteSpace(c) || c == '>') {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 106:
+		if (c == 'd') {
+			s = 107;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 107:
+		if (c == 'l') {
+			s = 108;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 108:
+		if (Char::IsWhiteSpace(c) || c == ';') {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 109:
+		if (c != '"') {
+			st = st + c;
+			prev = c;
+			s = 109;
+		}
+		else {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < IdTab->Rows->Count; i++)
+			{
+				if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText("id");
+			if (!flag)
+			{
+				IdTab->Rows->Add(id.ToString(), st, "id");
+				id++;
+			}
+			for (int i = 0; i < IdTab->Rows->Count; i++) {
+				if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 110:
+		if (c == 'a') {
+			s = 111;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 111:
+		if (c == 'r') {
+			s = 112;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 112:
+		if (Char::IsWhiteSpace(c)) {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < wordsTab->Rows->Count; i++)
+			{
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText(st);
+			if (!flag)
+			{
+				wordsTab->Rows->Add(w.ToString(), st, st);
+				w++;
+			}
+			for (int i = 0; i < wordsTab->Rows->Count; i++) {
+				if (wordsTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					wordsTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(40, " + wordsTab->Rows[i]->Cells["40"]->Value->ToString() + ")");
+				}
+			}
+			s = 73;
+			st = "";
+		}
+		else {
+			s = 0;
+		}
+		break;
+	case 113:
+		if (c != '\'') {
+			s = 114;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			s = 114;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 114:
+		if (c == '\'') {
+			bool flag = false;
+			String^ searchValue = st->ToString();
+
+			for (int i = 0; i < IdTab->Rows->Count; i++)
+			{
+				if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+				{
+					flag = true;
+					break;
+				}
+			}
+			richTextBox1->AppendText("id");
+			if (!flag)
+			{
+				IdTab->Rows->Add(id.ToString(), st, "id");
+				id++;
+			}
+			for (int i = 0; i < IdTab->Rows->Count; i++) {
+				if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+					IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+					richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+				}
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 115:
+		if (c == 's') {
+			s = 116;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 116:
+		if (c == 't') {
+			s = 117;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 117:
+		if (c == 'e') {
+			s = 118;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 118:
+		if (c == 'm') {
+			s = 119;
+			st = st + c;
+			prev = c;
+		}
+		else {
+			if (Char::IsWhiteSpace(c)) {
+				counter++;
+			}
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	case 119:
+		if (Char::IsWhiteSpace(c) || c == '(') {
+			if (Char::IsWhiteSpace(c)) {
+				bool flag = false;
+				String^ searchValue = st->ToString();
+
+				for (int i = 0; i < IdTab->Rows->Count; i++)
+				{
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+					{
+						flag = true;
+						break;
+					}
+				}
+				richTextBox1->AppendText("id");
+				if (!flag)
+				{
+					IdTab->Rows->Add(id.ToString(), st, "id");
+					id++;
+				}
+				for (int i = 0; i < IdTab->Rows->Count; i++) {
+					if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+						IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+						richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+					}
+				}
+				s = 0;
+				st = "";
+				prev = c;
+			}
+		}
+		else {
+			s = 0;
+			st = "";
+			prev = c;
+		}
+		break;
+	default:
+		break;
+	}
+}

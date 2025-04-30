@@ -1,0 +1,3 @@
+D:\Учёба\Автомат\2-12\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+D:\Учёба\Автомат\2-12\Project1\Project1\x64\Debug\Project1.MyForm.resources
+D:\Учёба\Автомат\2-12\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache

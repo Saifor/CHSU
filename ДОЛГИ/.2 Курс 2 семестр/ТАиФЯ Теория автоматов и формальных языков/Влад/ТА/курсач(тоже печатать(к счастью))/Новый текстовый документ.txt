@@ -1,0 +1,33 @@
+case 44:
+	if (Char::IsWhiteSpace(str[i])) {
+		bool flag = false;
+		String^ searchValue = st->ToString();
+
+		for (int i = 0; i < IdTab->Rows->Count; i++)
+		{
+			if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+				IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue))
+			{
+				flag = true;
+				break;
+			}
+		}
+		richTextBox1->AppendText("id");
+		if (!flag)
+		{
+			IdTab->Rows->Add(fl.ToString(), st, "id");
+			fl++;
+		}
+		for (int i = 0; i < IdTab->Rows->Count; i++) {
+			if (IdTab->Rows[i]->Cells["Number"]->Value != nullptr &&
+				IdTab->Rows[i]->Cells["Number"]->Value->ToString()->Equals(searchValue)) {
+				richTextBox2->AppendText("(50, " + IdTab->Rows[i]->Cells["50"]->Value->ToString() + ")");
+			}
+		}
+		s1 = 0;
+		st = "";
+	}
+	else {
+		s1 = 0;
+	}
+	break;
