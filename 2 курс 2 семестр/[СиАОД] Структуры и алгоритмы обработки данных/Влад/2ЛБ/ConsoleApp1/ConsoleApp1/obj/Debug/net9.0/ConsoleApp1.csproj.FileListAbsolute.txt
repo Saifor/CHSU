@@ -1,0 +1,29 @@
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.exe
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.deps.json
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.runtimeconfig.json
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.pdb
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfo.cs
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.dll
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\refint\ConsoleApp1.dll
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.pdb
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.genruntimeconfig.cache
+D:\Учёба\СиАОД\Для Егора\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ref\ConsoleApp1.dll
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.exe
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.deps.json
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.runtimeconfig.json
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.pdb
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfo.cs
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.sourcelink.json
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.dll
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\refint\ConsoleApp1.dll
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.pdb
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.genruntimeconfig.cache
+D:\GitHub\CHSU\2 курс 2 семестр\[СиАОД] Структуры и алгоритмы обработки данных\Влад\2ЛБ\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ref\ConsoleApp1.dll
