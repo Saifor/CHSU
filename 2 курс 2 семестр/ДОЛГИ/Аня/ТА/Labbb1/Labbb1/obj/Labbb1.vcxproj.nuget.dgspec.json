@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "Z:\\2022_1ПИб-02-1оп-22\\Рябкова А.Л\\_2 курс\\4 семестр\\ТА\\Labbb1\\Labbb1\\Labbb1.vcxproj": {}
+  },
+  "projects": {
+    "Z:\\2022_1ПИб-02-1оп-22\\Рябкова А.Л\\_2 курс\\4 семестр\\ТА\\Labbb1\\Labbb1\\Labbb1.vcxproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Z:\\2022_1ПИб-02-1оп-22\\Рябкова А.Л\\_2 курс\\4 семестр\\ТА\\Labbb1\\Labbb1\\Labbb1.vcxproj",
+        "projectName": "Labbb1",
+        "projectPath": "Z:\\2022_1ПИб-02-1оп-22\\Рябкова А.Л\\_2 курс\\4 семестр\\ТА\\Labbb1\\Labbb1\\Labbb1.vcxproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "Z:\\2022_1ПИб-02-1оп-22\\Рябкова А.Л\\_2 курс\\4 семестр\\ТА\\Labbb1\\Labbb1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "secondaryFramework": "native",
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.22621.29, 10.0.22621.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

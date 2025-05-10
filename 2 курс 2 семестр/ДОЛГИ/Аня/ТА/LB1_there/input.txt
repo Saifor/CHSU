@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+void main() {
+	int n;
+	cin >> n;
+	int* a = new int[n];
+
+	for (int i = 0; i < n; i++)
+	{
+			switch (i%2)
+			{
+			case(0):
+				a[i] = i*i;
+				break;
+			case(1):
+				a[i] = i+i;
+				break;
+			}
+	}
+
+	for (int j = 0; j < n; j++)
+	{
+		cout << a[j] << " ";
+	}
+	cout <<  "\n";
+if (s[i] == ' ') {
+				outputText->Text += s[i];
+				S = 2;
+			}
+	system("pause");
+}

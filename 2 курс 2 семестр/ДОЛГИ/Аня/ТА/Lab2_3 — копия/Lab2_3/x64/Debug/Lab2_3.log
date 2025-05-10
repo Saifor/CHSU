@@ -1,0 +1,11 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  CppCLR_WinFormsProject.cpp
+Z:\2022_1ПИб-02-1оп-22\Рябкова А.Л\_2 курс\4 семестр\ТА\Lab2_3 — копия\Lab2_3\Form1.h(466,8): warning C4101: flag: неиспользованная локальная переменная
+  (компиляция исходного файла "/CppCLR_WinFormsProject.cpp")
+  
+  Form1.cpp
+  Создание кода...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Lab2_3.vcxproj -> Z:\2022_1ПИб-02-1оп-22\Рябкова А.Л\_2 курс\4 семестр\ТА\Lab2_3 — копия\x64\Debug\Lab2_3.exe

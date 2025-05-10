@@ -1,0 +1,9 @@
+Z:\2022_1ПИб-02-1оп-22\Рябкова А.Л\_2 курс\4 семестр\ТА\Lab56\Lab56\x64\Debug\Lab56.vcxproj.AssemblyReference.cache
+Z:\2022_1ПИб-02-1оп-22\Рябкова А.Л\_2 курс\4 семестр\ТА\Lab56\Lab56\x64\Debug\Lab56.MyForm.resources
+Z:\2022_1ПИб-02-1оп-22\Рябкова А.Л\_2 курс\4 семестр\ТА\Lab56\Lab56\x64\Debug\Lab56.vcxproj.GenerateResource.cache
+D:\Lab56\Lab56\x64\Debug\Lab56.vcxproj.AssemblyReference.cache
+D:\Lab56\Lab56\x64\Debug\Lab56.MyForm.resources
+D:\Lab56\Lab56\x64\Debug\Lab56.vcxproj.GenerateResource.cache
+C:\Users\Anya\Documents\ТА\Lab56\Lab56\x64\Debug\Lab56.vcxproj.AssemblyReference.cache
+C:\Users\Anya\Documents\ТА\Lab56\Lab56\x64\Debug\Lab56.MyForm.resources
+C:\Users\Anya\Documents\ТА\Lab56\Lab56\x64\Debug\Lab56.vcxproj.GenerateResource.cache
