@@ -9,7 +9,7 @@ class Heater : public IHeater {
 private:
 	static int count;
 	char* name = 0;
-	Color cl;
+	Color clr;
 	int price;
 	double power;
 protected:
