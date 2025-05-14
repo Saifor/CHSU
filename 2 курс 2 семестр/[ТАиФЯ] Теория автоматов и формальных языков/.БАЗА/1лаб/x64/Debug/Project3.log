@@ -1,3 +1,0 @@
-﻿  Source.cpp
-D:\автоматы\Project3\Source.cpp(53,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  Project3.vcxproj -> D:\автоматы\Project3\x64\Debug\Project3.exe
