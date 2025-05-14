@@ -1,3 +1,0 @@
-D:\Учёба\ООП\курсач\Приложение\App\App\x64\Debug\App.vcxproj.AssemblyReference.cache
-D:\Учёба\ООП\курсач\Приложение\App\App\x64\Debug\App.MyForm.resources
-D:\Учёба\ООП\курсач\Приложение\App\App\x64\Debug\App.vcxproj.GenerateResource.cache
